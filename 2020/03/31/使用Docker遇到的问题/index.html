@@ -51,18 +51,18 @@
   };
 </script>
 
-  <meta name="description" content="第一次发布博客​    Hello World!​    Hello this blog of mine!​    This is the first time trying to post a new blog, and I have no idea what to say.​    But I just can’t wait to do something in it.">
-<meta name="keywords" content="test">
+  <meta name="description" content="使用Docker遇到的问题 *Cannot connect to the Docker daemon at unix:&#x2F;&#x2F;&#x2F;var&#x2F;run&#x2F;docker.sock. Is the docker daemon running? * 重新配置daemon，并重启docker 12systemctl daemon-reloadsystemctl restart docker.service  ES运行内">
+<meta name="keywords" content="Shell">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First-Post">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;02&#x2F;02&#x2F;First-Post&#x2F;index.html">
+<meta property="og:title" content="使用Docker遇到的问题">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;31&#x2F;%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98&#x2F;index.html">
 <meta property="og:site_name" content="Blog of KrisHugo">
-<meta property="og:description" content="第一次发布博客​    Hello World!​    Hello this blog of mine!​    This is the first time trying to post a new blog, and I have no idea what to say.​    But I just can’t wait to do something in it.">
+<meta property="og:description" content="使用Docker遇到的问题 *Cannot connect to the Docker daemon at unix:&#x2F;&#x2F;&#x2F;var&#x2F;run&#x2F;docker.sock. Is the docker daemon running? * 重新配置daemon，并重启docker 12systemctl daemon-reloadsystemctl restart docker.service  ES运行内">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-01T06:54:22.192Z">
+<meta property="og:updated_time" content="2020-04-01T06:56:04.624Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/02/02/First-Post/">
+<link rel="canonical" href="http://yoursite.com/2020/03/31/%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
 
 
 <script id="page-configurations">
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title>First-Post | Blog of KrisHugo</title>
+  <title>使用Docker遇到的问题 | Blog of KrisHugo</title>
   
 
 
@@ -216,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/First-Post/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/31/%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header.jpg">
@@ -229,7 +229,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          First-Post
+          使用Docker遇到的问题
         </h1>
 
         <div class="post-meta">
@@ -239,14 +239,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-02-02 18:43:21" itemprop="dateCreated datePublished" datetime="2020-02-02T18:43:21+08:00">2020-02-02</time>
+              <time title="创建时间：2020-03-31 13:45:06" itemprop="dateCreated datePublished" datetime="2020-03-31T13:45:06+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-01 14:54:22" itemprop="dateModified" datetime="2020-04-01T14:54:22+08:00">2020-04-01</time>
+                <time title="修改时间：2020-04-01 14:56:04" itemprop="dateModified" datetime="2020-04-01T14:56:04+08:00">2020-04-01</time>
               </span>
 
           
@@ -260,20 +260,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h1><p>​    Hello World!</p><p>​    Hello this blog of mine!</p><p>​    This is the first time trying to post a new blog, and I have no idea what to say.</p><p>​    But I just can’t wait to do something in it.</p><a id="more"></a>
+        <h1 id="使用Docker遇到的问题"><a href="#使用Docker遇到的问题" class="headerlink" title="使用Docker遇到的问题"></a>使用Docker遇到的问题</h1><ol>
+<li><p>*<em>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? *</em></p>
+<p>重新配置daemon，并重启docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>ES运行内存不足</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>​    I know I forget it a long time, and throw it to a corner even forget it.</p>
-<p>​    Here is what I have to say, it’s too easy for me to post a blog without money, VIP or anything else. Programmer can do anything by himself!</p>
-<hr>
-<p>​    Here is the main sector of what I have to describe.</p>
-<p>​    The site of my blog contains all of writing which I love or want to remember or just eager to write down.</p>
-<p>​    It will include such as a diary, a span conclusion, and a little technology sharing.</p>
-<p>​    Hope I can remember to write all down.</p>
-<p>​    Hope you could find anything you like or approve! Thanks!</p>
-<p>​    Anyway, good night, every one!</p>
 
+
+</li>
+</ol>
     </div>
 
     
@@ -282,23 +282,23 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/test/" rel="tag"># test</a>
+              <a href="/tags/Shell/" rel="tag"># Shell</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/02/hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/2020/02/02/Change-To-Chinese/" rel="next" title="Change-To-Chinese">
+                  <i class="fa fa-chevron-left"></i> Change-To-Chinese
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2020/02/02/Diary-20200202/" rel="prev" title="Diary">
-                  Diary <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="prev" title="Java面试准备">
+                  Java面试准备 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -338,7 +338,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一次发布博客"><span class="nav-number">1.</span> <span class="nav-text">第一次发布博客</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Docker遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">使用Docker遇到的问题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
