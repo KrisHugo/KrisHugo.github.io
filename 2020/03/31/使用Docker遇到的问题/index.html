@@ -59,7 +59,7 @@
 <meta property="og:site_name" content="Blog of KrisHugo">
 <meta property="og:description" content="使用Docker遇到的问题 *Cannot connect to the Docker daemon at unix:&#x2F;&#x2F;&#x2F;var&#x2F;run&#x2F;docker.sock. Is the docker daemon running? * 重新配置daemon，并重启docker 12systemctl daemon-reloadsystemctl restart docker.service  ES运行内">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-01T06:56:04.624Z">
+<meta property="og:updated_time" content="2020-04-01T08:35:31.318Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2020/03/31/%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
@@ -246,7 +246,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-01 14:56:04" itemprop="dateModified" datetime="2020-04-01T14:56:04+08:00">2020-04-01</time>
+                <time title="修改时间：2020-04-01 16:35:31" itemprop="dateModified" datetime="2020-04-01T16:35:31+08:00">2020-04-01</time>
               </span>
 
           
@@ -267,8 +267,12 @@
 </li>
 <li><p><strong>ES运行内存不足</strong></p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></table></figure>
-
-
+</li>
+<li><p>查看logs</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker container logs 容器名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在容器出现错误时修改内部文件的办法</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">找到docker容器的文件路径</span></span><br><span class="line">find / -name 出现错误的文件名</span><br><span class="line"><span class="meta">#</span><span class="bash">进入并修改文件</span></span><br><span class="line">vim 文件路径</span><br></pre></td></tr></table></figure>
 
 
 
@@ -354,18 +358,18 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
