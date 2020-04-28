@@ -1,9 +1,2259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>深度学习专业课内容</title>
+    <url>/2020/04/26/2020-04-26-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="深度学习专业课内容"><a href="#深度学习专业课内容" class="headerlink" title="深度学习专业课内容"></a>深度学习专业课内容</h2><h3 id="专业课概述"><a href="#专业课概述" class="headerlink" title="专业课概述"></a>专业课概述</h3><p>AlphaGo使用的机器学习内容：蒙特卡洛树搜索，两个深度神经网络</p>
+<ul>
+<li>神经网络内容：<ul>
+<li>卷积神经网络：ImageNet（残差网络），Inception<ul>
+<li>实际应用：目标检测，人脸验证，图片风格转换</li>
+</ul>
+</li>
+<li>序列模型：网络结构，GRU，LSTM<ul>
+<li>实际应用：词嵌入，语言模型，注意力机制，触发语检测</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>神经网络使用领域：<ul>
+<li>计算机视觉<ul>
+<li>实际运用<ul>
+<li>图像分类</li>
+<li>语义分割</li>
+<li>物体识别和检测</li>
+<li>运动和跟踪</li>
+<li>视觉问答</li>
+<li>三维重建</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自然语言处理<ul>
+<li>主要是由两个内容组成<ul>
+<li>自然语言理解</li>
+<li>自然语言生成</li>
+</ul>
+</li>
+<li>实际运用<ul>
+<li>语音识别</li>
+<li>机器翻译</li>
+<li>语音合成</li>
+<li>人机对话</li>
+<li>语音助手</li>
+<li>问答系统</li>
+<li>机器阅读</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>生成对抗网络<ul>
+<li>特质<ul>
+<li>通过训练数据进行生成需要的数据</li>
+<li>属于监督学习方法</li>
+<li>同时训练一个生成网络和一个判别网络<ul>
+<li>生成网络：生成逼真的图片欺骗判别网络</li>
+<li>判别网络：区分生成图片和真实图片</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>深度学习框架<ul>
+<li><strong>TensorFlow</strong> from Google for Industry<ul>
+<li>19.10 -> Version 2.0</li>
+<li>专业课主要学习的框架，学习版本为1.x，2.0版本与1.x版本差别很大，需要分开学习<ul>
+<li>编程语言：python 3.x</li>
+<li>编程环境：Anaconda, Jupyter Notebook, TensorFlow 1.x</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>Keras into TensorFlow</em></li>
+<li><strong>Pytorch</strong> use Python from Facebook for study</li>
+<li>PaddlePaddle from Baidu</li>
+<li>Deeplearning4j use JAVA </li>
+<li>Mxnet from Amazon</li>
+<li><em>Caffe&Caffe2 into Pytorch</em></li>
+<li>CNTK from Microsoft</li>
+<li>Theano is ancient</li>
+<li>Chainer use Python</li>
+</ul>
+</li>
+<li><a href="https://www.bilibili.com/video/BV164411m79z?from=search&seid=16677849041663475348" target="_blank" rel="noopener">学习辅用网上视频课：吴恩达深度学习课程</a></li>
+</ul>
+</body></html>]]></content>
+      <categories>
+        <category>college</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 数据分析与应用</title>
+    <url>/2020/04/26/2020-04-26-Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="Python-数据分析与应用"><a href="#Python-数据分析与应用" class="headerlink" title="Python 数据分析与应用"></a>Python 数据分析与应用</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3></body></html>]]></content>
+      <categories>
+        <category>college</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>big data</tag>
+        <tag>data analyze</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考公务员 复习计划安排</title>
+    <url>/2020/04/12/%E8%80%83%E5%85%AC%E5%8A%A1%E5%91%98%20%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E5%AE%89%E6%8E%92/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="考公务员-复习计划安排-（第一版，若有更多会继续补充）"><a href="#考公务员-复习计划安排-（第一版，若有更多会继续补充）" class="headerlink" title="考公务员 复习计划安排 （第一版，若有更多会继续补充）"></a>考公务员 复习计划安排 （第一版，若有更多会继续补充）</h1><h2 id="1-知乎上的复习的总时间分配建议"><a href="#1-知乎上的复习的总时间分配建议" class="headerlink" title="1. 知乎上的复习的总时间分配建议"></a>1. 知乎上的复习的总时间分配建议</h2><p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C5.png" alt="preview"></p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C6.png" alt="preview"></p>
+<p><strong>知乎上的安排是11月底国考，那么在5，6月才正式开始复习考公都是没问题的</strong>，</p>
+<p>但是既然现在都已经开始复习了，那么就正好比别人预留更多复习时间，到考试的状态也就更好。</p>
+<h2 id="2-通过实际情况设计具体时间安排"><a href="#2-通过实际情况设计具体时间安排" class="headerlink" title="2. 通过实际情况设计具体时间安排"></a>2. 通过实际情况设计具体时间安排</h2><p>按照<strong>每天学习5个小时左右</strong>的情况来安排已经达到了一个比较合理的学习状态，毕竟除开公务员，还有英语六级和专业课两方面的成绩及格要求。</p>
+<p><strong>但是学习5个小时这件事还是比较模糊的，5个小时做好了什么事情才算是将5个小时发挥出了足够的学习效率才是要紧的。</strong></p>
+<h3 id="通过知乎回答分析的个人的复习计划"><a href="#通过知乎回答分析的个人的复习计划" class="headerlink" title="通过知乎回答分析的个人的复习计划"></a>通过知乎回答分析的个人的复习计划</h3><ul>
+<li><p>图片的分配时间总共16周，而从现在开始算起至考试大概有226天，大概32周，加上先前的复习安排，已经是非常充裕了</p>
+</li>
+<li><p>通过图片的总结来看，直接安排每两整周（14天）的时间来学完单一科是比较不错的决定，将大量同类知识一次性的学完。</p>
+</li>
+<li><p>在前8周（<em>2020.04.12 - 2020.06.07</em>）优先把行策的所有视频课都刷完，并将对应科目的专项习题练习（<strong>粉笔APP</strong>或者<strong>纸质资料</strong>）</p>
+<ul>
+<li><p>1-2周：言语理解</p>
+</li>
+<li><p>3-4周：判断推理</p>
+</li>
+<li><p>5-6周：资料分析</p>
+</li>
+<li><p>7-8周：数量关系。重点：<strong>工程问题，方阵问题，浓度问题，时钟问题，植树问题，年龄问题，经济利润问题，周期问题，容斥原理问题，鸡兔同笼问题，牛吃草问题</strong></p>
+</li>
+<li><p><strong>下面是知乎上的各科重点难点解析</strong></p>
+<img src="G:\Blog\KrisHugo.github.io\source\images\11.png" alt="image-20200412213311958" style="zoom:50%;">
+</li>
+<li><p>3-8周要分时间做前面学过的科目的专项习题</p>
+</li>
+<li><p>==每周日都要复习错题！==</p>
+</li>
+<li><p>==补充：==基于现在已经学习了一部分内容，可以将某一科学完之后空余的时间用于复习常识<em>以及用于学习专业课知识和英语六级</em></p>
+</li>
+</ul>
+</li>
+<li><p>中间9-16周（2020.06.08 - 2020.08.03）将重心完全放在申论上，申论的重点有二：练习题型和积累素材（要买），每两周为一周期来分配时间。<em>注：我不太懂申论，只能你来看下面的图片来安排了</em></p>
+</li>
+<li><p>后17-24周用于科目弱点训练或者直接真题练习</p>
+</li>
+<li><p>最后24-31周完全用于真题练习，每周包括两套行策以及一套申论</p>
+</li>
+<li><p>最后一周：复习所有的错题和难点重点</p>
+</li>
+</ul>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C8.png" alt="preview"></p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C9.png" alt="preview"></p>
+<h3 id="推荐资料："><a href="#推荐资料：" class="headerlink" title="推荐资料："></a>推荐资料：</h3><p>申论：</p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C10.png" alt="img"></p>
+</body></html>]]></content>
+  </entry>
+  <entry>
+    <title># 需要进一步翻译的句子</title>
+    <url>/2020/04/11/#%20%E9%9C%80%E8%A6%81%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%BF%BB%E8%AF%91%E7%9A%84%E5%8F%A5%E5%AD%90/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="需要进一步翻译的句子"><a href="#需要进一步翻译的句子" class="headerlink" title="需要进一步翻译的句子"></a>需要进一步翻译的句子</h1><p>I think it’s really important to get this right the first time <strong>as opposed to opening up too early</strong></p>
+<p>U.S. Surgeon General Jerome Adams on Friday <strong>pumped the brakes</strong> on the possibility that <strong>wide swaths</strong> of America would reopen at the beginning of May</p>
+<p>only places that have seen low levels of COVID-19 and have implemented sufficient surveillance techniques to detect and contain further outbreaks would be able to consider opening up by then.</p>
+<p>while White House economic adviser Larry Kudlow expressed hope the country could begin reopening on a rolling basis in four to eight weeks.</p>
+<p>But the strength of the economy has been at the center of Trump’s reelection argument, and he has been fixated on certain financial markers even amid the pandemic</p>
+<p>Non-compliance may in turn prompt the entire deal to unravel—in the past week Saudi Arabia almost scuttled the deal when one country, Mexico, balked at its terms. America’s ability to intervene is limited, despite Mr Trump’s assurances. The president said that America would help “pick up the slack” for Mexico, by reducing its own production further. But it is unclear how that additional cut will materialise, if at all.</p>
+<p>The company slashed prices for oil headed to Asia in May, according to S&P Global Platts, a price-reporting outfit, even as it let prices rise for other destinations. That suggests a keen interest in defending Saudi market share in Asia, the world’s main driver of oil demand. </p>
+<p>The global oil-price war is not over, but on hold.</p>
+</body></html>]]></content>
+  </entry>
+  <entry>
+    <title>个人数学一考研笔记——高等数学</title>
+    <url>/2020/04/10/%E4%B8%AA%E4%BA%BA%E6%95%B0%E5%AD%A6%E4%B8%80%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#导论">导论:数学一高数考啥</a></li>
+<li>[第一章](#第一章 函数 极限 连续)</li>
+</ul>
+<h2 id="导论"><a href="#导论" class="headerlink" title="导论"></a>导论</h2><ul>
+<li><strong>一元函数微积分</strong>：重点、难点<ul>
+<li>微分学<ul>
+<li>函数、<strong>极限</strong>、连续</li>
+<li>导数与微分</li>
+<li><strong>微分中值定理</strong>导数的应用</li>
+</ul>
+</li>
+<li>积分学<ul>
+<li>不定积分</li>
+<li><strong>定积分</strong>及反常积分：不等式或等式证明</li>
+<li>定积分应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>多元函数微积分： <strong>注意对照一元函数微积分</strong><ul>
+<li>微分学<ul>
+<li>函数、极限、连续</li>
+<li>偏导数与全微分</li>
+<li>微分学的应用（极值与最值）</li>
+</ul>
+</li>
+<li>积分学<ul>
+<li><strong>重积分</strong>：不等式或等式证明</li>
+<li><strong>线面积分</strong>：不等式或等式证明</li>
+<li>积分应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>空间解析几何与向量代数</strong></li>
+<li>微分方程<ul>
+<li>一阶方程</li>
+<li>可降阶方程</li>
+<li>高阶线性方程</li>
+</ul>
+</li>
+<li>无穷级数<ul>
+<li><strong>常数项级数</strong>：证明题</li>
+<li><strong>幂级数</strong>：求和</li>
+<li>傅里叶级数</li>
+</ul>
+</li>
+</ul>
+<h2 id="第一章-函数-极限-连续"><a href="#第一章-函数-极限-连续" class="headerlink" title="第一章 函数 极限 连续"></a>第一章 函数 极限 连续</h2><h3 id="第一节-函数"><a href="#第一节-函数" class="headerlink" title="第一节 函数"></a>第一节 函数</h3><ul>
+<li><p>题型</p>
+<ul>
+<li>函数性质</li>
+<li>复合函数</li>
+</ul>
+</li>
+<li><p>函数概念</p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C3.png" alt="image-20200410155331992"></p>
+<ul>
+<li><p>符号函数</p>
+</li>
+<li><p>取整函数</p>
+</li>
+<li><p>复合函数</p>
+<ul>
+<li>不是任何两个函数都可以复合<ul>
+<li>要确定外函数的定义域和内涵数的值域是否重合，否则复合函数无意义</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>反函数</p>
+<ul>
+<li>若存在y，有两个及以上的在定义域内的x，使得函数成立，则该函数没有反函数</li>
+<li><strong>单调函数一定有反函数</strong>，这是一个充分非必要条件</li>
+<li>考点 ，<strong>两次反函</strong>结果为<strong>自变量</strong></li>
+</ul>
+</li>
+<li><p>初等函数</p>
+<ul>
+<li><p><strong>幂函数，指数函数，对数函数，三角函数，反三角函数</strong>统称基本初等函数：<strong>背定义域，性质，图形</strong></p>
+</li>
+<li><p>初等函数：由<strong>常数和基本初等函数</strong>经过有限次的加减乘除和复合所得到且<strong>能用一个解析表达式表达</strong>的函数。</p>
+<ul>
+<li>单调性</li>
+<li>奇偶性<ul>
+<li>偶函数：定义域D中关于<strong>Y轴对称</strong>,<strong>f(-x) = f(x)</strong></li>
+<li>奇函数：定义域D中关于<strong>原点对称</strong>，<strong>f(-x) = -f(x)</strong>，且若在x=0有定义，f(0) = 0</li>
+<li><strong>奇偶函数相加相乘变化</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C4" alt="image-20200412151836571"></p>
+<ul>
+<li>周期性：f(x + T) = f(x) 则为周期函数，使得上式成立的最小正数T为最小正周期，简称为函数的周期</li>
+<li>有界性，f(x)的绝对值有一个极限值，界或者叫最大值M为正数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="第二节-极限"><a href="#第二节-极限" class="headerlink" title="==第二节 极限=="></a>==第二节 极限==</h3><h3 id="第三节-连续"><a href="#第三节-连续" class="headerlink" title="第三节 连续"></a>第三节 连续</h3></body></html>]]></content>
+      <categories>
+        <category>考研</category>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>数学</tag>
+        <tag>数学一</tag>
+        <tag>高等数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人英语考研笔记</title>
+    <url>/2020/04/10/%E8%8B%B1%E8%AF%AD%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="英语考研笔记"><a href="#英语考研笔记" class="headerlink" title="英语考研笔记"></a>英语考研笔记</h1><h2 id="总论"><a href="#总论" class="headerlink" title="总论"></a>总论</h2><h3 id="篇章目录"><a href="#篇章目录" class="headerlink" title="篇章目录"></a>篇章目录</h3><ul>
+<li><p>[商业经济类](#商业经济类 篇一)</p>
+<ul>
+<li>[篇一](#商业经济类 篇一)<ul>
+<li>[句一](#句一：When it comes to the slowing economy, Ellen Spero isn’t biting her nails just yet.)</li>
+<li>[句二](#句二：But the 47-year-old manicurist isn’t cutting , filing or polishing as many nails as she’d like to, either.)</li>
+<li><a href="#">句三</a></li>
+<li>[句四](#句四：Spero blames the softening economy.”I’m a good economic indicator,” she says.”I provide a service that people can do without when they’re concerned about saving some dollars.”)</li>
+<li>[句五](#句五：So Spero is downscaling, shopping at middle-brow Dillard’s department store near her suburban Cleveland home, instead of Neiman Marcus.”I don’t know if other clients are going to abandon me, too” she says.)</li>
+<li>[句六](#句六：Even before Alan Greenspan’s admission that America’s red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves)</li>
+<li>[句七](#句七：From car dealerships to Gap outlets, sales have been lagging for months as shoppers temper their spending.)</li>
+<li>[句八](#句八：For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach is coming at a crucial time)</li>
+<li>[句九](#句九：But don’t sound any alarms just yet)</li>
+<li>[句十](#句十：Consumers seem mildly concerned, not panicked, and many say they remain optimistic about the economy’s long-term prospects, even as they do some modest belt-tightening.)</li>
+<li>[句十一](#句十一: Consumers say they’re not in despair because, despite the dreadful headlines, their own fortunes still feel pretty good.)</li>
+<li>[句十二](#句十二：Home prices are holding steady in most regions)</li>
+<li>[句十三](#句十三： In Manhattan, “there’s a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,” says broker Barbara Corcoran. In San Francisco, prices are still rising even as frenzied overbidding quiets. “Instead of 20 to 30 offers, now maybe you only get two or three,” says John Deadly, a Bay Area real-estate broker)</li>
+<li>[句十四](#句十四：And most folks still feel pretty comfortable about their ability to find and keep a job)</li>
+<li>[句十五](#句十五：Many folks see silver linings to this slowdown.)</li>
+<li>[句十六](#句十六：Potential home buyers would cheer for lower interest rates. Employers wouldn’t mind a little fewer bubbles in the job market)</li>
+<li>[句十七](#句十七： Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom.)</li>
+<li>[句十八](#句十八：Diners might see an upside, too.)</li>
+<li>[句十九](#句十九：Getting a table at Manhattan’s hot new Alain Ducasse restaurant used to be impossible. Not anymore.)</li>
+<li>[句二十](#句二十：For that, Greenspan & Co. may still be worth toasting.)</li>
+<li><a href="#题目">题目</a></li>
+</ul>
+</li>
+<li>[篇二](#商业经济类 篇二)</li>
+</ul>
+</li>
+<li><p><a href="#长难句">长难句</a></p>
+</li>
+<li><p><a href="#课外阅读">课外阅读</a></p>
+</li>
+<li><p>特殊部分</p>
+<ul>
+<li><a href="#writing1">writing笔记一：多变化</a></li>
+<li><a href="#writing2">writing笔记二</a></li>
+<li><a href="#writing3">writing笔记三：写作开头段</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="商业经济类-篇一"><a href="#商业经济类-篇一" class="headerlink" title="商业经济类 篇一"></a>商业经济类 篇一</h2><hr>
+<h2 id="句一：When-it-comes-to-the-slowing-economy-Ellen-Spero-isn’t-biting-her-nails-just-yet"><a href="#句一：When-it-comes-to-the-slowing-economy-Ellen-Spero-isn’t-biting-her-nails-just-yet" class="headerlink" title="句一：When it comes to the slowing economy, Ellen Spero isn’t biting her nails just yet."></a>句一：When it comes to the slowing economy, Ellen Spero isn’t biting her nails just yet.</h2><h3 id="知识点一"><a href="#知识点一" class="headerlink" title="知识点一"></a>知识点一</h3><p><strong>When it comes to</strong>… 当人们提到…时，</p>
+<h4 id="1-reading"><a href="#1-reading" class="headerlink" title="1. reading"></a>1. reading</h4><ul>
+<li>引出主旨：<strong>此句往后的下一句应该是某个人的态度</strong>。<ul>
+<li><strong>而且很有可能是考点</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="2-writing"><a href="#2-writing" class="headerlink" title="2. writing"></a>2. <a name="writing3">writing</a></h4><ul>
+<li><strong>用于开头段：</strong>when it comes to <em>主题（甚至可以直接抄题目）*，opinions differ / vary. Some may assert that *观点1</em>, others , however, appear to argue that <em>观点2</em>, I am strongly convinced that <em>我的观点</em>.<ul>
+<li>I am strongly convinced that … 被动语法（加分）<ul>
+<li>convince 使相信<ul>
+<li>convincing 令人信服的<ul>
+<li>convincing argument 令人信服的观点</li>
+<li>lame argument 跛脚的观点</li>
+<li>far less convincing 说服力不足<ul>
+<li>The argument of China used to be far less convincing that of America, but no longer. It’s now much more convincing.</li>
+<li>much more convincing 有说服力</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>whenever it comes to…. 无论何时人们提到…时，<strong>进阶用法</strong></li>
+<li><strong>提出观点的动词：认为，主张</strong><ul>
+<li>argue</li>
+<li>assert</li>
+<li>claim</li>
+<li>hold</li>
+<li>contend</li>
+</ul>
+</li>
+<li>可以用于修饰的<strong>情态动词</strong>等<ul>
+<li>may / might</li>
+<li>have to / must</li>
+<li>ought to / should</li>
+<li>can / could</li>
+<li>tend to</li>
+<li>seem to</li>
+<li>appear to</li>
+</ul>
+</li>
+<li><strong>开头段拓展：</strong>while many tend to hold that <em>观点1</em>, others might contend that <em>观点2</em>.<ul>
+<li>while <em>句子1</em>, <em>与之对立的句子2</em>.<ul>
+<li>while用于连接两个<strong>相互对立</strong>的句子，<strong>完形填空会考</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="知识点二"><a href="#知识点二" class="headerlink" title="知识点二"></a>知识点二</h3><p>the <strong>slowing</strong> economy 减速的经济</p>
+<ul>
+<li>the economy is slowing</li>
+</ul>
+<p>基础：</p>
+<p>​    slow adj. 慢的; v. （速度）放慢</p>
+<p>​    slow down 放慢速度</p>
+<ul>
+<li>反义：speed up 加快速度</li>
+</ul>
+<p>延伸：</p>
+<ul>
+<li>slowdown 减速<ul>
+<li>反义：acceleration 加速</li>
+</ul>
+</li>
+<li>breakdown 崩溃</li>
+</ul>
+<p>相近词汇：</p>
+<ul>
+<li>cooling 降温</li>
+<li>softening 疲软</li>
+</ul>
+<p><strong>阅读中的考法</strong></p>
+<ul>
+<li>多个<strong>相近词相互替换</strong>使用</li>
+</ul>
+<p><strong>补充：</strong></p>
+<p><strong>一</strong>：<a name="slowWords">下跌</a></p>
+<ul>
+<li>slowing<ul>
+<li>slow<strong>（速度）</strong>下降</li>
+<li><strong>只要考，后面就跟着economy</strong></li>
+</ul>
+</li>
+<li>falling 日益下降的<ul>
+<li>fall -> fell -> fallen <strong>（数量）</strong>下降<ul>
+<li>fall rapidly 骤减<ul>
+<li><strong>the rural population fell rapidly from 1990 to 2010.</strong></li>
+</ul>
+</li>
+<li>the fall of an apple 苹果的落下</li>
+</ul>
+</li>
+<li>falling costs <strong>日益下跌的</strong>支出/花费<ul>
+<li>falling <strong>communication</strong> and <strong>transportation</strong> 日益下跌的通讯量和交通量<ul>
+<li>communication 通讯；交流</li>
+<li>transportation 交通</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a name="fading">fading</a> 逐渐消失的<ul>
+<li>fade  <strong>逐渐消失</strong>；褪色</li>
+<li>the <strong>fading competitiveness</strong> of US economy 美国经济<strong>逐渐消失</strong>的竞争力 <ul>
+<li>compete v.净增</li>
+<li><a href="#growing">反义:growing</a></li>
+</ul>
+</li>
+<li>fading distinction between socialism and capitalism 资本主义与社会主义<strong>逐步消失的差距</strong><ul>
+<li>distinction 区别</li>
+</ul>
+</li>
+<li><strong>passing fad 昙花一现的东西</strong><ul>
+<li><strong>不用强行追求单个词的意思</strong>，正如龌龊一词，不需要知道单个字的意思</li>
+<li>the net is not just a passing pad.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>declining 逐步衰退<ul>
+<li>decline v. 衰退，走下坡路；<strong>不表示速度下降</strong><ul>
+<li>global economic decline 全球经济衰退</li>
+<li>moral decline 道德衰退</li>
+<li>on the decline 走下坡路<ul>
+<li><strong>While America is on the decline, China is on the rise. 美国正在走下坡路，中国正在走上坡路</strong></li>
+</ul>
+</li>
+<li><strong>a decline industry 走下坡路的行业</strong><ul>
+<li>auto industry 汽车行业</li>
+<li>textile industry 纺织行业</li>
+<li>banking industry 银行行业(未走下坡路, 只是正在改革整顿) </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>二</strong>：<a name="riseWords">增长</a></p>
+<ul>
+<li><p>rising 日益上涨的</p>
+<ul>
+<li><p>rise->rose->risen</p>
+</li>
+<li><p><strong>rising concern 越来越担忧/关切</strong></p>
+<ul>
+<li><blockquote>
+<p><strong>Rising concern, fortunately, has been given today to such an unsettling  phenomenon. 今天，人们越来越关注这种令人不安的现象。</strong></p>
+</blockquote>
+</li>
+<li>settle v. 确定</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a name="growing">growing</a> 逐渐增长的</p>
+<ul>
+<li>growing attention = rising concern</li>
+<li>the growing competitiveness of emerging <strong>economies</strong> 新兴经济体<strong>与日俱增</strong>的竞争力<ul>
+<li><strong>emerging countries 新兴国家</strong></li>
+<li>emerge v. 出现</li>
+</ul>
+</li>
+<li>a growing number of students / youngsters / Chinese / cities / parents<ul>
+<li>a growing number of…… <strong>越来越多的……</strong><ul>
+<li><a href="#increasing">同义用法</a></li>
+<li>……in mounting numbers  <strong>越来越多的……</strong>（后置定语形态）时<ul>
+<li><em>mount 基本不单独考</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#fading">反义:fading</a></li>
+</ul>
+</li>
+<li><p><a name="soaring">soaring</a> 激增的</p>
+<ul>
+<li>soar v. 激增</li>
+<li>soaring home prices 激增的房价</li>
+<li>soaring health budget 激增的医疗卫生支出<ul>
+<li>health 医疗卫生；健康<ul>
+<li>WHO 世界卫生组织</li>
+<li>Health Institution</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#budget">budget:支出</a></li>
+</ul>
+</li>
+<li><p><a name="increasing">increasing</a> 逐渐上升的</p>
+<ul>
+<li>an increasing number of …. <strong>越来越多的……</strong></li>
+</ul>
+</li>
+<li><p><a name="takeOff">take off</a> 起飞，激增</p>
+</li>
+</ul>
+<p><strong>三</strong></p>
+<p>支出，花费，开销：</p>
+<ul>
+<li><a name="budget">budget</a></li>
+<li>spending</li>
+<li>cost</li>
+<li>expense<ul>
+<li>living expenses 生活支出</li>
+</ul>
+</li>
+<li>expenditure</li>
+</ul>
+<h3 id="知识点三"><a href="#知识点三" class="headerlink" title="知识点三"></a>知识点三</h3><p><strong>Ellen Spero isn’t biting her nails just yet.</strong>  </p>
+<ul>
+<li><p>题一的考点</p>
+<ul>
+<li>can hardly = can not 几乎不能</li>
+<li><strong>maintain</strong> one’s business 维持生意<ul>
+<li>maintain 维持，维护</li>
+</ul>
+</li>
+<li>be engaged in …… 忙于 ……<ul>
+<li>engage 从事</li>
+<li>I’m too much engaged in my study. 我学习太投入了</li>
+</ul>
+</li>
+<li><a name="desperate">desperate</a> 绝望的<ul>
+<li>in a desperate situation 在极其糟糕的状况</li>
+<li>despair n. 绝望<ul>
+<li>in despair 处在绝望中</li>
+</ul>
+</li>
+<li>inspire v. 激励</li>
+<li>spirit n. 精神</li>
+</ul>
+</li>
+<li>spur n./v. 刺激（物）；鞭策</li>
+<li>grow out of one’s bad habit 摆脱了坏习惯<ul>
+<li>form / develop new habits 养成新习惯</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>not … just yet 尚未，还没有</p>
+<ul>
+<li>Some aren’t realized the <strong>severity</strong> of the situation. 一些人尚未意识到形势的<strong>严峻</strong>。</li>
+<li>severity n. （形势的）严峻，严重</li>
+</ul>
+</li>
+<li><p>bite ones nails <strong>引申词义：不知所措，束手无策</strong></p>
+<ul>
+<li>意思相近：<strong>scratch</strong> ones head<ul>
+<li>scratch 挠，搔，抓，刮，擦</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句二：But-the-47-year-old-manicurist-isn’t-cutting-filing-or-polishing-as-many-nails-as-she’d-like-to-either"><a href="#句二：But-the-47-year-old-manicurist-isn’t-cutting-filing-or-polishing-as-many-nails-as-she’d-like-to-either" class="headerlink" title="句二：But the 47-year-old manicurist isn’t cutting , filing or polishing as many nails as she’d like to, either."></a>句二：But the 47-year-old manicurist isn’t cutting , filing or polishing as many nails as she’d like to, either.</h2><h3 id="知识点一-1"><a href="#知识点一-1" class="headerlink" title="知识点一"></a>知识点一</h3><p><a name="manicurist"><strong>最终简化结果：But she isn’t cutting as many nails as she’d like to,either 但是她正在剪的指甲没有她想要剪的那么多</strong></a></p>
+<ul>
+<li><p>manicurist</p>
+<ul>
+<li><a name="superclass">超纲词</a><ul>
+<li>当超纲词为名词时<ul>
+<li>注意 the、this、these、that、those、such。则该词在上文中提到过，改成he、she、it、they即可。</li>
+<li>若无上点中的定冠词等，则本句中一定有之近义词或者反义词。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>此处对应前句中的Ellen Spero</strong></li>
+<li>通过<a href="#manicurist">简化句子</a>推出manicurist是美甲师</li>
+</ul>
+</li>
+<li><p>cut v.剪</p>
+<ul>
+<li>cut the nails</li>
+<li><strong>当遇到并列结构时，会一个即可</strong><ul>
+<li>fill，polish <em>此处甚至不需要懂</em><ul>
+<li><em>file v. （用锉）磨 n. 锉刀；v. 提交文档 n.文件夹</em></li>
+<li><em>polish v. 磨光，打蜡，上油釉</em>，润色（文章）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>not … as many as … 前者没有后者那么多 </p>
+<ul>
+<li>比较结构</li>
+<li>华工do not have as many students as 北理 does.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句三：Most-of-her-clients-spend-12-to-50-weekly-but-last-month-two-longtime-customers-suddenly-stopped-showing-up"><a href="#句三：Most-of-her-clients-spend-12-to-50-weekly-but-last-month-two-longtime-customers-suddenly-stopped-showing-up" class="headerlink" title="句三：Most of her clients spend $12 to $50 weekly, but last month two longtime customers suddenly stopped showing up."></a>句三：Most of her clients spend $12 to $50 weekly, but last month two longtime customers suddenly stopped showing up.</h2><h3 id="知识点一-2"><a href="#知识点一-2" class="headerlink" title="知识点一"></a>知识点一</h3><ul>
+<li>client <ul>
+<li><a href="#superclass">超纲词汇</a><ul>
+<li><strong>…., but…. 句式：前后对比</strong><ul>
+<li><a href="#while">相似句式：while句式</a></li>
+</ul>
+</li>
+<li>找到前后的类似同义词 customer</li>
+</ul>
+</li>
+<li><strong>顾客，客户</strong><ul>
+<li>client</li>
+<li>customer</li>
+<li>shopper</li>
+<li>buyer</li>
+</ul>
+</li>
+<li><a name="writing1">writing笔记</a><ul>
+<li>多变化<ul>
+<li>词汇多变化<ul>
+<li>例：图画：cartoon, picture, sketch, image, drawing, illustration</li>
+</ul>
+</li>
+<li><a href="#sentence">句式多变化</a><ul>
+<li>基本句式<ul>
+<li>基本格式：主谓…</li>
+<li><strong>基本句型都能转换成长难句（3大类，14小种）</strong><ul>
+<li>大类一：插入语<ul>
+<li>从句</li>
+<li>短语</li>
+<li><strong>情态动词</strong></li>
+<li><strong>双逗号结构，双破折号结构</strong></li>
+</ul>
+</li>
+<li>大类二：引导性成分，<em>主语前逗号</em><ul>
+<li>从句<ul>
+<li>If从句</li>
+<li>时间状语从句</li>
+<li>地点状语从句</li>
+<li>等等</li>
+</ul>
+</li>
+<li>短语<ul>
+<li>-ed…</li>
+<li>-ing…</li>
+<li>To …</li>
+<li>adj….</li>
+<li>Prep…</li>
+</ul>
+</li>
+<li><strong>独立主格结构</strong></li>
+<li><strong>副词</strong><ul>
+<li>Indeed, </li>
+<li>However,</li>
+<li>Therefore,</li>
+<li>Likewise,</li>
+<li>Unfortunately,</li>
+<li>Historically,</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>大类三：<em>句后加逗号</em><ul>
+<li>从句</li>
+<li>短语</li>
+<li><strong>独立主格结构</strong></li>
+<li><strong>名词短语</strong>（做同位语）</li>
+</ul>
+</li>
+<li>大类三：<em>句后无逗号</em><ul>
+<li>从句</li>
+<li>短语</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊句式<ul>
+<li>倒装</li>
+<li>强调</li>
+<li>插入</li>
+<li>祈使句</li>
+<li>It做形式主语的例子</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>标点多变化<ul>
+<li>, . ! ? – “”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>longtime customer 常客</li>
+<li>show up 出现，露面<ul>
+<li>Most of the candidate for examination <strong>get up</strong> early in the morning; As soon as they <strong>wake up</strong>, they show up in <strong>the recitation room</strong><ul>
+<li>get up 起床</li>
+<li>wake up 醒来</li>
+<li>the recitation room 自习室</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句四：Spero-blames-the-softening-economy-“I’m-a-good-economic-indicator-”-she-says-“I-provide-a-service-that-people-can-do-without-when-they’re-concerned-about-saving-some-dollars-”"><a href="#句四：Spero-blames-the-softening-economy-“I’m-a-good-economic-indicator-”-she-says-“I-provide-a-service-that-people-can-do-without-when-they’re-concerned-about-saving-some-dollars-”" class="headerlink" title="句四：Spero blames the softening economy.“I’m a good economic indicator,” she says.“I provide a service that people can do without when they’re concerned about saving some dollars.”"></a>句四：Spero blames the softening economy.“I’m a good economic indicator,” she says.“I provide a service that people can do without when they’re concerned about saving some dollars.”</h2><h3 id="知识点一-3"><a href="#知识点一-3" class="headerlink" title="知识点一"></a>知识点一</h3><ul>
+<li><strong>blame 归咎于，埋怨…</strong><ul>
+<li>相近词汇：<ul>
+<li>owe … to … </li>
+<li>attribute … to …<ul>
+<li>The police attribute / owe the accident to pooler weather conditions. 警方将这场事故归因于糟糕的天气原因</li>
+<li>The driver blamed poor weather conditions, but the police disagreed with it. </li>
+<li>The authorities attribute / owe the success of China to the <strong>superiority</strong> of <em>socialism</em>.<ul>
+<li>superiority 优越性</li>
+<li>socialism 社会主义</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>==<strong>直接引语的使用</strong>==<ul>
+<li><strong>Reading</strong><ul>
+<li>引号内的内容属于论据，用于支持论点，不太需要读也不大会考</li>
+<li>通常不读，直接跳过，除非出现在段首</li>
+</ul>
+</li>
+<li><a name="writing2"><strong>Writing</strong></a><ul>
+<li>创造条件用引语</li>
+<li>“XXX.(评论现象) ” notes Dr.XXX 47-year-old sociology professor in Fudan University. 瞎编博士评论.</li>
+<li>“XXX.” Says Bai Yansong, a renowned / well-known host of CCTV. (评分：直接引语，倒装，同位语)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句五：So-Spero-is-downscaling-shopping-at-middle-brow-Dillard’s-department-store-near-her-suburban-Cleveland-home-instead-of-Neiman-Marcus-“I-don’t-know-if-other-clients-are-going-to-abandon-me-too”-she-says"><a href="#句五：So-Spero-is-downscaling-shopping-at-middle-brow-Dillard’s-department-store-near-her-suburban-Cleveland-home-instead-of-Neiman-Marcus-“I-don’t-know-if-other-clients-are-going-to-abandon-me-too”-she-says" class="headerlink" title="句五：So Spero is downscaling, shopping at middle-brow Dillard’s department store near her suburban Cleveland home, instead of Neiman Marcus.“I don’t know if other clients are going to abandon me, too” she says."></a>句五：So Spero is downscaling, shopping at middle-brow Dillard’s department store near her suburban Cleveland home, instead of Neiman Marcus.“I don’t know if other clients are going to abandon me, too” she says.</h2><h3 id="知识点一-4"><a href="#知识点一-4" class="headerlink" title="知识点一"></a>知识点一</h3><p><strong>So Spero is downscaling, shopping at…</strong></p>
+<ul>
+<li><p>主句，-ing…</p>
+<ul>
+<li>短语做补充说明</li>
+<li>一个主语做了两个动作以上的时候，要么用连接词连接，要么直接将除其中一个动词做谓语，其他动词全部改成不定式。<ul>
+<li>不定式：to do, doing</li>
+</ul>
+</li>
+<li>Getting up early, she went to the airplane in a hurry this morning.<ul>
+<li>She got up early, going to the airport hurriedly this morning</li>
+<li>哪一个使用不定式没有关系，但句子组成顺序应该是具有一定的逻辑性的，例如时间顺序或其他顺序</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>downscale 规模缩减 </p>
+<ul>
+<li>scale 规模</li>
+</ul>
+</li>
+<li><p><strong>middle-brow 中档的</strong></p>
+</li>
+<li><p>suburban 郊区的</p>
+<ul>
+<li><strong>suburb n. 郊区</strong></li>
+<li><strong>urban adj. 城市的</strong></li>
+<li><strong>rural adj.农村的</strong></li>
+</ul>
+</li>
+<li><p><a name="department store">department store</a></p>
+</li>
+</ul>
+<blockquote>
+<p>背单词还是要将单词放进句子里放进篇章里背，才能长久的记住单词，干脆把整篇文章记下来！——商志</p>
+</blockquote>
+<ul>
+<li><em>Cleveland</em> 地名</li>
+</ul>
+<blockquote>
+<p> 引号内不需要看懂，直接略过 ——商志</p>
+</blockquote>
+<hr>
+<h2 id="句六：Even-before-Alan-Greenspan’s-admission-that-America’s-red-hot-economy-is-cooling-lots-of-working-folks-had-already-seen-signs-of-the-slowdown-themselves"><a href="#句六：Even-before-Alan-Greenspan’s-admission-that-America’s-red-hot-economy-is-cooling-lots-of-working-folks-had-already-seen-signs-of-the-slowdown-themselves" class="headerlink" title="句六：Even before Alan Greenspan’s admission that America’s red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves"></a>句六：Even before Alan Greenspan’s admission that America’s red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves</h2><h4 id="段落中的作用：总论"><a href="#段落中的作用：总论" class="headerlink" title="段落中的作用：总论"></a>段落中的作用：总论</h4><h3 id="知识点一-5"><a href="#知识点一-5" class="headerlink" title="知识点一"></a>知识点一</h3><p><strong>Even before Alan Greenspan’s admission that America’s red-hot economy is cooling</strong></p>
+<blockquote>
+<p> <strong>引导成分，并非主句，做修饰用</strong>，一般引导语句不需要看，<strong>不看也不影响考试做题</strong></p>
+</blockquote>
+<ul>
+<li><strong>even before</strong> 即使在……之前<ul>
+<li>==<strong>even 即使</strong>==</li>
+<li>even after 即使在……之后</li>
+<li>even when 即使在……的时候<ul>
+<li>even when she was only six, the girl shows   off her marvelous intelligence.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Alan Greenspan 艾伦·格林斯潘<ul>
+<li>the chairman of the US Federal Reserve 美联储主席<ul>
+<li>Federal 联邦</li>
+<li>Reserve n./v. 储备</li>
+<li>管理美元金融系统<ul>
+<li><em>中国人民银行是管理人民币金融系统 ，也就是央行</em></li>
+</ul>
+</li>
+<li>影响全世界的经济<ul>
+<li>修改利率等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>在文中即用于表示官方</strong></li>
+</ul>
+</li>
+<li>admission n. 承认<ul>
+<li>admit v. 承认</li>
+</ul>
+</li>
+</ul>
+<h3 id="知识点二-1"><a href="#知识点二-1" class="headerlink" title="知识点二"></a>知识点二</h3><p><strong>lots of working folks had already seen signs of the slowdown themselves</strong></p>
+<ul>
+<li><p><em>许多工作的人们自己也已经发现了经济减速的许多迹象</em></p>
+</li>
+<li><p>folk 人群</p>
+<ul>
+<li>many people = many folks = many</li>
+</ul>
+</li>
+<li><p>sign 标志</p>
+<ul>
+<li>signs of acceleration 加速的迹象</li>
+<li>signs of slowdown 减速的迹象</li>
+<li>signs of recovery 复苏的迹象</li>
+<li>snow is a good sign of a new good year. 瑞雪兆丰年<ul>
+<li>be a good sign of 是…的好预兆</li>
+</ul>
+</li>
+<li><strong>延伸</strong><ul>
+<li>signal 信号<ul>
+<li>mobile phone 移动电话<ul>
+<li>smart phone 智能手机</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>bus 巴士</em></li>
+<li><em>subway 地铁</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><em>themselves</em></p>
+</li>
+</ul>
+<blockquote>
+<p>只是想记住反身代词的复数形式</p>
+</blockquote>
+<hr>
+<h2 id="句七：From-car-dealerships-to-Gap-outlets-sales-have-been-lagging-for-months-as-shoppers-temper-their-spending"><a href="#句七：From-car-dealerships-to-Gap-outlets-sales-have-been-lagging-for-months-as-shoppers-temper-their-spending" class="headerlink" title="句七：From car dealerships to Gap outlets, sales have been lagging for months as shoppers temper their spending."></a>句七：From car dealerships to Gap outlets, sales have been lagging for months as shoppers temper their spending.</h2><h4 id="段落中的作用：第一个分论点"><a href="#段落中的作用：第一个分论点" class="headerlink" title="段落中的作用：第一个分论点"></a>段落中的作用：第一个分论点</h4><h3 id="知识点一："><a href="#知识点一：" class="headerlink" title="知识点一："></a>知识点一：</h3><ul>
+<li><p><em>from car dealerships to Gap outlets</em> 补充成分，可以不看</p>
+<ul>
+<li>翻译：从汽车经销商到Gap（品牌名）商店</li>
+<li>deal n. 交易<ul>
+<li>dealership 经销商</li>
+</ul>
+</li>
+<li>outlets n. 商店；出口；（情绪，废水）发泄口<ul>
+<li>商店的意思时一般指公路两边的商店</li>
+<li>fast-food outlets 快餐店</li>
+<li>Outlets <em>奥特莱斯</em> 名牌打折店</li>
+<li>近似词汇：<ul>
+<li>[department store](#department store)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><em>as shoppers temper their spending 补充成分，可以不看</em></p>
+<ul>
+<li><p>因为顾客降低了他们的开销</p>
+</li>
+<li><p><strong>as 因为 = because = for = since</strong></p>
+</li>
+<li><p><em>shopper = client = customer = buyer = consumer</em></p>
+</li>
+<li><p><strong>temper one’s spending</strong> 减轻某人的花费</p>
+<ul>
+<li><p><strong>temper v.减轻 n.脾气</strong></p>
+<ul>
+<li>calm your temper!</li>
+</ul>
+</li>
+<li><p>spend v. 花费</p>
+<ul>
+<li>spending n. 花费</li>
+<li>反义词<ul>
+<li>earn v.赚钱<ul>
+<li>earning n.赚钱</li>
+<li>monthly earns</li>
+<li>weekly earns</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>No learning, no earning.</p>
+</blockquote>
+<blockquote>
+<p>客观积极的谈论钱，才是健康的家庭。</p>
+</blockquote>
+<blockquote>
+<p>该花费的钱，省着只可能是错过机会。</p>
+</blockquote>
+</li>
+<li><p>相近用法：</p>
+<ul>
+<li>lower their spending</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>*<em>sales have been lagging for months *</em> 主句，最重要的部分</p>
+<ul>
+<li>lag v. 拖后，徘徊</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句八：For-retailers-who-last-year-took-in-24-percent-of-their-revenue-between-Thanksgiving-and-Christmas-the-cautious-approach-is-coming-at-a-crucial-time"><a href="#句八：For-retailers-who-last-year-took-in-24-percent-of-their-revenue-between-Thanksgiving-and-Christmas-the-cautious-approach-is-coming-at-a-crucial-time" class="headerlink" title="句八：For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach is coming at a crucial time"></a>句八：For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach is coming at a crucial time</h2><h4 id="段落中的作用：第二个分论点"><a href="#段落中的作用：第二个分论点" class="headerlink" title="段落中的作用：第二个分论点"></a>段落中的作用：第二个分论点</h4><h3 id="知识点一-6"><a href="#知识点一-6" class="headerlink" title="知识点一"></a>知识点一</h3><p><strong>For retailers</strong></p>
+<ul>
+<li>for sb. 对某人来说</li>
+<li>retailer 零售商<ul>
+<li>retail 零售</li>
+</ul>
+</li>
+<li>wholesaler 批发商<ul>
+<li>wholesale 批发</li>
+</ul>
+</li>
+</ul>
+<h3 id="知识点二-2"><a href="#知识点二-2" class="headerlink" title="知识点二"></a>知识点二</h3><p><strong>who last year took in 24 percent of their revenue between Thanksgiving and Christmas</strong></p>
+<ul>
+<li>翻译：在感恩节和圣诞节期间挣了他们一年24%的收入</li>
+<li>take in 挣钱 = earn</li>
+<li>revenue<ul>
+<li>（年）收入</li>
+</ul>
+</li>
+</ul>
+<h3 id="知识点三-1"><a href="#知识点三-1" class="headerlink" title="知识点三"></a>知识点三</h3><p><strong>the cautious approach is coming at a crucial time</strong></p>
+<ul>
+<li><p>翻译：这种小心翼翼的方式来的真不是时候</p>
+</li>
+<li><p>caution 小心</p>
+<ul>
+<li>cautious 小心谨慎的</li>
+<li>CAUTION : gap 小心间隙<ul>
+<li>gap 鸿沟，差距，间隙</li>
+</ul>
+</li>
+<li>CAUTION : slippery 小心地滑<ul>
+<li>slippery 滑的<ul>
+<li>slope n. 斜坡，斜面</li>
+<li><em>slipper</em> 拖鞋</li>
+<li>slip 滑倒，滑跤</li>
+<li><em>sleep</em> 睡觉</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CAUTION : wet floor 小心地滑</li>
+</ul>
+</li>
+<li><p>approach n. / v. 靠近，逼近；n. 方式，方法</p>
+<ul>
+<li>the scientific approach 科学的方法</li>
+<li>the intensive approach 集约型的方法/精细的方法</li>
+<li>the crude approach 粗糙的方法 </li>
+<li>new approach 新的方法<ul>
+<li>new approach to environmental protection. 环境保护的新方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>is coming at a crucial time</strong> 固定搭配，某事来的真不是时候 / 某事来的真是时候 / <strong>某事发生的真是在一个关键的时间点（可能认为好也可能认为不好）</strong></p>
+<ul>
+<li>crucial adj. 关键的</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="句八：Already-experts-say-holiday-sales-are-off-7-percent-from-last-year’s-pace"><a href="#句八：Already-experts-say-holiday-sales-are-off-7-percent-from-last-year’s-pace" class="headerlink" title="句八：Already, experts say, holiday sales are off 7 percent from last year’s pace."></a>句八：Already, experts say, holiday sales are off 7 percent from last year’s pace.</h2><h4 id="段落中的作用：第三个分论点"><a href="#段落中的作用：第三个分论点" class="headerlink" title="段落中的作用：第三个分论点"></a>段落中的作用：第三个分论点</h4><h3 id="知识点一-7"><a href="#知识点一-7" class="headerlink" title="知识点一"></a>知识点一</h3><ul>
+<li>翻译：专家说，和去年相比，假日销售额减少了7%。<ul>
+<li>此处的假日销售指的是旅游行业</li>
+</ul>
+</li>
+<li>holiday sales 旅游行业的销售额 饭店、酒店、旅游、公共交通</li>
+<li>last year’s pace 去年的这段时间</li>
+</ul>
+<h3 id="知识点二-3"><a href="#知识点二-3" class="headerlink" title="知识点二"></a>知识点二</h3><ul>
+<li><strong>整一段是一个总分结构</strong><ul>
+<li>多个句子，一个意思，可以标记后直接省略分论点，能够快速提高阅读速度。</li>
+</ul>
+</li>
+</ul>
+<h2 id="句九：But-don’t-sound-any-alarms-just-yet"><a href="#句九：But-don’t-sound-any-alarms-just-yet" class="headerlink" title="句九：But don’t sound any alarms just yet"></a>句九：But don’t sound any alarms just yet</h2><h3 id="知识点一：-1"><a href="#知识点一：-1" class="headerlink" title="知识点一："></a>知识点一：</h3><ul>
+<li>not … just yet. 尚未</li>
+<li>sound any alarms 响起警报<ul>
+<li>sound n. 声音 v. 听起来 <strong>adj. 很棒</strong><ul>
+<li>sound like v. 听起来像…</li>
+<li>==physically sound but intellectually poor 身体很好，但在脑力上不行。==</li>
+<li>environmentally sound 环境很棒</li>
+<li>cognitively sound 认知能力优秀<ul>
+<li>cognitive adj. 认知方面的<ul>
+<li>recognize v. 认生 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>alarm n. 警报<ul>
+<li>alert n. 警觉<ul>
+<li><strong>on the alert 保持警觉</strong></li>
+</ul>
+</li>
+<li>warning  警示，警告<ul>
+<li>warn sb of sth 提醒某人注意某事<ul>
+<li>warn us of possible accident.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>男儿当自强。</p>
+</blockquote>
+<h2 id="句十：Consumers-seem-mildly-concerned-not-panicked-and-many-say-they-remain-optimistic-about-the-economy’s-long-term-prospects-even-as-they-do-some-modest-belt-tightening"><a href="#句十：Consumers-seem-mildly-concerned-not-panicked-and-many-say-they-remain-optimistic-about-the-economy’s-long-term-prospects-even-as-they-do-some-modest-belt-tightening" class="headerlink" title="句十：Consumers seem mildly concerned, not panicked, and many say they remain optimistic about the economy’s long-term prospects, even as they do some modest belt-tightening."></a>句十：Consumers seem mildly concerned, not panicked, and many say they remain optimistic about the economy’s long-term prospects, even as they do some modest belt-tightening.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><p>consumers seem mildly concerned. 消费者们表现出轻微的关切.</p>
+<ul>
+<li><p>be mildly concerned 没有过分担忧</p>
+<ul>
+<li><p>be concerned = feel concerned 感到担忧 / 关切</p>
+<ul>
+<li>we are concerned about sth.</li>
+</ul>
+</li>
+<li><p>mild 温和的</p>
+<ul>
+<li>wild 野生的<ul>
+<li>wild animal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>近义词汇</p>
+<ul>
+<li><strong>Not panicked</strong></li>
+<li><strong>Not bite one’s nails</strong></li>
+<li><strong>Not <a href="#desperate">in despair</a></strong></li>
+</ul>
+</li>
+<li><p>拓展</p>
+<ul>
+<li>be / feel panicked  感到恐慌</li>
+<li>be / feel concerned 感到担忧</li>
+<li>be / feel disappointed 感到失望</li>
+<li>be / feel surprised 感到兴奋</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li><p>many say they remain optimistic about the economy’s long-term prospects. 许多人说他们仍然保持对经济的长期前景保持乐观. </p>
+<ul>
+<li><p><strong><a name="remain optimistic">remain optimistic</a></strong> 保持乐观</p>
+<ul>
+<li><strong>[hold steady](#hold steady)</strong> 保持稳定</li>
+</ul>
+</li>
+<li><p><a name="T1Q2">题二：How do the public feel about the current economic situation</a></p>
+<ul>
+<li>the current economic situation 当前经济状况<ul>
+<li>current 当前的<ul>
+<li>today’s</li>
+<li>present</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the public 公众</li>
+<li>confused = puzzled = <a name="perplexed">perplexed</a> 困惑的<ul>
+<li>be / feel confused / puzzled / perplexed 感到困惑</li>
+<li><strong>阅读中问态度一般答案不会是困惑</strong></li>
+</ul>
+</li>
+<li>carefree adj. 不关心，不在乎的<ul>
+<li>duty-free 免税的<ul>
+<li>duty-free stores 免税店</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>long-term prospect / effect / development 长期的 前景 / 效果 / 发展</p>
+<ul>
+<li>long-term 长期的<ul>
+<li>short-term 短期的</li>
+<li>term 时期</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点三</strong></p>
+<ul>
+<li>even as they do some modest belt-tightening. 即使当他们稍加勒紧腰带的时候<ul>
+<li>even as 即使当….时 = even when</li>
+<li>do some belt-tightening 勒紧腰带<ul>
+<li><strong>modest</strong> adj. 一般的，中等的；谦逊的<ul>
+<li>the modestly educated 受过中等教育的人<ul>
+<li>the highly educated</li>
+<li>the poor educated</li>
+<li>the literate 文盲</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tighten 束紧，抓紧<ul>
+<li>tighten the legal control over the press 抓紧对新闻媒体的法律控制<ul>
+<li>legal control 法律约束；法律控制</li>
+</ul>
+</li>
+<li>tighten the belt 勒紧腰带</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句十一-Consumers-say-they’re-not-in-despair-because-despite-the-dreadful-headlines-their-own-fortunes-still-feel-pretty-good"><a href="#句十一-Consumers-say-they’re-not-in-despair-because-despite-the-dreadful-headlines-their-own-fortunes-still-feel-pretty-good" class="headerlink" title="句十一: Consumers say they’re not in despair because, despite the dreadful headlines, their own fortunes still feel pretty good."></a>句十一: Consumers say they’re not in despair because, despite the dreadful headlines, their own fortunes still feel pretty good.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li>despite the dreadful headlines. 尽管媒体的报道让人恐慌<ul>
+<li>插入语，可以先省略不看</li>
+<li>dreadful adj. 可怕的</li>
+<li>despite 虽然，尽管<ul>
+<li>可以替换为： <strong>in spite of</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>fortune 财产，财富<ul>
+<li>fame and fortune 名利<ul>
+<li>famous 有名的</li>
+<li>fortunate 幸运的</li>
+</ul>
+</li>
+<li>make one’s fortune 发财<ul>
+<li><strong>make it 成功</strong><ul>
+<li>Will China make it?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>feel pretty good 感觉很好</li>
+</ul>
+<h2 id="句十二：Home-prices-are-holding-steady-in-most-regions"><a href="#句十二：Home-prices-are-holding-steady-in-most-regions" class="headerlink" title="句十二：Home prices are holding steady in most regions"></a>句十二：Home prices are holding steady in most regions</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><p>Home price 房价</p>
+<ul>
+<li>home buyer 买房者</li>
+</ul>
+</li>
+<li><p><a name="hold steady">hold steady</a> 保持稳定 [固定搭配]</p>
+<ul>
+<li>the sales are holding steady from 2009 to 2019 销量十年内保持稳定</li>
+<li>[固定搭配：remain optimistic](#remain optimistic)</li>
+</ul>
+</li>
+<li><p>region 地区</p>
+<ul>
+<li>regional cooperation 地区合作</li>
+<li>national cooperation 国际合作</li>
+<li>形似词：<ul>
+<li>religion 宗教</li>
+<li>reign 统治<ul>
+<li>sovereign 君主，元首；统治<ul>
+<li><strong>sovereignty 主权</strong></li>
+</ul>
+</li>
+<li>Pu Yi end his reign in 1912. 溥仪在1912年结束了他的同志<ul>
+<li>end one’s reign 结束统治</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a name="T1Q3">题三：When mentioning “the $4 million to $10 million range”</a></p>
+<ul>
+<li>million 百万</li>
+<li>mention v. 提到</li>
+<li>range v./n.范围；区间</li>
+<li><strong>real estate 房地产 [固定用法]</strong></li>
+<li>stock exchange 股票交易</li>
+<li>venture investment 风险投资<ul>
+<li>venture = adventure n. 冒险</li>
+<li>invest v. 投资<ul>
+<li>no investing, no harvesting. 没有播种，没有收获</li>
+<li>Invest more, Harvest more.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句十三：-In-Manhattan-“there’s-a-new-gold-rush-happening-in-the-4-million-to-10-million-range-predominantly-fed-by-Wall-Street-bonuses-”-says-broker-Barbara-Corcoran-In-San-Francisco-prices-are-still-rising-even-as-frenzied-overbidding-quiets-“Instead-of-20-to-30-offers-now-maybe-you-only-get-two-or-three-”-says-John-Deadly-a-Bay-Area-real-estate-broker"><a href="#句十三：-In-Manhattan-“there’s-a-new-gold-rush-happening-in-the-4-million-to-10-million-range-predominantly-fed-by-Wall-Street-bonuses-”-says-broker-Barbara-Corcoran-In-San-Francisco-prices-are-still-rising-even-as-frenzied-overbidding-quiets-“Instead-of-20-to-30-offers-now-maybe-you-only-get-two-or-three-”-says-John-Deadly-a-Bay-Area-real-estate-broker" class="headerlink" title="句十三： In Manhattan, “there’s a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,” says broker Barbara Corcoran. In San Francisco, prices are still rising even as frenzied overbidding quiets. “Instead of 20 to 30 offers, now maybe you only get two or three,” says John Deadly, a Bay Area real-estate broker"></a>句十三： In Manhattan, “there’s a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,” says broker Barbara Corcoran. In San Francisco, prices are still rising even as frenzied overbidding quiets. “Instead of 20 to 30 offers, now maybe you only get two or three,” says John Deadly, a Bay Area real-estate broker</h2><p><strong>翻译</strong> 在曼哈顿，经纪人BC说：“这里有一个被华尔街主导投资赞助的价值四百万到一千万美金的幅度的淘金热”，在旧金山，</p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li>In XXX 在…地方<ul>
+<li>In Manhattan 在曼哈顿</li>
+</ul>
+</li>
+<li><strong>此处明显是分论据，若出题在分论据中，那么实际问的是总论点</strong></li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>gold rush 淘金热 [固定搭配]<ul>
+<li><strong>rush n. 盲目的不理性的狂热</strong></li>
+<li>the rush to go abroad 出国热</li>
+<li>the rush to learn English 学英语热</li>
+<li>the rush to put computers in the classroom 多媒体教学热</li>
+</ul>
+</li>
+<li>Wall Street 华尔街</li>
+<li>(Which is) happening in …… 发生在……情况下<ul>
+<li>happening in the $4 million to $10 million range 发生在四百万到一千万的范围内</li>
+</ul>
+</li>
+<li>predominantly fed by Wall Street bonuses<ul>
+<li>feed v. 喂养；输送<ul>
+<li>feed the family 养一家人</li>
+</ul>
+</li>
+<li>which is fed by </li>
+<li>bonus 红利，股息<ul>
+<li>Wall Street bonuses 华尔街的分红</li>
+</ul>
+</li>
+<li>predominant adj.  起主导作用的，占据支配地位的<ul>
+<li>play a predominant role 扮演支配地位的角色；起到支配作用的</li>
+<li>==<strong>近似词：主要</strong>==<ul>
+<li>mostly </li>
+<li>mainly</li>
+<li><strong>chiefly</strong></li>
+<li><strong>primarily</strong></li>
+</ul>
+</li>
+<li>In Shanghai, an average student spends $150 each week, predominantly fed by the family. 在上海，每周学生平均消费达到了 150$，大多都依靠父母资助。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>broker n. 经纪人；中介<ul>
+<li>break 打碎，打破<ul>
+<li>break the silence</li>
+<li>break the record</li>
+<li>broke， broken</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点三</strong></p>
+<ul>
+<li><a href="#riseWords">rise v./n.上涨</a></li>
+<li>even as the frenzied overbidding quiets 即使当疯狂竞标安静下来<ul>
+<li>overbid v. 过高出价<ul>
+<li><a name="bid">bid</a> n. / v. 出价</li>
+</ul>
+</li>
+<li>quiet adj. 安静的 v. 偃旗息鼓，安静下来</li>
+<li>frenzied 狂热的 = crazy</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点四</strong></p>
+<ul>
+<li><p><strong>bay 海湾</strong></p>
+<ul>
+<li>Grandma’s Penghu Bay 外婆的澎湖湾</li>
+</ul>
+</li>
+<li><p>Instead of 20 to 30 offers, now maybe you only get two or three. <strong>过去也许有二三十份报价，现在大概只能拿到两三份报价</strong></p>
+<ul>
+<li><p>instead of 取而代之</p>
+<ul>
+<li>instead of 从句, 主句 <strong>不是…，而是…. / 取而代之……的是……</strong></li>
+</ul>
+</li>
+<li><p>offer n. / v.报价；v. 提供</p>
+</li>
+<li><p><a href="#bid">bid v. / n. 出价</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>阅读知识</strong></p>
+<ul>
+<li>本段论据是为了说明房价稳定，人民认为他们的财产仍然保有好的价值</li>
+<li>The reasons of consumers not panicked / in despair </li>
+</ul>
+<h2 id="句十四：And-most-folks-still-feel-pretty-comfortable-about-their-ability-to-find-and-keep-a-job"><a href="#句十四：And-most-folks-still-feel-pretty-comfortable-about-their-ability-to-find-and-keep-a-job" class="headerlink" title="句十四：And most folks still feel pretty comfortable about their ability to find and keep a job"></a>句十四：And most folks still feel pretty comfortable about their ability to find and keep a job</h2><p><strong>翻译：许多人仍然对找到并拥有一份工作很有把握</strong></p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li><strong>feel pretty comfortable about one’s ability to do sth 对自己某方面的能力很有把握</strong> </li>
+</ul>
+<h2 id="句十五：Many-folks-see-silver-linings-to-this-slowdown"><a href="#句十五：Many-folks-see-silver-linings-to-this-slowdown" class="headerlink" title="句十五：Many folks see silver linings to this slowdown."></a>句十五：Many folks see silver linings to this slowdown.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li>folk music 民间音乐<ul>
+<li>folk dance 民间舞蹈</li>
+<li>traditional folk art 传统民间艺术<ul>
+<li>paper-cutting is one of the most popular traditional folk art. 剪纸是最流行的传统民间艺术之一</li>
+</ul>
+</li>
+<li>folk 人们；民间的<ul>
+<li>many folks</li>
+<li>most folks</li>
+<li>lots of folks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[sliver lining](#silver lining) 好事，好运 ==谚语延伸词==<ul>
+<li>sliver 银<ul>
+<li>延伸<ul>
+<li>gold 金</li>
+<li>bronze 铜</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>Every cloud has its silver lining. 每一片乌云都有一条银边</em><ul>
+<li><strong>谚语含义：塞翁失马焉知非福 / 祸兮福所倚</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句十六：Potential-home-buyers-would-cheer-for-lower-interest-rates-Employers-wouldn’t-mind-a-little-fewer-bubbles-in-the-job-market"><a href="#句十六：Potential-home-buyers-would-cheer-for-lower-interest-rates-Employers-wouldn’t-mind-a-little-fewer-bubbles-in-the-job-market" class="headerlink" title="句十六：Potential home buyers would cheer for lower interest rates. Employers wouldn’t mind a little fewer bubbles in the job market"></a>句十六：Potential home buyers would cheer for lower interest rates. Employers wouldn’t mind a little fewer bubbles in the job market</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><p>潜在购房者为了更低的利率而举杯欢庆</p>
+</li>
+<li><p>potential home buyers 潜在的购房者</p>
+<ul>
+<li>potential adj. 潜在的 n. 潜力<ul>
+<li>potential elite 潜在的精英 </li>
+<li>realize one’s potential 激发某人的潜力</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>cheer v. 欢呼；举杯庆祝</p>
+</li>
+<li><p>lower the interest rates 调低利率</p>
+<ul>
+<li>interest rate 利率</li>
+<li>lower v. 调低，降低；<em>比较级.</em> 更低</li>
+<li><em>在经济情况不好时调低利率，经济过热、金融市场泡沫很大时调高利息</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>雇主们不会介意职业市场中的更少的泡沫了</li>
+<li>employer 雇主</li>
+<li>employee 雇员</li>
+<li>bubbles in the job market 人才市场中的泡沫<ul>
+<li>经济情况向好时，雇员对工薪要求就高了，职场泡沫就变大了</li>
+</ul>
+</li>
+<li><strong>a little</strong> <em>(修饰比较级)</em> 一点点<ul>
+<li>a litter + 比较级<ul>
+<li>little brother is a little taller than elder brother <strong>更高一点点</strong></li>
+<li>… much taller than ….  <strong>高多了</strong></li>
+<li>… far taller than …. <strong>高的多了去了</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>拓展知识</strong></p>
+<ul>
+<li>Tsinghua Bear</li>
+<li>Tsinghua University</li>
+<li>Peking University</li>
+<li>除上面的特殊英语标识，其他都直接用Beijing</li>
+</ul>
+<h2 id="句十七：-Many-consumers-seem-to-have-been-influenced-by-stock-market-swings-which-investors-now-view-as-a-necessary-ingredient-to-a-sustained-boom"><a href="#句十七：-Many-consumers-seem-to-have-been-influenced-by-stock-market-swings-which-investors-now-view-as-a-necessary-ingredient-to-a-sustained-boom" class="headerlink" title="句十七： Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom."></a>句十七： Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom.</h2><p><strong>翻译：许多消费者在股市波动中受到影响，但对于某些投资者来说，股市波动是一个经济持久发展的重要组成部分</strong></p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li>stock-market swings 股市下滑，股市波动<ul>
+<li>stock-market 股市</li>
+<li>swing 下滑；波动<ul>
+<li><strong>同义词</strong><ul>
+<li>fluctuation 波动</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>benefit n. / v. 利益，好处；v. 收益</li>
+</ul>
+</li>
+<li>investor 投资者</li>
+<li>view as 视为……</li>
+<li>a necessary ingredient to a sustained boom 一个经济的持久繁荣的重要组成部分<ul>
+<li>ingredient n. 成分，组成部分<ul>
+<li><strong>同义词</strong><ul>
+<li>element</li>
+<li>component</li>
+<li>part</li>
+</ul>
+</li>
+<li>necessary ingredient 重要组成部分</li>
+</ul>
+</li>
+<li><strong>a sustained boom 持久的繁荣</strong><ul>
+<li>boom 繁荣，高速发展<ul>
+<li>economic boom 经济繁荣</li>
+<li>birth boom 婴儿潮，生育高峰期</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句十八：Diners-might-see-an-upside-too"><a href="#句十八：Diners-might-see-an-upside-too" class="headerlink" title="句十八：Diners might see an upside, too."></a>句十八：Diners might see an upside, too.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><em>diner 吃货</em></li>
+<li>upside 正面，好的一面<ul>
+<li><strong>every coin has two sides</strong> 每个硬币都有两面</li>
+<li>downside 背面，不好的一面</li>
+</ul>
+</li>
+<li><em>see an upside, too</em> 与[句十四](#句十四：Many folks see silver linings to this slowdown.)的silver linings遥相呼应。</li>
+</ul>
+<h2 id="句十九：Getting-a-table-at-Manhattan’s-hot-new-Alain-Ducasse-restaurant-used-to-be-impossible-Not-anymore"><a href="#句十九：Getting-a-table-at-Manhattan’s-hot-new-Alain-Ducasse-restaurant-used-to-be-impossible-Not-anymore" class="headerlink" title="句十九：Getting a table at Manhattan’s hot new Alain Ducasse restaurant used to be impossible. Not anymore."></a>句十九：Getting a table at Manhattan’s hot new Alain Ducasse restaurant used to be impossible. Not anymore.</h2><p><strong>翻译：在曼哈顿的火热的新开的XXX餐厅吃上一桌，在过去是不可能的. 而现在不一样了</strong></p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li><strong>动名词短语做主语</strong><ul>
+<li><a href="#zhuyu">可以做主语的成分有七种</a><ul>
+<li>动名词短语 -ing、不定式短语 to do</li>
+<li>从句</li>
+<li>It做形式主语</li>
+<li>名词或名词词组</li>
+<li>代词或代词词组</li>
+<li>the + 形容词</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>used to 过去曾是</strong></li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>Not anymore 不再这样了<ul>
+<li>同义词<ul>
+<li>Not any longer</li>
+<li>No longer</li>
+<li>No more</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting"><a href="#句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting" class="headerlink" title="句二十：For that, Greenspan & Co. may still be worth toasting."></a>句二十：For that, Greenspan & Co. may still be worth toasting.</h2><p><strong>翻译：对于这样一种局面，格林斯潘和他的朋友们真值得好好长出一口气，庆祝一番</strong></p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li>Greenspan & Co.<ul>
+<li>Greenspan and Companies </li>
+<li>格林斯潘和他的同事们，<strong>指代中央银行的银行家们</strong></li>
+</ul>
+</li>
+<li><strong>toast n. 干杯</strong> n. 吐司 v. 烤<ul>
+<li>toasted duck 烤鸭</li>
+</ul>
+</li>
+</ul>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><ul>
+<li><a href="#T1Q1">题一</a></li>
+<li><a href="#T1Q2">题二</a></li>
+<li><a href="#T1Q3">题三</a></li>
+<li><a name="T1Q4">题四</a><ul>
+<li>Why can many people see “silver linings” to the economic slowdown?<ul>
+<li>[silver lining](#silver lining)</li>
+<li>They would benefit in certain ways 他们会在某处获益</li>
+<li>The stock market shows signs of recovery 股票市场显示出复苏的迹象<ul>
+<li>没有提及</li>
+</ul>
+</li>
+<li>Such a slowdown usually precedes a boom 这种经济的减速通常出现在经济繁荣之前<ul>
+<li>precede 早于…之前发生<ul>
+<li><em>Ming dynasty preceded Qing dynasty.</em> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The purchasing power would be enhanced 购买力将会提升<ul>
+<li>purchasing power 购买力<ul>
+<li>purchase 购买</li>
+</ul>
+</li>
+<li>enhance 提升</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a name="T1Q5">题五</a><ul>
+<li>To which </li>
+</ul>
+</li>
+</ul>
+<h2 id="总结知识点："><a href="#总结知识点：" class="headerlink" title="总结知识点："></a>总结知识点：</h2><p><strong>前两段的内容：</strong></p>
+<ul>
+<li><p>当人们发现经济下滑时：</p>
+<ul>
+<li><p>the slowing economy</p>
+</li>
+<li><p>the softening economy</p>
+</li>
+<li><p>the cooling economy</p>
+</li>
+<li><p>the slowdown economy</p>
+</li>
+</ul>
+</li>
+<li><p>人们的态度</p>
+<ul>
+<li>Not bite one’s nails</li>
+<li>Not in despair</li>
+<li>Not panicked</li>
+<li>be mildly concerned</li>
+<li>remain optimistic</li>
+</ul>
+</li>
+<li><p>行动上，对支出进行调整：</p>
+<ul>
+<li>downscale </li>
+<li>shopping at middle-brown department stores.</li>
+<li>temper one’s spending</li>
+<li>do some （modest） belt-tightening</li>
+<li>the cautious approach of consume</li>
+</ul>
+</li>
+</ul>
+<p><strong>第三段的内容：</strong>解释现状的原因，主题：<strong>reason of consumers’ not being desperate</strong></p>
+<p><strong>第四段的内容：</strong>做总结</p>
+<ul>
+<li>前文谈到经济下滑，中央银行感受到紧张，此处通过对普通人的生活状态和对未来的期待表示他们对未来仍充满期望，让中央银行的人值得放松一下值得庆祝庆祝（不幸中的万幸）。</li>
+</ul>
+<h2 id="拓展知识"><a href="#拓展知识" class="headerlink" title="拓展知识"></a>拓展知识</h2><ul>
+<li>single 单一的；单身的</li>
+<li>remedy n. / v.疗法；治疗；方法；解决办法<ul>
+<li>medicine n. 药；医学</li>
+<li>recover v. 恢复</li>
+</ul>
+</li>
+<li>caution 小心；谨慎</li>
+<li>panic  恐慌<ul>
+<li>panicked</li>
+</ul>
+</li>
+</ul>
+<h2 id="商业经济类-篇二"><a href="#商业经济类-篇二" class="headerlink" title="商业经济类 篇二"></a>商业经济类 篇二</h2><h2 id="句一：Could-the-bad-old-days-of-economic-decline-be-about-to-return"><a href="#句一：Could-the-bad-old-days-of-economic-decline-be-about-to-return" class="headerlink" title="句一：Could the bad old days of economic decline be about to return?"></a>句一：Could the bad old days of economic decline be about to return?</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><strong>设问句可以使用在写作中</strong><ul>
+<li><strong>could ….. be about to return?</strong><ul>
+<li><strong>某事可能会再现吗</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>情态动词<ul>
+<li>may = might = could 可能</li>
+</ul>
+</li>
+<li><a name="be about to">be about to</a> 将要<ul>
+<li>同义<ul>
+<li>be going to</li>
+<li>be to</li>
+<li>will</li>
+<li>shall</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>return 回来；再现<ul>
+<li>return to … 回去某地</li>
+</ul>
+</li>
+<li><strong>the bad old days 以前的艰难日子</strong><ul>
+<li>the good old days 以前的美好日子</li>
+<li>the bad old days of starving / food shortage 以前那段饥荒的糟糕日子<ul>
+<li>Definitely not. 绝对不会</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句二：Since-OPEC-agreed-to-supply-cuts-in-March-the-price-of-crude-oil-has-jumped-to-almost-26-a-barrel-up-from-less-than-10-last-December"><a href="#句二：Since-OPEC-agreed-to-supply-cuts-in-March-the-price-of-crude-oil-has-jumped-to-almost-26-a-barrel-up-from-less-than-10-last-December" class="headerlink" title="句二：Since OPEC agreed to supply-cuts in March, the price of crude oil has jumped to almost $26 a barrel, up from less than $10 last December."></a>句二：Since OPEC agreed to supply-cuts in March, the price of crude oil has jumped to almost $26 a barrel, up from less than $10 last December.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><strong>since 时间状语</strong><ul>
+<li><strong>since 引导成分, 主句</strong></li>
+<li>时间状语<ul>
+<li>since</li>
+<li>before</li>
+<li>after</li>
+<li>when</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>主句:</strong>the price has jump to almost $26 a barrel</li>
+<li><strong>OPEC</strong> 欧佩克 原油输出国组织  <ul>
+<li>Oil Petroleum Export Cooperation<ul>
+<li>cooperation 组织</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>agree to sth.</strong> 同意某事</li>
+<li>supply-cuts 供应削减<ul>
+<li>supply n. v. 供应<ul>
+<li><strong><a name="swine">swine flu</a> 猪流感</strong><ul>
+<li>swine 猪</li>
+</ul>
+</li>
+<li><strong>bird flu 禽流感</strong></li>
+<li><strong>epidemic 瘟疫; 流行病</strong></li>
+</ul>
+</li>
+<li>demand n. v. 需求</li>
+</ul>
+</li>
+<li><strong>march n.行军 / March 三月</strong><ul>
+<li>the long march 长征</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>the price of crude oil has jump to almost $26 a barrel 原油价格飙升至接近每桶26美元<ul>
+<li>crude oil 原油<ul>
+<li>crude rubber 天然橡胶</li>
+<li><strong>crude 未经加工的，未经开发的</strong><ul>
+<li>the new, crude continent 未经开发的新大陆</li>
+<li>crude approach 粗放型的方法</li>
+<li><strong>intensive approach 深入细致的方法</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>barrel 桶</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点三</strong></p>
+<ul>
+<li><strong>(which is) up from less than $10 last December 从去年十月的十美元上涨而来</strong></li>
+</ul>
+<h2 id="句三：This-near-tripling-of-oil-prices-calls-up-scary-memories-of-the-1973-oil-shock-when-prices-quadrupled-and-1979-1980-when-they-also-almost-tripled"><a href="#句三：This-near-tripling-of-oil-prices-calls-up-scary-memories-of-the-1973-oil-shock-when-prices-quadrupled-and-1979-1980-when-they-also-almost-tripled" class="headerlink" title="句三：This near-tripling of oil prices calls up scary memories of the 1973 oil shock, when prices quadrupled, and 1979-1980, when they also almost tripled."></a>句三：This near-tripling of oil prices calls up scary memories of the 1973 oil shock, when prices quadrupled, and 1979-1980, when they also almost tripled.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><strong>主句：</strong>this near-tripling calls up scary memories. 接近三倍的上涨唤醒了痛苦的回忆<ul>
+<li><strong>double vt. 翻倍，翻一番</strong></li>
+<li><strong>triple vt. 三倍于</strong></li>
+<li><strong>call up one’s scary memory 唤醒某人可怕的回忆</strong><ul>
+<li>scar 伤疤</li>
+<li>scared 害怕的<ul>
+<li>are you scared 你害怕了吗？</li>
+</ul>
+</li>
+<li>scary memory 痛苦的回忆<ul>
+<li>sweet memory 甜蜜的回忆</li>
+</ul>
+</li>
+<li>memory 记忆；回忆<ul>
+<li>memorize 记起<ul>
+<li><em>remember</em></li>
+<li><em>forget</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>oil shock 油荒 / 油价震荡<ul>
+<li>oil shortage 石油短缺</li>
+<li>shock n. v. 休克；震惊；震荡 <ul>
+<li>labor shock 用工荒</li>
+<li>electricity shock 电荒</li>
+<li>coal shock 煤荒</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句四：Both-previous-shocks-resulted-in-double-digit-inflation-and-global-economic-decline"><a href="#句四：Both-previous-shocks-resulted-in-double-digit-inflation-and-global-economic-decline" class="headerlink" title="句四：Both previous shocks resulted in double-digit inflation and global economic decline"></a>句四：Both previous shocks resulted in double-digit inflation and global economic decline</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><p>previous 之前的</p>
+<ul>
+<li>the previous text 之前的课文<ul>
+<li>the next text 下一篇课文</li>
+</ul>
+</li>
+<li>the previous four decades<ul>
+<li><strong>the previous seven decades has witnessed dramatic changes in our country. 过去七十年来，我们的国家发生了巨大的变化</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>result in 导致了…</strong></p>
+</li>
+<li><p>double-digit inflation and global economic decline</p>
+<ul>
+<li><strong>double-digit 两位数的</strong><ul>
+<li>seven-digit income 七位数的收入</li>
+<li>digital 数字的<ul>
+<li>digital devices 数字设备</li>
+<li>digital age 数字时代</li>
+<li>digital divide 数字鸿沟</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>inflation 通货膨胀</li>
+<li>global<ul>
+<li>global warming</li>
+<li>global economic decline</li>
+<li>globalization 全球一体化</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句五：-So-where-are-the-headlines-warning-of-gloom-and-doom-this-time"><a href="#句五：-So-where-are-the-headlines-warning-of-gloom-and-doom-this-time" class="headerlink" title="句五： So where are the headlines warning of gloom and doom this time?"></a>句五： So where are the headlines warning of gloom and doom this time?</h2><p><strong>知识点一</strong></p>
+<ul>
+<li>headline 媒体报道，头条<ul>
+<li>report</li>
+<li>story</li>
+<li>coverage</li>
+</ul>
+</li>
+<li>(which are) warning of gloom and doom 对困难状况的提醒<ul>
+<li>gloom 郁闷<ul>
+<li>gloomy adj. 郁闷的</li>
+</ul>
+</li>
+<li>doom v. / n.宿命，命定<ul>
+<li>mood 情绪</li>
+</ul>
+</li>
+<li>warn 提醒<ul>
+<li>warn sb. of bad days / gloom and doom 提醒某人糟糕的日子即将来临<ul>
+<li>possible accidents 可能的意外</li>
+<li>every disaster 各种灾害</li>
+</ul>
+</li>
+<li>warning 警示，警告，提醒</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句六：The-oil-price-was-given-another-push-up-this-week-when-Iraq-suspended-oil-exports"><a href="#句六：The-oil-price-was-given-another-push-up-this-week-when-Iraq-suspended-oil-exports" class="headerlink" title="句六：The oil price was given another push up this week when Iraq suspended oil exports."></a>句六：The oil price was given another push up this week when Iraq suspended oil exports.</h2><p>本周伊拉克停止石油出口后，石油价格又一次被推动上扬。</p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li>suspend oil exports 停止石油出口<ul>
+<li><strong>suspend v. 停止</strong>；吊销<ul>
+<li>the police has suspended his driving permit 警察吊销了他的执照<ul>
+<li><strong>permit n. 执照 v. 允许，许可</strong></li>
+</ul>
+</li>
+<li>In dreams, logic is suspended. 在梦中，思考停止了。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>push up 上涨<ul>
+<li>the oil price was given another push up this week 本周石油价格又一次被推动上扬。</li>
+<li>be given push up 上涨</li>
+</ul>
+</li>
+</ul>
+<h2 id="句七：Strengthening-economic-growth-at-the-same-time-as-winter-grips-the-northern-hemisphere-could-push-the-price-higher-still-in-the-short-term"><a href="#句七：Strengthening-economic-growth-at-the-same-time-as-winter-grips-the-northern-hemisphere-could-push-the-price-higher-still-in-the-short-term" class="headerlink" title="句七：Strengthening economic growth, at the same time as winter grips the northern hemisphere, could push the price higher still in the short term"></a>句七：Strengthening economic growth, at the same time as winter grips the northern hemisphere, could push the price higher still in the short term</h2><p>随着北半球进入严冬，加强经济发展将在短期内继续推高油价</p>
+<p><strong>知识点一</strong></p>
+<ul>
+<li>in the short term 短期内<ul>
+<li>term 时期 <- time 时间</li>
+<li>long-term 长期<ul>
+<li>long-term effect / development / prospect</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>strengthen v. 加强；加快；提高<ul>
+<li>strengthen the party’s leadership 加强那个党的领导力</li>
+<li>strengthen economic growth 加快经济发展</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li>at the same time 同时</li>
+<li><strong>as</strong> winter grips the northern hemisphere 随着北半球进入严冬<ul>
+<li>as 随着…</li>
+<li><strong>grip</strong> 抓牢，紧握<ul>
+<li>近似词<ul>
+<li>grape 葡萄</li>
+<li><strong><a name="grope">grope</a> 摸索</strong><ul>
+<li>we had been groping in the dark for decades.(centuries) 我们已经在黑暗中摸索了数十年.(数百年)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>hemisphere 半球<ul>
+<li>the northern hemisphere 北半球</li>
+<li>the eastern hemisphere 东半球</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="句八：Yet-there-are-good-reasons-to-expect-the-economic-consequences-now-to-be-less-severe-than-in-the-1970s"><a href="#句八：Yet-there-are-good-reasons-to-expect-the-economic-consequences-now-to-be-less-severe-than-in-the-1970s" class="headerlink" title="句八：Yet there are good reasons to expect the economic consequences now to be less severe than in the 1970s."></a>句八：Yet there are good reasons to expect the economic consequences now to be less severe than in the 1970s.</h2><p><strong>知识点一</strong></p>
+<ul>
+<li><p>yet 但是 -> but</p>
+</li>
+<li><p>be less severe than 相比（后者）,（前者）没有那么严重</p>
+<ul>
+<li>severe adj. 严重的</li>
+</ul>
+</li>
+<li><p>consequence n. 由此导致的结果，后果</p>
+<ul>
+<li>severe consequences 严重的后果</li>
+</ul>
+</li>
+</ul>
+<p><strong>知识点二</strong></p>
+<ul>
+<li><strong>There are good reasons to expects …</strong><ul>
+<li>总论句，<strong>意味着后面即将出现分论点</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="句九：In-most-countries-the-cost-of-crude-oil-now-accounts-for-a-smaller-share-of-the-price-of-petrol-than-it-did-in-the-1970s-In-Europe-taxes-account-for-up-to-four-fifths-of-the-retail-price-so-even-quite-big-changes-in-the-price-of-crude-have-a-more-muted-effect-on-pump-prices-than-in-the-past"><a href="#句九：In-most-countries-the-cost-of-crude-oil-now-accounts-for-a-smaller-share-of-the-price-of-petrol-than-it-did-in-the-1970s-In-Europe-taxes-account-for-up-to-four-fifths-of-the-retail-price-so-even-quite-big-changes-in-the-price-of-crude-have-a-more-muted-effect-on-pump-prices-than-in-the-past" class="headerlink" title="句九：In most countries the cost of crude oil now accounts for a smaller share of the price of petrol than it did in the 1970s. In Europe, taxes account for up to four-fifths of the retail price, so even quite big changes in the price of crude have a more muted effect on pump prices than in the past."></a>句九：In most countries the cost of crude oil now accounts for a smaller share of the price of petrol than it did in the 1970s. In Europe, taxes account for up to four-fifths of the retail price, so even quite big changes in the price of crude have a more muted effect on pump prices than in the past.</h2><ul>
+<li><strong>分论点</strong></li>
+<li></li>
+</ul>
+<h2 id="句十：Rich-economies-are-also-less-dependent-on-oil-than-they-were-and-so-less-sensitive-to-swings-in-the-oil-price"><a href="#句十：Rich-economies-are-also-less-dependent-on-oil-than-they-were-and-so-less-sensitive-to-swings-in-the-oil-price" class="headerlink" title="句十：Rich economies are also less dependent on oil than they were, and so less sensitive to swings in the oil price."></a>句十：Rich economies are also less dependent on oil than they were, and so less sensitive to swings in the oil price.</h2><h2 id="句十一：Energy-conservation-a-shift-to-other-fuels-and-a-decline-in-the-importance-of-heavy-energy-intensive-industries-have-reduced-oil-consumption"><a href="#句十一：Energy-conservation-a-shift-to-other-fuels-and-a-decline-in-the-importance-of-heavy-energy-intensive-industries-have-reduced-oil-consumption" class="headerlink" title="句十一：Energy conservation, a shift to other fuels and a decline in the importance of heavy, energy-intensive industries have reduced oil consumption."></a>句十一：Energy conservation, a shift to other fuels and a decline in the importance of heavy, energy-intensive industries have reduced oil consumption.</h2><h2 id="句十二：Software-consultancy-and-mobile-telephones-use-far-less-oil-than-steel-or-car-production"><a href="#句十二：Software-consultancy-and-mobile-telephones-use-far-less-oil-than-steel-or-car-production" class="headerlink" title="句十二：Software, consultancy and mobile telephones use far less oil than steel or car production."></a>句十二：Software, consultancy and mobile telephones use far less oil than steel or car production.</h2><h2 id="句十三：For-each-dollar-of-GDP-in-constant-prices-rich-economies-now-use-nearly-50-less-oil-than-in-1973"><a href="#句十三：For-each-dollar-of-GDP-in-constant-prices-rich-economies-now-use-nearly-50-less-oil-than-in-1973" class="headerlink" title="句十三：For each dollar of GDP (in constant prices) rich economies now use nearly 50% less oil than in 1973."></a>句十三：For each dollar of GDP (in constant prices) rich economies now use nearly 50% less oil than in 1973.</h2><h2 id="句十四：The-OECD-estimates-in-its-latest-Economic-Outlook-that-if-oil-prices-averaged-22-a-barrel-for-a-full-year-compared-with-13-in-1998-this-would-increase-the-oil-import-bill-in-rich-economies-by-only-0-25-0-5-of-GDP"><a href="#句十四：The-OECD-estimates-in-its-latest-Economic-Outlook-that-if-oil-prices-averaged-22-a-barrel-for-a-full-year-compared-with-13-in-1998-this-would-increase-the-oil-import-bill-in-rich-economies-by-only-0-25-0-5-of-GDP" class="headerlink" title="句十四：The OECD estimates in its latest Economic Outlook that, if oil prices averaged $22 a barrel for a full year, compared with $13 in 1998, this would increase the oil import bill in rich economies by only 0.25-0.5% of GDP."></a>句十四：The OECD estimates in its latest Economic Outlook that, if oil prices averaged $22 a barrel for a full year, compared with $13 in 1998, this would increase the oil import bill in rich economies by only 0.25-0.5% of GDP.</h2><h2 id="句十五：That-is-less-than-one-quarter-of-the-income-loss-in-1974-or-1980"><a href="#句十五：That-is-less-than-one-quarter-of-the-income-loss-in-1974-or-1980" class="headerlink" title="句十五：That is less than one-quarter of the income loss in 1974 or 1980."></a>句十五：That is less than one-quarter of the income loss in 1974 or 1980.</h2><h2 id="句十六：On-the-other-hand-oil-importing-emerging-economies-—-to-which-heavy-industry-has-shifted-—-have-become-more-energy-intensive-and-so-could-be-more-seriously-squeezed"><a href="#句十六：On-the-other-hand-oil-importing-emerging-economies-—-to-which-heavy-industry-has-shifted-—-have-become-more-energy-intensive-and-so-could-be-more-seriously-squeezed" class="headerlink" title="句十六：On the other hand, oil-importing emerging economies — to which heavy industry has shifted — have become more energy-intensive, and so could be more seriously squeezed."></a>句十六：On the other hand, oil-importing emerging economies — to which heavy industry has shifted — have become more energy-intensive, and so could be more seriously squeezed.</h2><h2 id="句十七：One-more-reason-not-to-lose-sleep-over-the-rise-in-oil-prices-is-that-unlike-the-rises-in-the-1970s-it-has-not-occurred-against-the-background-of-general-commodity-price-inflation-and-global-excess-demand"><a href="#句十七：One-more-reason-not-to-lose-sleep-over-the-rise-in-oil-prices-is-that-unlike-the-rises-in-the-1970s-it-has-not-occurred-against-the-background-of-general-commodity-price-inflation-and-global-excess-demand" class="headerlink" title="句十七：One more reason not to lose sleep over the rise in oil prices is that, unlike the rises in the 1970s, it has not occurred against the background of general commodity-price inflation and global excess demand"></a>句十七：One more reason not to lose sleep over the rise in oil prices is that, unlike the rises in the 1970s, it has not occurred against the background of general commodity-price inflation and global excess demand</h2><ul>
+<li>One more reason (插入语) is that <strong>分论点引出句</strong> </li>
+</ul>
+<h2 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h2><ul>
+<li><strong><a name="T2Q1">题一</a></strong><ul>
+<li>the main reason for the latest rise of oil price is ____?<ul>
+<li>the latest news 最新消息<ul>
+<li>latest 最新，最近</li>
+<li>the latest development 最新进展，最新动态</li>
+</ul>
+</li>
+<li>global inflation 全球通货膨胀</li>
+<li><strong>reduction in supply 供给削减</strong><ul>
+<li>开头段 第一个原因：Since OPEC agreed to supply-cuts in March.</li>
+</ul>
+</li>
+<li>fast growth in economy 经济的快速增长</li>
+<li>Iraq’s suspension of exports 伊拉克的出口停止<ul>
+<li>第二个原因，但不是主要原因</li>
+<li>第三个原因，strengthening economic growth.</li>
+<li>第四个原因：the winter grips the northern hemisphere.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="长难句"><a href="#长难句" class="headerlink" title="长难句"></a>长难句</h2><h3 id="长难句一：语法"><a href="#长难句一：语法" class="headerlink" title="长难句一：语法"></a>长难句一：语法</h3><ul>
+<li>系动词 be <ul>
+<li><strong>系表结构</strong>：am, is, are, was, were 后面跟着的无论是名词还是介词短语，都被称为表语</li>
+</ul>
+</li>
+<li><a name="zhuyu">主语</a><ul>
+<li>名词，名词词组<ul>
+<li>Reform has been strongly opposed.<ul>
+<li>oppose vt. 反对 <ul>
+<li>oppose to … 反对（某事）</li>
+<li>相似词：<ul>
+<li>object</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>strongly adv.<ul>
+<li>-ly 基本都是<strong>副词后缀</strong></li>
+<li>I am strongly convinced that <em>观点</em>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ellen Maren quit a decade ago.<ul>
+<li>a decade ago <ul>
+<li>decade 十年<ul>
+<li>century 百年，世纪</li>
+<li><a href="#takeOff">take off</a> <a href="#soaring">激增</a></li>
+<li><strong>Over</strong> the past four decades, 过去四十年<ul>
+<li>within</li>
+<li>during</li>
+<li>in</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>时间状语，状语是修饰成分，非主干</li>
+</ul>
+</li>
+<li>quit v. 辞职<ul>
+<li>相似词<ul>
+<li>resign </li>
+<li>depart</li>
+<li>leave</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Doctor Yale note …<ul>
+<li>note vt. 提到；注意</li>
+</ul>
+</li>
+<li>Bankers have been blaming oneself for their troubles in public.<ul>
+<li>have been -ing 现在完成进行时</li>
+<li>blame v. 责备<ul>
+<li>blame sb. for sth. 因为某事责怪某人</li>
+</ul>
+</li>
+<li>in public 在公开场合</li>
+</ul>
+</li>
+<li>Man go to war and be exposed to stress.<ul>
+<li>be exposed to 置身于…之下</li>
+<li>stress n. 压力</li>
+</ul>
+</li>
+<li>It’s experience demonstrate the importance of doing sth.<ul>
+<li>experience n. 经历，经验；v. 经历</li>
+<li><strong>显示，表明</strong><ul>
+<li>demonstrate</li>
+<li>suggest</li>
+<li>show</li>
+<li>indicate</li>
+<li>reveal</li>
+<li>manifest</li>
+</ul>
+</li>
+<li><strong>deal with 应对，对付（找到方法来应对）</strong><ul>
+<li>相似词组<ul>
+<li>cope with</li>
+<li>handle</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>diffuse stress 排解压力<ul>
+<li>diffuse v.传播；排解</li>
+<li><strong>the diffusion of printing</strong> 印刷术的传播</li>
+</ul>
+</li>
+<li>aimless 漫无目的的，茫然迷茫的<ul>
+<li>aimlessness n. 漫无目的</li>
+<li>aim 目标</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>代词，代词词组</li>
+<li>不定式，不定式词组</li>
+<li>动名词，动名词词组</li>
+<li>it做形式主语</li>
+<li>从句</li>
+<li>the+形容词</li>
+<li><strong>大部分的句子都需要有主语</strong><ul>
+<li>特殊句型：<a name="imperative">祈使句</a>（没有主语）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>时间状语</li>
+</ul>
+<h2 id="课外阅读"><a href="#课外阅读" class="headerlink" title="课外阅读"></a>课外阅读</h2><ol>
+<li><p>Literature can help, because in many cases, it knows us better than we know ourselves and provides us with an account, more accurate than any we might have been capable of, of what is likely to be going on in our minds.</p>
+<ul>
+<li>而书籍可以帮助我们，因为在很多例子中，它比我们自己更加了解我们，以及它能够提供给我们一个——比其他任何我们以为有能力的依据更具准确性的——对我们脑海中可能发生的事的解释。</li>
+<li>provide us with an account 为我们提供一个解释/概述</li>
+</ul>
+</li>
+<li><p>The writer’s work is merely a kind of optical instrument which he offers to the reader to enable him to discern what, without this book, he would perhaps never have experienced in himself.</p>
+<ul>
+<li>作家的作用可以看成是一种视觉性乐器，提供读者能够看清那些若不读这本书则可能永远无法经历的事物。</li>
+<li>discern 看清</li>
+</ul>
+</li>
+<li><p>Every great writer can be hailed as an explorer.</p>
+<ul>
+<li>每一个读者都可以被称颂为是一名探索者</li>
+<li>hail v. 来自；称颂；<ul>
+<li><strong>be hailed as 被称颂为</strong></li>
+<li><strong>ride hailing 网约车</strong><ul>
+<li>ride sharing 共享出行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>An effect of reading a book which has devoted attention to noticing faint yet vital tremors.</p>
+<ul>
+<li>阅读书籍时带来的那些只有倾注身心才能关注得到的微小但深刻的感触</li>
+<li><strong>devote 倾注</strong><ul>
+<li>devote attention to >= pay attention to</li>
+</ul>
+</li>
+<li><strong>faint 细小的</strong></li>
+<li><strong>vital 至关重要的</strong></li>
+<li><strong>tremor 颤栗；震动</strong></li>
+</ul>
+</li>
+<li><p>once we’ve put the volume down and resumed our own life, we can attend to precisely the things which the author would have responded to had he or she been in our company.</p>
+<ul>
+<li>当我们放下书卷回归生活时，我们将精准地注意到那些原本作者才会给予回应的事物，如同有作者陪伴在旁一般。</li>
+<li><strong>once 当…</strong></li>
+<li><strong>volume 音量；(书)卷</strong></li>
+<li><strong>resume v. 重新开始；恢复；返回；n. 简历</strong> </li>
+<li><strong>precisely 精准地</strong></li>
+</ul>
+</li>
+<li><p>Our attention will be drawn to the shades of the sky, to the changeability of a face, to the hypocrisy of a friend, or to a submerged sadness about a situation which we had previously not even known we could feel sad about, which is why Ralph Waldo Emerson proposed: ‘In the minds of geniuses, we find – again – our own neglected thoughts.’ </p>
+<ul>
+<li>我们的目光将会聚焦至蔚蓝天空中的阴影角落，某副面孔的变化无常，至亲好友的虚伪假面，或是曾无可理解的那些隐秘伤痛。这也是为什么Ralph Waldo Emerson曾如此说：“在聪慧者的知识殿堂内，我们就可找回那些被我们遗忘的思索。”</li>
+<li><strong>be drawn to 聚焦至</strong></li>
+<li><strong>changeability 多变的</strong></li>
+<li><em>hypocrisy 虚伪</em></li>
+<li>submerged 潜在的；水下的</li>
+</ul>
+</li>
+</ol>
+<p><strong>名人名言：I have lived a thousand lives and I’ve loved a thousand loves. I’ve walked on distant worlds and seen the end of time. Because I read. ——George R.R. Martin, author, Game of Thrones fantasy series</strong></p>
+<ol start="7">
+<li>Students Set up App for Stray Cats on Campus<ul>
+<li>大学学生上线针对流浪猫的一款APP</li>
+<li><strong>stray 流浪的，孤独的</strong></li>
+</ul>
+</li>
+<li>How British Farmers Are Diversifying<ul>
+<li>英国农民如何进行多样化(开发)?</li>
+<li><strong>diversify 使多样化</strong></li>
+</ul>
+</li>
+<li>the farmer turns to other forms of income outside the sphere of traditional farming practices<ul>
+<li><strong>outside the sphere of traditional farming practices 在传统农业尝试过的领域外</strong></li>
+</ul>
+</li>
+<li>if you fancy making cheese, picking cherries or smoking fish, you can head down to a farm to learn a new skill. <ul>
+<li>如果你热爱制作奶酪，摘樱桃或者烟熏鱼，你可以走进一个农场来学习某一门新爱好。</li>
+<li><strong>head down to (谦逊地)走进某处</strong></li>
+<li><strong>bed down in 睡在某处</strong></li>
+</ul>
+</li>
+<li>farmers are now branching out from traditional crops into wildflower seed production and essential oil crops.<ul>
+<li>农民们正从传统的农作物开始拓展业务到野花种子生产和香精油作物。</li>
+<li><strong>branch out from … into …从某事拓展分支到某事</strong></li>
+</ul>
+</li>
+<li><strong>livestock 牲畜</strong></li>
+<li><strong>herd 兽群；人群</strong></li>
+<li><strong>trek 长途跋涉</strong></li>
+<li></li>
+</ol>
+</body></html>]]></content>
+      <categories>
+        <category>考研</category>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>英语</tag>
+        <tag>商志</tag>
+        <tag>词汇学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研</title>
+    <url>/2020/04/09/%E8%80%83%E7%A0%94/</url>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="考研"><a href="#考研" class="headerlink" title="考研"></a>考研</h1><h2 id="复习阶段了解"><a href="#复习阶段了解" class="headerlink" title="复习阶段了解"></a>复习阶段了解</h2><p>报名时间：9月24日开始，第一天报名，因为要填报考点</p>
+<p>考试时间：12月月底，最后一个周末考试，大概要考2天</p>
+<p>复习顺序：政治和专业课可以在短时间内得到大幅提升</p>
+<p>​    政治不宜过早，最简单，报班节省时间</p>
+<p>​    英语的目标是过线</p>
+<p>​    数学是拉分项</p>
+<p>​    专业课是信息战</p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C2.png" alt="image-20200409160319786"></p>
+<p>理工340分差不多可以选比较好的211</p>
+<p>研究生分学硕和专硕：考试难度不一样，学费不一样，研究方向不一样等等</p>
+<p>学硕（一般三年）：理论研究型 -> 研一，上课；研二，做项目；研三，毕业论文。一般考研难度高；考试科目不一样，考英语一，数学考数学一；学硕相对便宜，有奖学金；</p>
+<p>专硕（一般两年）：实际操作型 -> 研一，上课；研二，实习；专硕相对更贵，没有奖学金；</p>
+<p>非会计和管理的大多数考试安排</p>
+<p>周六8:30~11:30 政治 100</p>
+<p>​        14:00~17:00 外国语 100</p>
+<p>周日8:30~11:30 数学 150分 / 专业课1 150分</p>
+<p>​        14:00~17:00 专业课2 150分</p>
+<p>​        </p>
+<p>政治：最简单的一科，不用先看</p>
+<p>​    包括内容：</p>
+<ul>
+<li>马原（哲学），毛中特，史纲，思修法基，当代</li>
+</ul>
+<p>报辅导班是最方便学习的渠道</p>
+<p>节省时间</p>
+<p>英语：过线为基本目的（国家线） 一区（广东）不同专业分数线不一样</p>
+<p>​    工学分数线：大概40以下</p>
+<p>​    英语一：5500单词量，有超纲词汇，阅读理解偏长，翻译分值5句10分，作文分值30分（看图作文）</p>
+<p>​    题型：完型20题10分，阅读，新题型，翻译，写作</p>
+<p>​    英语优先复习</p>
+<p>​    <strong>阅读和写作最主要</strong></p>
+<p>​    写作多练（单号小作文，双号大作文）</p>
+<p>​            小作文：书信为主</p>
+<p>​            大作文：</p>
+<p>数学：最终哟啊的科目</p>
+<p>​        数学决定了总分高低</p>
+<p>​    数学一/ 数学三：高数56%，线代22%，概率22%</p>
+<p>​    数学二（不考概率学）：高数78%，现代22%</p>
+<p>专业课：<strong>信息战</strong></p>
+<p>​    目标院校目标专业的相关信息</p>
+<ol>
+<li><p>“名校歧视普通高校生”</p>
+</li>
+<li><p>参考书和复习重点</p>
+</li>
+<li><p>导师</p>
+<p>认识目标院校目标专业师兄师姐</p>
+<p>方式一：去复试现场（通过复试通知了解（通过目标院校目标专业学院网站通知公告【3-5月份的通知，含复试时间和地点】））在面试结束后，买复习资料</p>
+<p>方式二：报辅导班 </p>
+</li>
+</ol>
+<h2 id="院校学习方法论"><a href="#院校学习方法论" class="headerlink" title="院校学习方法论"></a>院校学习方法论</h2><p>5+3方法</p>
+<p>5个问题，3个参数</p>
+<p>第一个问题：我能考什么专业？ - > 跨专业考研 （遵循一个原则：自然科学可跨人文，人文不可跨科学，科学跨科学要看情况（主干专业课要相同才可以跨），人文可跨人文）</p>
+<p>-> 本专业考研</p>
+<p>个人答案：理工科计算机</p>
+<p>第二个问题：我要考什么专业？-> 专业方向的选择 -> 问自己专业课的老师 </p>
+<p>个人答案：计算机专业人工智能、大数据、计算机应用等方向</p>
+<p>第三个问题：想去哪里发展（地域选择）-> 经济发展情况 -> 是否能适应</p>
+<p>第四个问题：目标城市哪些学校有我想考的专业 -> 中国研究生招生信息网(硕士目录[地域，学校，门类，方向，专业名称，学习方式])</p>
+<p>第五个问题：考那个学校 </p>
+<p>​    使用三个参数来判读那：</p>
+<p>​            复试分数线 （[考数学的专业]复试分数线的高低决定了报考的难度）</p>
+<p>​            招生人数[录取名单（学院名单）]</p>
+<p>​            指定参考书[考试科目] [问师兄师姐] [问目标院校目标专业本科生]</p>
+<h2 id="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"><a href="#通过复习参考书目来确定高中低档学校，让自己有回旋的余地" class="headerlink" title="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"></a>通过复习参考书目来确定高中低档学校，让自己有回旋的余地</h2><p>数据结构题型</p>
+<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C12.png" alt="image-20200413223422551"></p>
+</body></html>]]></content>
+  </entry>
+  <entry>
     <title>java代码中静态读取文件信息进行初始化</title>
     <url>/2020/04/05/java%E4%BB%A3%E7%A0%81%E4%B8%AD%E9%9D%99%E6%80%81%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="java代码中静态读取文件信息进行初始化"><a href="#java代码中静态读取文件信息进行初始化" class="headerlink" title="java代码中静态读取文件信息进行初始化"></a>java代码中静态读取文件信息进行初始化</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties pro = <span class="keyword">new</span> Properties();<span class="comment">//专门读取properties文件</span></span><br><span class="line">pro.load(ClassA.class.getClassLoader().getResourcesAsStream("classA.properties"));// 文件位于src目录下</span><br><span class="line">String info = pro.getProperty(<span class="string">"info"</span>);<span class="comment">//获取properties文件中的info属性</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="java代码中静态读取文件信息进行初始化"><a href="#java代码中静态读取文件信息进行初始化" class="headerlink" title="java代码中静态读取文件信息进行初始化"></a>java代码中静态读取文件信息进行初始化</h1><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">Properties pro = <span class="keyword">new</span> Properties();<span class="comment">//专门读取properties文件</span></span><br><span class="line">pro.load(ClassA.class.getClassLoader().getResourcesAsStream("classA.properties"));// 文件位于src目录下</span><br><span class="line">String info = pro.getProperty(<span class="string">"info"</span>);<span class="comment">//获取properties文件中的info属性</span></span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -14,7 +2264,7 @@
   <entry>
     <title>经济学分类以及对比</title>
     <url>/2020/04/05/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6vs%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</url>
-    <content><![CDATA[<h1 id="微观经济学vs宏观经济学"><a href="#微观经济学vs宏观经济学" class="headerlink" title="微观经济学vs宏观经济学"></a>微观经济学vs宏观经济学</h1><table>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="微观经济学vs宏观经济学"><a href="#微观经济学vs宏观经济学" class="headerlink" title="微观经济学vs宏观经济学"></a>微观经济学vs宏观经济学</h1><table>
 <thead>
 <tr>
 <th>差别</th>
@@ -47,7 +2297,8 @@
 <td>某个产品价格</td>
 <td>总价格</td>
 </tr>
-</tbody></table><h1 id="实证经济学vs规范经济学"><a href="#实证经济学vs规范经济学" class="headerlink" title="实证经济学vs规范经济学"></a>实证经济学vs规范经济学</h1><table>
+</tbody></table>
+<h1 id="实证经济学vs规范经济学"><a href="#实证经济学vs规范经济学" class="headerlink" title="实证经济学vs规范经济学"></a>实证经济学vs规范经济学</h1><table>
 <thead>
 <tr>
 <th></th>
@@ -90,8 +2341,7 @@
 <td>一般可以验证，取决于研究方法和技巧</td>
 <td>无法客观验证，取决于立场</td>
 </tr>
-</tbody></table><a id="more"></a>
-
+</tbody></table>
 <h1 id="实证经济学和规范经济学面对收入分配与增长的结论"><a href="#实证经济学和规范经济学面对收入分配与增长的结论" class="headerlink" title="实证经济学和规范经济学面对收入分配与增长的结论"></a>实证经济学和规范经济学面对收入分配与增长的结论</h1><table>
 <thead>
 <tr>
@@ -133,12 +2383,12 @@
 </tbody></table>
 <p>实证经济学的结论是客观的，需要验证正确与否</p>
 <p>规范经济学的结论取决于预设立场，无法验证</p>
-]]></content>
+</body></html>]]></content>
   </entry>
   <entry>
     <title>市场经济vs计划经济</title>
     <url>/2020/04/05/%E5%B8%82%E5%9C%BA%E7%BB%8F%E6%B5%8Evs%E8%AE%A1%E5%88%92%E7%BB%8F%E6%B5%8E/</url>
-    <content><![CDATA[<h1 id="市场经济vs计划经济"><a href="#市场经济vs计划经济" class="headerlink" title="市场经济vs计划经济"></a>市场经济vs计划经济</h1><table>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="市场经济vs计划经济"><a href="#市场经济vs计划经济" class="headerlink" title="市场经济vs计划经济"></a>市场经济vs计划经济</h1><table>
 <thead>
 <tr>
 <th></th>
@@ -181,7 +2431,8 @@
 <td>有</td>
 <td>无</td>
 </tr>
-</tbody></table>]]></content>
+</tbody></table>
+</body></html>]]></content>
       <categories>
         <category>课外学习</category>
       </categories>
@@ -193,12 +2444,18 @@
   <entry>
     <title>基于分布式架构的旅游平台开发日志</title>
     <url>/2020/04/03/%E5%9F%BA%E4%BA%8E%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E7%9A%84%E6%97%85%E6%B8%B8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h1 id="基于分布式架构的旅游平台开发日志"><a href="#基于分布式架构的旅游平台开发日志" class="headerlink" title="基于分布式架构的旅游平台开发日志"></a>基于分布式架构的旅游平台开发日志</h1><hr><h3 id="2020-4-3"><a href="#2020-4-3" class="headerlink" title="2020.4.3"></a>2020.4.3</h3><p>开始写开发日志</p><p>感觉有必要将问题都整理起来，不然以后遇到还是会捉急。</p><p>开发的进程也要写清楚，这样以后总结起来也会方便很多。</p><p>完成内容：</p><ul>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="基于分布式架构的旅游平台开发日志"><a href="#基于分布式架构的旅游平台开发日志" class="headerlink" title="基于分布式架构的旅游平台开发日志"></a>基于分布式架构的旅游平台开发日志</h1><hr>
+<h3 id="2020-4-3"><a href="#2020-4-3" class="headerlink" title="2020.4.3"></a>2020.4.3</h3><p>开始写开发日志</p>
+<p>感觉有必要将问题都整理起来，不然以后遇到还是会捉急。</p>
+<p>开发的进程也要写清楚，这样以后总结起来也会方便很多。</p>
+<p>完成内容：</p>
+<ul>
 <li><p>Feign的基本使用，并将Region Service和Hotel Service</p>
 </li>
 <li><p>Elastic Search的搜索功能方法基础实现完成，关键词搜索和地域搜索都完成了。</p>
 </li>
-</ul>]]></content>
+</ul>
+</body></html>]]></content>
       <categories>
         <category>Lite-Travel</category>
       </categories>
@@ -210,14 +2467,15 @@
   <entry>
     <title>IK-Analyzer的基本用法</title>
     <url>/2020/04/01/IK-Analyzer/</url>
-    <content><![CDATA[<h1 id="IK-Analyzer的基本用法"><a href="#IK-Analyzer的基本用法" class="headerlink" title="IK-Analyzer的基本用法"></a>IK-Analyzer的基本用法</h1><ul>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="IK-Analyzer的基本用法"><a href="#IK-Analyzer的基本用法" class="headerlink" title="IK-Analyzer的基本用法"></a>IK-Analyzer的基本用法</h1><ul>
 <li><p>最简单的请求</p>
-<p>​    <a href="http://172.16.0.4:9200/_analyze?analyzer=ik_smart&amp;pretty=true&amp;text=Sentence" target="_blank" rel="noopener">http://172.16.0.4:9200/_analyze?analyzer=ik_smart&amp;pretty=true&amp;text=Sentence</a></p>
+<p>​    <a href="http://172.16.0.4:9200/_analyze?analyzer=ik_smart&pretty=true&text=Sentence" target="_blank" rel="noopener">http://172.16.0.4:9200/_analyze?analyzer=ik_smart&pretty=true&text=Sentence</a></p>
 </li>
 <li><p>自定义分词器配置：可设置自定义分词以及停用词汇</p>
 <p>​    IKAnalyzer.cfg.xml</p>
 </li>
-</ul>]]></content>
+</ul>
+</body></html>]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -229,14 +2487,14 @@
   <entry>
     <title>Kibana学习</title>
     <url>/2020/04/01/Kibana%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="Kibana学习"><a href="#Kibana学习" class="headerlink" title="Kibana学习"></a>Kibana学习</h1><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#获取所有索引库</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">_cat/indices?v</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get specific</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get all</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Sort AND Page</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;,</span></span><br><span class="line">  <span class="meta">"sort"</span>: <span class="string">[</span></span><br><span class="line">    <span class="attr">&#123;</span></span><br><span class="line">      <span class="meta">"age"</span>: <span class="string">&#123;</span></span><br><span class="line">        <span class="meta">"order"</span>: <span class="string">"desc"</span></span><br><span class="line">      <span class="attr">&#125;</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">],</span></span><br><span class="line">  <span class="meta">"from"</span>: <span class="string">0,</span></span><br><span class="line">  <span class="meta">"size"</span>: <span class="string">3</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Specific Search</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;</span></span><br><span class="line">      </span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create new indic</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create mapping</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/_mapping</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"properties"</span>:<span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"city"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"long", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/1</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"zhangsan",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">20,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"zhangsan is a boy."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/2</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"lisi",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Shanghai",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">19,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"lisi is a shanghai boy."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/3</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"wangwu",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">25,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"wangwu is a guangdong handsome man."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/4</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaohong",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Beijing",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">15,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaohong is a Beijing girl."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/5</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"kris",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"American",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">17,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"kris is a sicuan cool boy.",</span></span><br><span class="line">  <span class="meta">"sex"</span>:<span class="string">"boy"</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info </span></span><br><span class="line"><span class="comment">#Or replace the original info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaomei",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"sicuan",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">18,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaomei is a sicuan hot girl."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#update the original info</span></span><br><span class="line"><span class="attr">POST</span> <span class="string">/user/userinfo/6/_update</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"doc"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">"rio",</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">23,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">"rio is a sicuan smart woman"</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#deleted</span></span><br><span class="line"><span class="attr">DELETE</span> <span class="string">/user/userinfo/6</span></span><br></pre></td></tr></table></figure><a id="more"></a>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Kibana学习"><a href="#Kibana学习" class="headerlink" title="Kibana学习"></a>Kibana学习</h1><figure class="highlight properties"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">#获取所有索引库</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">_cat/indices?v</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get specific</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get all</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Sort AND Page</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">},</span></span><br><span class="line">  <span class="meta">"sort"</span>: <span class="string">[</span></span><br><span class="line">    <span class="attr">{</span></span><br><span class="line">      <span class="meta">"age"</span>: <span class="string">{</span></span><br><span class="line">        <span class="meta">"order"</span>: <span class="string">"desc"</span></span><br><span class="line">      <span class="attr">}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">],</span></span><br><span class="line">  <span class="meta">"from"</span>: <span class="string">0,</span></span><br><span class="line">  <span class="meta">"size"</span>: <span class="string">3</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Specific Search</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{</span></span><br><span class="line">      </span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create new indic</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create mapping</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/_mapping</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"properties"</span>:<span class="string">{</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"city"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"long", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/1</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"zhangsan",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">20,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"zhangsan is a boy."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/2</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"lisi",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Shanghai",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">19,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"lisi is a shanghai boy."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/3</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"wangwu",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">25,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"wangwu is a guangdong handsome man."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/4</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaohong",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Beijing",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">15,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaohong is a Beijing girl."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/5</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"kris",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"American",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">17,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"kris is a sicuan cool boy.",</span></span><br><span class="line">  <span class="meta">"sex"</span>:<span class="string">"boy"</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info </span></span><br><span class="line"><span class="comment">#Or replace the original info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaomei",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"sicuan",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">18,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaomei is a sicuan hot girl."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#update the original info</span></span><br><span class="line"><span class="attr">POST</span> <span class="string">/user/userinfo/6/_update</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"doc"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">"rio",</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">23,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">"rio is a sicuan smart woman"</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#deleted</span></span><br><span class="line"><span class="attr">DELETE</span> <span class="string">/user/userinfo/6</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
 
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#nested 查询</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"nested"</span> : <span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">      <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">        <span class="meta">"match"</span>: <span class="string">&#123;</span></span><br><span class="line">          <span class="meta">"rooms.roomId"</span>: <span class="string">1</span></span><br><span class="line">        <span class="attr">&#125;</span></span><br><span class="line">      <span class="attr">&#125;</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"bool"</span>: <span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"must"</span>: <span class="string">[</span></span><br><span class="line">        <span class="attr">&#123;</span></span><br><span class="line">          <span class="meta">"nested"</span>: <span class="string">&#123;</span></span><br><span class="line">            <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">            <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">              <span class="meta">"match"</span>: <span class="string">&#123;</span></span><br><span class="line">                <span class="meta">"rooms.roomBedAdd"</span>: <span class="string">-1</span></span><br><span class="line">              <span class="attr">&#125;</span></span><br><span class="line">            <span class="attr">&#125;</span></span><br><span class="line">          <span class="attr">&#125;</span></span><br><span class="line">        <span class="attr">&#125;</span></span><br><span class="line">      <span class="attr">]</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight properties"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">#nested 查询</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"nested"</span> : <span class="string">{</span></span><br><span class="line">      <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">      <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">        <span class="meta">"match"</span>: <span class="string">{</span></span><br><span class="line">          <span class="meta">"rooms.roomId"</span>: <span class="string">1</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line">      <span class="attr">}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"bool"</span>: <span class="string">{</span></span><br><span class="line">      <span class="meta">"must"</span>: <span class="string">[</span></span><br><span class="line">        <span class="attr">{</span></span><br><span class="line">          <span class="meta">"nested"</span>: <span class="string">{</span></span><br><span class="line">            <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">            <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">              <span class="meta">"match"</span>: <span class="string">{</span></span><br><span class="line">                <span class="meta">"rooms.roomBedAdd"</span>: <span class="string">-1</span></span><br><span class="line">              <span class="attr">}</span></span><br><span class="line">            <span class="attr">}</span></span><br><span class="line">          <span class="attr">}</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line">      <span class="attr">]</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br></pre></td></tr></tbody></table></figure>
 
-]]></content>
+</body></html>]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -248,7 +2506,13 @@
   <entry>
     <title>纯数字文本中获取最大数字</title>
     <url>/2020/04/01/%E7%BA%AF%E6%95%B0%E5%AD%97%E6%96%87%E6%9C%AC%E4%B8%AD%E8%8E%B7%E5%8F%96%E6%9C%80%E5%A4%A7%E6%95%B0%E5%AD%97/</url>
-    <content><![CDATA[<h1 id="纯数字文本中获取最大数字"><a href="#纯数字文本中获取最大数字" class="headerlink" title="纯数字文本中获取最大数字"></a>纯数字文本中获取最大数字</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># number.txt</span><br><span class="line"></span><br><span class="line">232</span><br><span class="line">123 456 789</span><br><span class="line">856 45</span><br><span class="line">12</span><br><span class="line">458</span><br><span class="line">65 5 89 654 2123 544</span><br><span class="line">45 88 46 53 64 87 998 112 456 789 654</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将空格换成换行符</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g'</span><br><span class="line"><span class="meta">#</span><span class="bash"> 以及将空行去掉</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$"</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加排序</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加输出限制，只显示最大和最小的，即在文本中第一位和最后一位的</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr|sed -n '1p;$p'</span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="纯数字文本中获取最大数字"><a href="#纯数字文本中获取最大数字" class="headerlink" title="纯数字文本中获取最大数字"></a>纯数字文本中获取最大数字</h1><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># number.txt</span><br><span class="line"></span><br><span class="line">232</span><br><span class="line">123 456 789</span><br><span class="line">856 45</span><br><span class="line">12</span><br><span class="line">458</span><br><span class="line">65 5 89 654 2123 544</span><br><span class="line">45 88 46 53 64 87 998 112 456 789 654</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将空格换成换行符</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g'</span><br><span class="line"><span class="meta">#</span><span class="bash"> 以及将空行去掉</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$"</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加排序</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加输出限制，只显示最大和最小的，即在文本中第一位和最后一位的</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr|sed -n '1p;$p'</span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -256,7 +2520,9 @@
   <entry>
     <title>Apache,MySQL,PHP安装功能函数</title>
     <url>/2020/04/01/Apache%E5%AE%89%E8%A3%85%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="Apache-MySQL-PHP安装功能函数"><a href="#Apache-MySQL-PHP安装功能函数" class="headerlink" title="Apache,MySQL,PHP安装功能函数"></a>Apache,MySQL,PHP安装功能函数</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">auto install apache</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">Httpd define path variable</span></span><br><span class="line">H_FILES=httpd-2.2.27.tar.bz2</span><br><span class="line">H_FILES_DIR=httpd-2.2.27</span><br><span class="line">H_URL=http://mirrors.cnnic.cn/apache/htpd/</span><br><span class="line">H_PREFIX=/usr/local/apache2/</span><br><span class="line"><span class="meta">#</span><span class="bash">MySQL</span></span><br><span class="line">M_FILES=...</span><br><span class="line">M_FILES_DIR=...</span><br><span class="line">M_URL=...</span><br><span class="line">M_PREFIX=...</span><br><span class="line"><span class="meta">#</span><span class="bash">PHP</span></span><br><span class="line">P_FILES=...</span><br><span class="line">P_FILES_DIR=...</span><br><span class="line">P_URL=...</span><br><span class="line">P_PREFIX=...</span><br><span class="line"></span><br><span class="line">MODULE=NOTHING</span><br><span class="line"></span><br><span class="line">function Menu()&#123;</span><br><span class="line">	echo "--------------------------------------------------"</span><br><span class="line">	echo "Please choose to install the following optional modules."</span><br><span class="line">    select i in "Apache" "MySQL" "PHP"</span><br><span class="line">    do</span><br><span class="line">        case $i in</span><br><span class="line">            Apache)</span><br><span class="line">            $MODULE=$H_FILES_DIR</span><br><span class="line">            ApacheInstall</span><br><span class="line">            ;;</span><br><span class="line">            MySQL)</span><br><span class="line">            $MODULE=$M_FILES_DIR</span><br><span class="line">            MySQLInstall</span><br><span class="line">            ;;</span><br><span class="line">            PHP)</span><br><span class="line">            $MODULE=$P_FILES_DIR</span><br><span class="line">            PHPInstall</span><br><span class="line">            ;;</span><br><span class="line">            *)</span><br><span class="line">            echo "FOUND NOTHING BY USING SUPPORTED ARGUMENT"</span><br><span class="line">            ;;</span><br><span class="line">    done</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function ApacheInstall()&#123;</span><br><span class="line">	echo "The Apache Server wait install..."</span><br><span class="line">    wget -c $H_URL/$H_FILES &amp;&amp; tar -jxvf &amp;&amp; cd &amp;H_FILES_DIR &amp;&amp; ./configure --prefix=$H_PREFIX</span><br><span class="line">	</span><br><span class="line">    if [ $? -eq 0 ];then</span><br><span class="line">        make &amp;&amp; make install</span><br><span class="line">        echo "--------------------------------------------------"</span><br><span class="line">        echo "$MODULE Server Installation succeed!"</span><br><span class="line">    else</span><br><span class="line">        echo "$MODULE Make or Make install ERROR, Please Check...."</span><br><span class="line">        exit 0</span><br><span class="line">    fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function MySQLInstall()&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function PHPInstall()&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Menu</span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Apache-MySQL-PHP安装功能函数"><a href="#Apache-MySQL-PHP安装功能函数" class="headerlink" title="Apache,MySQL,PHP安装功能函数"></a>Apache,MySQL,PHP安装功能函数</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">auto install apache</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">Httpd define path variable</span></span><br><span class="line">H_FILES=httpd-2.2.27.tar.bz2</span><br><span class="line">H_FILES_DIR=httpd-2.2.27</span><br><span class="line">H_URL=http://mirrors.cnnic.cn/apache/htpd/</span><br><span class="line">H_PREFIX=/usr/local/apache2/</span><br><span class="line"><span class="meta">#</span><span class="bash">MySQL</span></span><br><span class="line">M_FILES=...</span><br><span class="line">M_FILES_DIR=...</span><br><span class="line">M_URL=...</span><br><span class="line">M_PREFIX=...</span><br><span class="line"><span class="meta">#</span><span class="bash">PHP</span></span><br><span class="line">P_FILES=...</span><br><span class="line">P_FILES_DIR=...</span><br><span class="line">P_URL=...</span><br><span class="line">P_PREFIX=...</span><br><span class="line"></span><br><span class="line">MODULE=NOTHING</span><br><span class="line"></span><br><span class="line">function Menu(){</span><br><span class="line">	echo "--------------------------------------------------"</span><br><span class="line">	echo "Please choose to install the following optional modules."</span><br><span class="line">    select i in "Apache" "MySQL" "PHP"</span><br><span class="line">    do</span><br><span class="line">        case $i in</span><br><span class="line">            Apache)</span><br><span class="line">            $MODULE=$H_FILES_DIR</span><br><span class="line">            ApacheInstall</span><br><span class="line">            ;;</span><br><span class="line">            MySQL)</span><br><span class="line">            $MODULE=$M_FILES_DIR</span><br><span class="line">            MySQLInstall</span><br><span class="line">            ;;</span><br><span class="line">            PHP)</span><br><span class="line">            $MODULE=$P_FILES_DIR</span><br><span class="line">            PHPInstall</span><br><span class="line">            ;;</span><br><span class="line">            *)</span><br><span class="line">            echo "FOUND NOTHING BY USING SUPPORTED ARGUMENT"</span><br><span class="line">            ;;</span><br><span class="line">    done</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function ApacheInstall(){</span><br><span class="line">	echo "The Apache Server wait install..."</span><br><span class="line">    wget -c $H_URL/$H_FILES && tar -jxvf && cd &H_FILES_DIR && ./configure --prefix=$H_PREFIX</span><br><span class="line">	</span><br><span class="line">    if [ $? -eq 0 ];then</span><br><span class="line">        make && make install</span><br><span class="line">        echo "--------------------------------------------------"</span><br><span class="line">        echo "$MODULE Server Installation succeed!"</span><br><span class="line">    else</span><br><span class="line">        echo "$MODULE Make or Make install ERROR, Please Check...."</span><br><span class="line">        exit 0</span><br><span class="line">    fi</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function MySQLInstall(){</span><br><span class="line">	...</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function PHPInstall(){</span><br><span class="line">	...</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">Menu</span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -264,7 +2530,9 @@
   <entry>
     <title>自动备份Mysql Shell脚本</title>
     <url>/2020/04/01/%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BDMysql%20Shell%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<h1 id="自动备份Mysql-Shell脚本"><a href="#自动备份Mysql-Shell脚本" class="headerlink" title="自动备份Mysql Shell脚本"></a>自动备份Mysql Shell脚本</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">auto backup mysql db</span></span><br><span class="line"></span><br><span class="line">BACK_DIR=/data/backup/`date + %y%m%d`</span><br><span class="line">MYSQLDB=discuz</span><br><span class="line">MYSQLUSR=backup</span><br><span class="line">MYSQLPW=123456</span><br><span class="line">MYSQLCMD=/usr/bin/mysqldump</span><br><span class="line">if [ $UID -ne 0];then</span><br><span class="line">	echo "Must to be use root for exec shell"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $BAcK_DIR];then</span><br><span class="line">	mkdir -p $BAcK_DIR</span><br><span class="line">	echo "\033[32mThe $BACK_DIR Create Successfully!"</span><br><span class="line">else </span><br><span class="line">	echo "This $BACK_DIR is exists."</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash">MYSQLCMD -u<span class="variable">$MYSQLUSR</span> -p<span class="variable">$MYSQLPW</span> discuz &gt;<span class="variable">$BACK_DIR</span>/<span class="variable">$MYSQLDB</span>.sql</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="自动备份Mysql-Shell脚本"><a href="#自动备份Mysql-Shell脚本" class="headerlink" title="自动备份Mysql Shell脚本"></a>自动备份Mysql Shell脚本</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">auto backup mysql db</span></span><br><span class="line"></span><br><span class="line">BACK_DIR=/data/backup/`date + %y%m%d`</span><br><span class="line">MYSQLDB=discuz</span><br><span class="line">MYSQLUSR=backup</span><br><span class="line">MYSQLPW=123456</span><br><span class="line">MYSQLCMD=/usr/bin/mysqldump</span><br><span class="line">if [ $UID -ne 0];then</span><br><span class="line">	echo "Must to be use root for exec shell"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $BAcK_DIR];then</span><br><span class="line">	mkdir -p $BAcK_DIR</span><br><span class="line">	echo "\033[32mThe $BACK_DIR Create Successfully!"</span><br><span class="line">else </span><br><span class="line">	echo "This $BACK_DIR is exists."</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash">MYSQLCMD -u<span class="variable">$MYSQLUSR</span> -p<span class="variable">$MYSQLPW</span> discuz ><span class="variable">$BACK_DIR</span>/<span class="variable">$MYSQLDB</span>.sql</span></span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -272,10 +2540,10 @@
   <entry>
     <title>Java面试准备</title>
     <url>/2020/03/31/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="Java面试题"><a href="#Java面试题" class="headerlink" title="Java面试题"></a>Java面试题</h1><ol>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Java面试题"><a href="#Java面试题" class="headerlink" title="Java面试题"></a>Java面试题</h1><ol>
 <li>操作数栈的题：</li>
-</ol><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    ink k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a>
-
+</ol>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>{</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    ink k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <p>重点：字节码，i++，操作数栈，运算符优先级</p>
 <p>=运算符是最后运算的</p>
@@ -283,7 +2551,7 @@
 <p>+-*/四则运算需要将变量先压入操作数栈在取出操作数栈中的数进行运算后再将临时结果压入操作数栈中，等待取出结果。</p>
 <p>++运算符是直接对局部变量表中的变量直接操作的，不经过操作数栈。</p>
 <p>结果输出：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">i = <span class="number">4</span></span><br><span class="line">j = <span class="number">1</span></span><br><span class="line">k = <span class="number">11</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">i = <span class="number">4</span></span><br><span class="line">j = <span class="number">1</span></span><br><span class="line">k = <span class="number">11</span></span><br></pre></td></tr></tbody></table></figure>
 
 <ol start="2">
 <li>单例模式Singleton</li>
@@ -307,24 +2575,24 @@
 <p>常见形式：</p>
 <ul>
 <li><p>饿汉式：直接创建对象，不存在线程安全问题</p>
-<pre><code>- 直接实例化饿汉式（简洁直观）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 不考虑是否需要实例该单例</span></span><br><span class="line"><span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton instance = <span class="keyword">new</span> Singleton();</span><br><span class="line"><span class="comment">// 构造器</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 直接实例化饿汉式（简洁直观）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 不考虑是否需要实例该单例</span></span><br><span class="line"><span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton instance = <span class="keyword">new</span> Singleton();</span><br><span class="line"><span class="comment">// 构造器</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<pre><code>- 枚举式（最简洁）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 表示该类型的对象是有限的几个</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton&#123;</span><br><span class="line">    INSTANCE1,</span><br><span class="line">    INSTANCE2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 枚举式（最简洁）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 表示该类型的对象是有限的几个</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton{</span><br><span class="line">    INSTANCE1,</span><br><span class="line">    INSTANCE2</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<pre><code>- 静态代码块饿汉式（适合复杂实例化）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE;</span><br><span class="line"><span class="keyword">static</span>&#123;</span><br><span class="line">    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">//需要进行一定的初始化</span></span><br><span class="line">    <span class="comment">//或者需要从文件中获取属性值</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 静态代码块饿汉式（适合复杂实例化）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE;</span><br><span class="line"><span class="keyword">static</span>{</span><br><span class="line">    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">//需要进行一定的初始化</span></span><br><span class="line">    <span class="comment">//或者需要从文件中获取属性值</span></span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>懒汉式：延迟创建对象</p>
-<pre><code>- 线程不安全（适用于单线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">        instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 线程不安全（适用于单线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>){</span><br><span class="line">        instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<pre><code>- 线程安全（适用于多线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">    	<span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">                <span class="keyword">try</span>&#123;</span><br><span class="line">                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;    </span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 线程安全（适用于多线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>){</span><br><span class="line">    	<span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>)</span>{</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>){</span><br><span class="line">                <span class="keyword">try</span>{</span><br><span class="line">                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                }<span class="keyword">catch</span>(Exception e){</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">            }    </span><br><span class="line">        }    </span><br><span class="line">	}</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<pre><code>- 静态内部类形式（适用于多线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 在内部类加载和初始化时创建的，因此是线程安全的</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Inner.INSTANCE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- 静态内部类形式（适用于多线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="comment">// 在内部类加载和初始化时创建的，因此是线程安全的</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>{</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">return</span> Inner.INSTANCE;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 </li>
 </ul>
-]]></content>
+</body></html>]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -336,24 +2604,25 @@
   <entry>
     <title>使用Docker遇到的问题</title>
     <url>/2020/03/31/%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="使用Docker遇到的问题"><a href="#使用Docker遇到的问题" class="headerlink" title="使用Docker遇到的问题"></a>使用Docker遇到的问题</h1><ol>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="使用Docker遇到的问题"><a href="#使用Docker遇到的问题" class="headerlink" title="使用Docker遇到的问题"></a>使用Docker遇到的问题</h1><ol>
 <li><p>*<em>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? *</em></p>
 <p>重新配置daemon，并重启docker</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p><strong>ES运行内存不足</strong></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>查看logs</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker container logs 容器名</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">docker container logs 容器名</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>在容器出现错误时修改内部文件的办法</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">找到docker容器的文件路径</span></span><br><span class="line">find / -name 出现错误的文件名</span><br><span class="line"><span class="meta">#</span><span class="bash">进入并修改文件</span></span><br><span class="line">vim 文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">找到docker容器的文件路径</span></span><br><span class="line">find / -name 出现错误的文件名</span><br><span class="line"><span class="meta">#</span><span class="bash">进入并修改文件</span></span><br><span class="line">vim 文件路径</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 </li>
-</ol>]]></content>
+</ol>
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -361,7 +2630,8 @@
   <entry>
     <title>Change-To-Chinese</title>
     <url>/2020/02/02/Change-To-Chinese/</url>
-    <content><![CDATA[<h1 id="简单的网站测试"><a href="#简单的网站测试" class="headerlink" title="简单的网站测试"></a>简单的网站测试</h1><p>测试测试测试</p>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="简单的网站测试"><a href="#简单的网站测试" class="headerlink" title="简单的网站测试"></a>简单的网站测试</h1><p>测试测试测试</p>
+</body></html>]]></content>
       <tags>
         <tag>test</tag>
       </tags>
@@ -369,7 +2639,13 @@
   <entry>
     <title>Shell 数组</title>
     <url>/2020/02/02/Shell%20%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="Shell-数组"><a href="#Shell-数组" class="headerlink" title="Shell 数组"></a>Shell 数组</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">soft = (</span><br><span class="line">	nginx-1.6.1.tar.gz</span><br><span class="line">	mysql-5.1.17.tar.gz</span><br><span class="line">	php-5.3.3.tar.gz</span><br><span class="line">	/etc/sysctl.conf</span><br><span class="line">)</span><br><span class="line">echo "tHIS SOFT TOTAL $&#123;#soft[@]&#125; !"</span><br><span class="line">tar -xzf $&#123;soft[0]&#125; ;cd nginx-1.6.1 ;./configure ;make install</span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Shell-数组"><a href="#Shell-数组" class="headerlink" title="Shell 数组"></a>Shell 数组</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">soft = (</span><br><span class="line">	nginx-1.6.1.tar.gz</span><br><span class="line">	mysql-5.1.17.tar.gz</span><br><span class="line">	php-5.3.3.tar.gz</span><br><span class="line">	/etc/sysctl.conf</span><br><span class="line">)</span><br><span class="line">echo "tHIS SOFT TOTAL ${#soft[@]} !"</span><br><span class="line">tar -xzf ${soft[0]} ;cd nginx-1.6.1 ;./configure ;make install</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -377,15 +2653,15 @@
   <entry>
     <title>自动化运维</title>
     <url>/2020/02/02/Shell%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/</url>
-    <content><![CDATA[<h1 id="自动化运维"><a href="#自动化运维" class="headerlink" title="自动化运维"></a>自动化运维</h1><h2 id="1-自动禁止恶意IP访问"><a href="#1-自动禁止恶意IP访问" class="headerlink" title="1. 自动禁止恶意IP访问"></a>1. 自动禁止恶意IP访问</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 从访问记录<span class="built_in">log</span>里获取恶意ip访问信息</span></span><br><span class="line"></span><br><span class="line">SEC_FILE=/var/log/secure</span><br><span class="line"><span class="meta">#</span><span class="bash"> 筛选恶意访问(密码错误多次[&gt;=4次])多次的ip</span></span><br><span class="line">IP_ADDR=`tail -n 1000 $SEC_FILE | grep "Failed password" | egrep -o "([0-9]&#123;1,3&#125;\.)&#123;3&#125;[0-9]&#123;1,3&#125;" | sort -nr | uniq -c | awk ' $1&gt;=4 &#123;print $2&#125;'`</span><br><span class="line">IPTABLE_CONF=/etc/sysconfig/iptables</span><br><span class="line">echo </span><br><span class="line">cat &lt;&lt;EOF</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">---------------------welcome to use ssh login drop failed ip------------------</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">EOF</span><br><span class="line">for i in `echo $IP_ADDR`</span><br><span class="line">do</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓取防火墙中对应的ip信息</span></span><br><span class="line">	cat $IPTABLE_CONF | grep $i &gt;/dev/null</span><br><span class="line">	</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 判断是否已经存在对应ip的拒绝信息, 如存在, 就不添加相应信息</span></span><br><span class="line">	if [ $? -ne 0];then</span><br><span class="line">		sed -i "/lo/a -A INPUT -s $i -m state --state NEW -m tcp -p tcp --dropt 22 -j DROP" $IPTABLE_CONF</span><br><span class="line">	else </span><br><span class="line">		echo "This $i is exists in the iptables."</span><br><span class="line">	fi</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">/etc/init.d/iptables restart</span><br></pre></td></tr></table></figure><a id="more"></a>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="自动化运维"><a href="#自动化运维" class="headerlink" title="自动化运维"></a>自动化运维</h1><h2 id="1-自动禁止恶意IP访问"><a href="#1-自动禁止恶意IP访问" class="headerlink" title="1. 自动禁止恶意IP访问"></a>1. 自动禁止恶意IP访问</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 从访问记录<span class="built_in">log</span>里获取恶意ip访问信息</span></span><br><span class="line"></span><br><span class="line">SEC_FILE=/var/log/secure</span><br><span class="line"><span class="meta">#</span><span class="bash"> 筛选恶意访问(密码错误多次[>=4次])多次的ip</span></span><br><span class="line">IP_ADDR=`tail -n 1000 $SEC_FILE | grep "Failed password" | egrep -o "([0-9]{1,3}\.){3}[0-9]{1,3}" | sort -nr | uniq -c | awk ' $1>=4 {print $2}'`</span><br><span class="line">IPTABLE_CONF=/etc/sysconfig/iptables</span><br><span class="line">echo </span><br><span class="line">cat <<EOF</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">---------------------welcome to use ssh login drop failed ip------------------</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">EOF</span><br><span class="line">for i in `echo $IP_ADDR`</span><br><span class="line">do</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓取防火墙中对应的ip信息</span></span><br><span class="line">	cat $IPTABLE_CONF | grep $i >/dev/null</span><br><span class="line">	</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 判断是否已经存在对应ip的拒绝信息, 如存在, 就不添加相应信息</span></span><br><span class="line">	if [ $? -ne 0];then</span><br><span class="line">		sed -i "/lo/a -A INPUT -s $i -m state --state NEW -m tcp -p tcp --dropt 22 -j DROP" $IPTABLE_CONF</span><br><span class="line">	else </span><br><span class="line">		echo "This $i is exists in the iptables."</span><br><span class="line">	fi</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">/etc/init.d/iptables restart</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="2-网络自动化部署以及管理"><a href="#2-网络自动化部署以及管理" class="headerlink" title="2.网络自动化部署以及管理"></a>2.网络自动化部署以及管理</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Auto change Server Files</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少ip.txt</span></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat &lt;&lt;EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少参数</span></span><br><span class="line">if [ -z "$1" ];then</span><br><span class="line">	echo "Usage: $0 command, example&#123;Src_Files|Src_Dir Des_dir&#125;. "</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 抓去ip.txt的行数</span></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i&lt; $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "$&#123;i&#125;s/^/&amp;$&#123;i&#125; /g" ip.txt &gt;&gt;ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '&#123;if(I==$1)print $2&#125;' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 同步语句	</span></span><br><span class="line">	scp -r $1 root@$&#123;IP&#125;:$2</span><br><span class="line">	</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<h2 id="2-网络自动化部署以及管理"><a href="#2-网络自动化部署以及管理" class="headerlink" title="2.网络自动化部署以及管理"></a>2.网络自动化部署以及管理</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Auto change Server Files</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少ip.txt</span></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat <<EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少参数</span></span><br><span class="line">if [ -z "$1" ];then</span><br><span class="line">	echo "Usage: $0 command, example{Src_Files|Src_Dir Des_dir}. "</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 抓去ip.txt的行数</span></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i< $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "${i}s/^/&${i} /g" ip.txt >>ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '{if(I==$1)print $2}' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 同步语句	</span></span><br><span class="line">	scp -r $1 root@${IP}:$2</span><br><span class="line">	</span><br><span class="line">done</span><br></pre></td></tr></tbody></table></figure>
 
 
 
-<h2 id="3-批量远程服务器执行命令"><a href="#3-批量远程服务器执行命令" class="headerlink" title="3.批量远程服务器执行命令"></a>3.批量远程服务器执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat &lt;&lt;EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Usage: $0 command, example &#123;rm /tmp/test.txt | mkdir /tmp/20140228&#125;"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i&lt; $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "$&#123;i&#125;s/^/&amp;$&#123;i&#125; /g" ip.txt &gt;&gt;ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '&#123;if(I==$1)print $2&#125;' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 命令语句, 并输出操作返回结果</span></span><br><span class="line">	ssh -q -l root $IP "$*";echo "The $IP Execution Command: $* succeed";sleep 2"	</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<h2 id="3-批量远程服务器执行命令"><a href="#3-批量远程服务器执行命令" class="headerlink" title="3.批量远程服务器执行命令"></a>3.批量远程服务器执行命令</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat <<EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Usage: $0 command, example {rm /tmp/test.txt | mkdir /tmp/20140228}"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i< $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "${i}s/^/&${i} /g" ip.txt >>ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '{if(I==$1)print $2}' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 命令语句, 并输出操作返回结果</span></span><br><span class="line">	ssh -q -l root $IP "$*";echo "The $IP Execution Command: $* succeed";sleep 2"	</span><br><span class="line">done</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="4-Rsync-SSH批量自动化部署"><a href="#4-Rsync-SSH批量自动化部署" class="headerlink" title="4.Rsync+SSH批量自动化部署"></a>4.Rsync+SSH批量自动化部署</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刷新函数</span></span><br><span class="line">flush()&#123;</span><br><span class="line">	if [ ! -f rsync.list ];then</span><br><span class="line">		echo "Please Create rsync.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat &lt;&lt;EOF</span><br><span class="line">		192.168.149.128 src_dir des_dir</span><br><span class="line">		192.168.149.127 src_dir des_dir</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	</span><br><span class="line">	rm -rf rsync.list.swp ; cat rsync.list | grep -v "#" &gt;rsync.list.swp</span><br><span class="line">	COUNT=`cat rsync.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while (($&#123;i&#125; &lt; $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "$&#123;i&#125;p" rsync.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '&#123;print $1&#125;'`</span><br><span class="line">		SRC=`echo $Line | awk '&#123;print $2&#125;'`</span><br><span class="line">		DES=`echo $Line | awk '&#123;print $3&#125;'`</span><br><span class="line">		rsync -ap --delete $&#123;SRC&#125;/ root@$&#123;IP&#125;:$&#123;DES&#125;/</span><br><span class="line">	done</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重启</span></span><br><span class="line">restart()&#123;</span><br><span class="line">	if [ ! -f restart.list ];then</span><br><span class="line">		echo "Please Create restart.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat &lt;&lt;EOF</span><br><span class="line">		192.168.149.128 Command</span><br><span class="line">		192.168.149.127 Command</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	rm -rf restart.list.swp ; cat restart.list | grep -v "#" &gt;&gt;restart.list.swp</span><br><span class="line">	COUNT=`cat restart.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while (($&#123;i&#125; &lt; $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "$&#123;i&#125;p" restart.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '&#123;print $1&#125;'`</span><br><span class="line">		Command=`echo $Line | awk '&#123;print $2&#125;'`</span><br><span class="line">		ssh -l root $IP "sh $Command;echo 'The $IP Exec Command and : sh $Command success'"</span><br><span class="line">	done	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">case $i in </span><br><span class="line">	flush )</span><br><span class="line">	flush</span><br><span class="line">	;;</span><br><span class="line">	restart )</span><br><span class="line">	restart</span><br><span class="line">	;;</span><br><span class="line">	*)</span><br><span class="line">	echo "Usage: $0 command, example&#123;flush|restart&#125;"</span><br></pre></td></tr></table></figure>
+<h2 id="4-Rsync-SSH批量自动化部署"><a href="#4-Rsync-SSH批量自动化部署" class="headerlink" title="4.Rsync+SSH批量自动化部署"></a>4.Rsync+SSH批量自动化部署</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刷新函数</span></span><br><span class="line">flush(){</span><br><span class="line">	if [ ! -f rsync.list ];then</span><br><span class="line">		echo "Please Create rsync.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat <<EOF</span><br><span class="line">		192.168.149.128 src_dir des_dir</span><br><span class="line">		192.168.149.127 src_dir des_dir</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	</span><br><span class="line">	rm -rf rsync.list.swp ; cat rsync.list | grep -v "#" >rsync.list.swp</span><br><span class="line">	COUNT=`cat rsync.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while ((${i} < $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "${i}p" rsync.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '{print $1}'`</span><br><span class="line">		SRC=`echo $Line | awk '{print $2}'`</span><br><span class="line">		DES=`echo $Line | awk '{print $3}'`</span><br><span class="line">		rsync -ap --delete ${SRC}/ root@${IP}:${DES}/</span><br><span class="line">	done</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重启</span></span><br><span class="line">restart(){</span><br><span class="line">	if [ ! -f restart.list ];then</span><br><span class="line">		echo "Please Create restart.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat <<EOF</span><br><span class="line">		192.168.149.128 Command</span><br><span class="line">		192.168.149.127 Command</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	rm -rf restart.list.swp ; cat restart.list | grep -v "#" >>restart.list.swp</span><br><span class="line">	COUNT=`cat restart.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while ((${i} < $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "${i}p" restart.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '{print $1}'`</span><br><span class="line">		Command=`echo $Line | awk '{print $2}'`</span><br><span class="line">		ssh -l root $IP "sh $Command;echo 'The $IP Exec Command and : sh $Command success'"</span><br><span class="line">	done	</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">case $i in </span><br><span class="line">	flush )</span><br><span class="line">	flush</span><br><span class="line">	;;</span><br><span class="line">	restart )</span><br><span class="line">	restart</span><br><span class="line">	;;</span><br><span class="line">	*)</span><br><span class="line">	echo "Usage: $0 command, example{flush|restart}"</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="4-增量备份脚本"><a href="#4-增量备份脚本" class="headerlink" title="4.增量备份脚本"></a>4.增量备份脚本</h2><ul>
 <li><p>完整备份</p>
@@ -399,13 +2675,13 @@
 </ul>
 <p><strong>一般是周日进行完整备份，每天进行一次增量备份</strong></p>
 <p>定时备份：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">确定今天是周几: date +%u</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">确定今天是周几: date +%u</span><br></pre></td></tr></tbody></table></figure>
 
 
 
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有文件</span></span><br><span class="line">SOURCE_DIR=(</span><br><span class="line"><span class="meta">	$</span><span class="bash">*</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">TARGET_DIR=/data/backup/</span><br><span class="line"></span><br><span class="line">YEAR=`date +%Y`</span><br><span class="line">MONTH=`date +%m`</span><br><span class="line">DAY=`date +%d`</span><br><span class="line">WEEK=`date +%u`</span><br><span class="line">A_NAME=`date +%H%M`</span><br><span class="line">FILES=$&#123;A_NAME&#125;_system_backup.tgz</span><br><span class="line">CODE=$?</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Please Enter Your Backup Files or Directories"</span><br><span class="line">	echo "Usage: &#123; $0 /boot /etc &#125;"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $TARGET_DIR/$YEAR/$MONTH/$DAY ];then</span><br><span class="line">	mkdir -p $TARGET_DIR/$YEAR/$MONTH/$DAY</span><br><span class="line">	echo "The $TARGET_DIR Created success"</span><br><span class="line">fi</span><br><span class="line">Full_Backup()&#123;</span><br><span class="line">	if [ "$WEEK" -eq "7" ];then</span><br><span class="line">		rm -rf $TARGET_DIR/snapshot</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES $&#123;SOURCE_DIR[@]&#125;</span><br><span class="line">		[ "$CODE" == "0" ]&amp;&amp;echo "These Full_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">&#125;</span><br><span class="line">Add_Backup()&#123;</span><br><span class="line">	if [ "$WEEK" -ne "7" ];then</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES $&#123;SOURCE_DIR[@]&#125;</span><br><span class="line">		[ "$CODE" == "0" ]&amp;&amp;echo "These Add_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">&#125;</span><br><span class="line">sleep 3</span><br><span class="line">Full_Backup;Add_Backup</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有文件</span></span><br><span class="line">SOURCE_DIR=(</span><br><span class="line"><span class="meta">	$</span><span class="bash">*</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">TARGET_DIR=/data/backup/</span><br><span class="line"></span><br><span class="line">YEAR=`date +%Y`</span><br><span class="line">MONTH=`date +%m`</span><br><span class="line">DAY=`date +%d`</span><br><span class="line">WEEK=`date +%u`</span><br><span class="line">A_NAME=`date +%H%M`</span><br><span class="line">FILES=${A_NAME}_system_backup.tgz</span><br><span class="line">CODE=$?</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Please Enter Your Backup Files or Directories"</span><br><span class="line">	echo "Usage: { $0 /boot /etc }"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $TARGET_DIR/$YEAR/$MONTH/$DAY ];then</span><br><span class="line">	mkdir -p $TARGET_DIR/$YEAR/$MONTH/$DAY</span><br><span class="line">	echo "The $TARGET_DIR Created success"</span><br><span class="line">fi</span><br><span class="line">Full_Backup(){</span><br><span class="line">	if [ "$WEEK" -eq "7" ];then</span><br><span class="line">		rm -rf $TARGET_DIR/snapshot</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES ${SOURCE_DIR[@]}</span><br><span class="line">		[ "$CODE" == "0" ]&&echo "These Full_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">}</span><br><span class="line">Add_Backup(){</span><br><span class="line">	if [ "$WEEK" -ne "7" ];then</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES ${SOURCE_DIR[@]}</span><br><span class="line">		[ "$CODE" == "0" ]&&echo "These Add_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">}</span><br><span class="line">sleep 3</span><br><span class="line">Full_Backup;Add_Backup</span><br></pre></td></tr></tbody></table></figure>
 
-]]></content>
+</body></html>]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -413,9 +2689,9 @@
   <entry>
     <title>倾诉欲</title>
     <url>/2020/02/02/%E5%80%BE%E8%AF%89%E6%AC%B2/</url>
-    <content><![CDATA[<h1 id="倾诉欲"><a href="#倾诉欲" class="headerlink" title="倾诉欲"></a>倾诉欲</h1><p>   每个人都会有困难的时候。</p><p>   有些困难看似不起眼，可它永远垒在那里，无时无刻不想着拌你一脚，你一时觉得无所谓，也许搬个铲子动土的时间，不如拿来赚更多的钱。</p><p>   可真当它动起火来，真将你绊倒在地的时候，你哗啦地翻下山坡，卷起后面一片沙尘，摔得你鼻青脸肿，随后再在山顶上瞧着你，嘲笑你还得上来。</p><a id="more"></a>
-
-
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="倾诉欲"><a href="#倾诉欲" class="headerlink" title="倾诉欲"></a>倾诉欲</h1><p>   每个人都会有困难的时候。</p>
+<p>   有些困难看似不起眼，可它永远垒在那里，无时无刻不想着拌你一脚，你一时觉得无所谓，也许搬个铲子动土的时间，不如拿来赚更多的钱。</p>
+<p>   可真当它动起火来，真将你绊倒在地的时候，你哗啦地翻下山坡，卷起后面一片沙尘，摔得你鼻青脸肿，随后再在山顶上瞧着你，嘲笑你还得上来。</p>
 <p>   或者你觉得它太过危险，你注意到了后面的险山峻岭。可你此时此刻再无多余的心思去顾虑它，你双手抱住了一摞顶天的，不管是什么东西，背上背了沉重的背包，小腿以下甚至已经敷满了皑皑白雪。可你知道你迟早会遇到那颗扎根在泥土里的尖石头。</p>
 <p>   你过分焦虑，你知道它越来越近，你知道它注定要扳倒你。你想尽办法躲开，也许是向左走一点，也许是向右多偏离一些，尽管可能高山上的暴风最终将让你迷失方向。</p>
 <p>   突然你胸口挂着的通讯器的杂声消失了，那边传来了轻声呼吸，和一声问候。</p>
@@ -430,7 +2706,7 @@
 <hr>
 <p><img src="images/1.jpg" alt title="说爱你的平铺直叙法"></p>
 <hr>
-]]></content>
+</body></html>]]></content>
       <tags>
         <tag>writing</tag>
       </tags>
@@ -438,12 +2714,12 @@
   <entry>
     <title>Diary</title>
     <url>/2020/02/02/Diary-20200202/</url>
-    <content><![CDATA[<h1 id="Diary-2020-02-02"><a href="#Diary-2020-02-02" class="headerlink" title="Diary 2020-02-02"></a>Diary 2020-02-02</h1><p>​    好多父母甚至根本不知道如何教育孩子，他们只是凭着一个身份和嘴上的爱，以及自私和懒惰在教育孩子。</p><p>​    他们期望他们可以不需要再付出就可以获得孩子的一切，获得孩子的收入养活自己，获得孩子的身份展开话题，获得孩子的自尊满足自己的虚荣。</p><p>​    他们大张旗鼓的夺走了孩子的灵魂。</p><a id="more"></a>
-
-
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Diary-2020-02-02"><a href="#Diary-2020-02-02" class="headerlink" title="Diary 2020-02-02"></a>Diary 2020-02-02</h1><p>​    好多父母甚至根本不知道如何教育孩子，他们只是凭着一个身份和嘴上的爱，以及自私和懒惰在教育孩子。</p>
+<p>​    他们期望他们可以不需要再付出就可以获得孩子的一切，获得孩子的收入养活自己，获得孩子的身份展开话题，获得孩子的自尊满足自己的虚荣。</p>
+<p>​    他们大张旗鼓的夺走了孩子的灵魂。</p>
 <p>​    孩子甚至还没有意识到。</p>
 <p>​    就变成了父母的一条狗。</p>
-]]></content>
+</body></html>]]></content>
       <tags>
         <tag>diary</tag>
       </tags>
@@ -451,10 +2727,10 @@
   <entry>
     <title>First-Post</title>
     <url>/2020/02/02/First-Post/</url>
-    <content><![CDATA[<h1 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h1><p>​    Hello World!</p><p>​    Hello this blog of mine!</p><p>​    This is the first time trying to post a new blog, and I have no idea what to say.</p><p>​    But I just can’t wait to do something in it.</p><a id="more"></a>
-
-
-
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h1><p>​    Hello World!</p>
+<p>​    Hello this blog of mine!</p>
+<p>​    This is the first time trying to post a new blog, and I have no idea what to say.</p>
+<p>​    But I just can’t wait to do something in it.</p>
 <p>​    I know I forget it a long time, and throw it to a corner even forget it.</p>
 <p>​    Here is what I have to say, it’s too easy for me to post a blog without money, VIP or anything else. Programmer can do anything by himself!</p>
 <hr>
@@ -464,31 +2740,31 @@
 <p>​    Hope I can remember to write all down.</p>
 <p>​    Hope you could find anything you like or approve! Thanks!</p>
 <p>​    Anyway, good night, every one!</p>
-]]></content>
+</body></html>]]></content>
       <categories>
-        <category>writting</category>
+        <category>writing</category>
       </categories>
       <tags>
         <tag>test</tag>
-        <tag>writting</tag>
+        <tag>writing</tag>
       </tags>
   </entry>
   <entry>
     <title>Hello World</title>
     <url>/2019/11/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
+</body></html>]]></content>
   </entry>
 </search>
