@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Blog of KrisHugo" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="微观经济学vs宏观经济学   差别 微观经济学 宏观经济学    市场 某个具体市场 所有的市场   供给 某个产品的供给 所有供给   需求 某个产品的需求 所有的需求   生产者 某个生产者 所有生产者   价格 某个产品价格 总价格   实证经济学vs规范经济学    实证经济学 规范经济学    研究视角 实际是什么 应该是什么    对过去解释：实际发生了什么，是怎么发生的。 对过去的判">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经济学分类以及对比">
+<meta property="og:url" content="http://yoursite.com/2020/04/01/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6vs%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Blog of KrisHugo">
+<meta property="og:description" content="微观经济学vs宏观经济学   差别 微观经济学 宏观经济学    市场 某个具体市场 所有的市场   供给 某个产品的供给 所有供给   需求 某个产品的需求 所有的需求   生产者 某个生产者 所有生产者   价格 某个产品价格 总价格   实证经济学vs规范经济学    实证经济学 规范经济学    研究视角 实际是什么 应该是什么    对过去解释：实际发生了什么，是怎么发生的。 对过去的判">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-28T09:43:53.014Z">
+<meta property="article:author" content="Kris Hugo">
+<meta property="article:tag" content="微观经济学">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/04/01/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6vs%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>经济学分类以及对比 | Blog of KrisHugo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog of KrisHugo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">KrisHugo Is A Programmer;</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/01/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6vs%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Kris Hugo">
+      <meta itemprop="description" content="Neutral, Indifference, Inertia;">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of KrisHugo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          经济学分类以及对比
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-04-01T00:00:00+08:00">2020-04-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-28 17:43:53" itemprop="dateModified" datetime="2020-04-28T17:43:53+08:00">2020-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">微观经济学</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <html><head></head><body></body></html><html><head></head><body><h1 id="微观经济学vs宏观经济学"><a href="#微观经济学vs宏观经济学" class="headerlink" title="微观经济学vs宏观经济学"></a>微观经济学vs宏观经济学</h1><table>
+<thead>
+<tr>
+<th>差别</th>
+<th>微观经济学</th>
+<th>宏观经济学</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>市场</td>
+<td>某个具体市场</td>
+<td>所有的市场</td>
+</tr>
+<tr>
+<td>供给</td>
+<td>某个产品的供给</td>
+<td>所有供给</td>
+</tr>
+<tr>
+<td>需求</td>
+<td>某个产品的需求</td>
+<td>所有的需求</td>
+</tr>
+<tr>
+<td>生产者</td>
+<td>某个生产者</td>
+<td>所有生产者</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>某个产品价格</td>
+<td>总价格</td>
+</tr>
+</tbody></table>
+<h1 id="实证经济学vs规范经济学"><a href="#实证经济学vs规范经济学" class="headerlink" title="实证经济学vs规范经济学"></a>实证经济学vs规范经济学</h1><table>
+<thead>
+<tr>
+<th></th>
+<th>实证经济学</th>
+<th>规范经济学</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>研究视角</td>
+<td>实际是什么</td>
+<td>应该是什么</td>
+</tr>
+<tr>
+<td></td>
+<td>对过去解释：实际发生了什么，是怎么发生的。</td>
+<td>对过去的判断：已经发生的事情是否应该</td>
+</tr>
+<tr>
+<td></td>
+<td>对未来预测：将来会发生什么，是怎么发生的</td>
+<td>对未来的判断：应该怎么做</td>
+</tr>
+<tr>
+<td>诊断还是药方</td>
+<td>诊断，具有描述性和分析性</td>
+<td>药方，具有建议性</td>
+</tr>
+<tr>
+<td>需要预设立场吗</td>
+<td>不需要</td>
+<td>需要</td>
+</tr>
+<tr>
+<td>存在领域</td>
+<td>纯粹的经济理论</td>
+<td>经济政策下</td>
+</tr>
+<tr>
+<td>是否正确</td>
+<td>一般可以验证，取决于研究方法和技巧</td>
+<td>无法客观验证，取决于立场</td>
+</tr>
+</tbody></table>
+<h1 id="实证经济学和规范经济学面对收入分配与增长的结论"><a href="#实证经济学和规范经济学面对收入分配与增长的结论" class="headerlink" title="实证经济学和规范经济学面对收入分配与增长的结论"></a>实证经济学和规范经济学面对收入分配与增长的结论</h1><table>
+<thead>
+<tr>
+<th></th>
+<th>实证经济学</th>
+<th>规范经济学</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>收入分配与增长</td>
+<td>中国市场化的过程导致了收入分配两极分化</td>
+<td>这表明，中国的经济改革存在着缺陷（重视公平）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>尽管如此，这可以接受（重视增长）</td>
+</tr>
+<tr>
+<td></td>
+<td>改革带来收入分配差距增大，但这是促进经济增长的必要代价</td>
+<td>不需要这样的经济增长</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>需要这样的经济增长</td>
+</tr>
+<tr>
+<td></td>
+<td>中国市场化的过程未导致收入分配的两极分化</td>
+<td>这样的市场化是可取的</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>是否如此无关紧要</td>
+</tr>
+</tbody></table>
+<p>实证经济学的结论是客观的，需要验证正确与否</p>
+<p>规范经济学的结论取决于预设立场，无法验证</p>
+</body></html>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" rel="tag"># 微观经济学</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2020/03/31/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="next" title="Java面试准备">
+                  <i class="fa fa-chevron-left"></i> Java面试准备
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2020/04/01/%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BDMysql%20Shell%E8%84%9A%E6%9C%AC/" rel="prev" title="自动备份Mysql Shell脚本">
+                  自动备份Mysql Shell脚本 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微观经济学vs宏观经济学"><span class="nav-number">1.</span> <span class="nav-text">微观经济学vs宏观经济学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实证经济学vs规范经济学"><span class="nav-number">2.</span> <span class="nav-text">实证经济学vs规范经济学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实证经济学和规范经济学面对收入分配与增长的结论"><span class="nav-number">3.</span> <span class="nav-text">实证经济学和规范经济学面对收入分配与增长的结论</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Kris Hugo"
+    src="/images/header.jpg">
+  <p class="site-author-name" itemprop="name">Kris Hugo</p>
+  <div class="site-description" itemprop="description">Neutral, Indifference, Inertia;</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/KrisHugo" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;KrisHugo" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kris Hugo</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.5.0
+  </div>
+
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
