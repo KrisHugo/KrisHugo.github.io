@@ -97,7 +97,6 @@
 ]]></content>
       <categories>
         <category>linux</category>
-        <category>问题</category>
       </categories>
       <tags>
         <tag>问题</tag>
@@ -341,7 +340,6 @@
       <categories>
         <category>考研</category>
         <category>数学</category>
-        <category>高等数学</category>
       </categories>
       <tags>
         <tag>考研</tag>
@@ -2229,7 +2227,7 @@
 ]]></content>
       <categories>
         <category>考研</category>
-        <category>英语一</category>
+        <category>English</category>
       </categories>
       <tags>
         <tag>考研</tag>
@@ -2603,6 +2601,9 @@
     <content><![CDATA[<h1 id="自动备份Mysql-Shell脚本"><a href="#自动备份Mysql-Shell脚本" class="headerlink" title="自动备份Mysql Shell脚本"></a>自动备份Mysql Shell脚本</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">auto backup mysql db</span></span><br><span class="line"></span><br><span class="line">BACK_DIR=/data/backup/`date + %y%m%d`</span><br><span class="line">MYSQLDB=discuz</span><br><span class="line">MYSQLUSR=backup</span><br><span class="line">MYSQLPW=123456</span><br><span class="line">MYSQLCMD=/usr/bin/mysqldump</span><br><span class="line">if [ $UID -ne 0];then</span><br><span class="line">	echo "Must to be use root for exec shell"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $BAcK_DIR];then</span><br><span class="line">	mkdir -p $BAcK_DIR</span><br><span class="line">	echo "\033[32mThe $BACK_DIR Create Successfully!"</span><br><span class="line">else </span><br><span class="line">	echo "This $BACK_DIR is exists."</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash">MYSQLCMD -u<span class="variable">$MYSQLUSR</span> -p<span class="variable">$MYSQLPW</span> discuz &gt;<span class="variable">$BACK_DIR</span>/<span class="variable">$MYSQLDB</span>.sql</span></span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Shell</category>
+      </categories>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -2967,23 +2968,5 @@
         <tag>writing</tag>
         <tag>test</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2019/11/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>
