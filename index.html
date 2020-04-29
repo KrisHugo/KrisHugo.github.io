@@ -218,6 +218,128 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Kris Hugo">
+      <meta itemprop="description" content="Neutral, Indifference, Inertia;">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of KrisHugo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">Win10 + AppServ + 另外自行安装的Mysql8.0遇到的问题</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-29 12:00:00 / 修改时间：14:13:46" itemprop="dateCreated datePublished" datetime="2020-04-29T12:00:00+08:00">2020-04-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AppServ/" itemprop="url" rel="index">
+                    <span itemprop="name">AppServ</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AppServ/phpMyAdmin/" itemprop="url" rel="index">
+                    <span itemprop="name">phpMyAdmin</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%97%AE%E9%A2%98/" itemprop="url" rel="index">
+                    <span itemprop="name">问题</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <html><head></head><body></body></html><html><head></head><body><h1 id="Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题"><a href="#Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题" class="headerlink" title="Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题"></a>Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题</h1><ol>
+<li><strong>配置PHPMyAdmin</strong><ul>
+<li>需要配置的内容有：连接路径，连接的Mysql服务及账户密码</li>
+<li>phpMyAdmin配置文件路径：./config.inc.php (phpMyAdmin根目录下) </li>
+</ul>
+</li>
+</ol>
+<figure class="highlight php"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// config.inc.php</span></span><br><span class="line"><span class="comment">// 1. 配置php网站域名</span></span><br><span class="line">$cfg[<span class="string">'PmaAbsoluteUri'</span>] = <span class="string">'http://127.0.0.1/phpmyadmin'</span>;</span><br><span class="line"><span class="comment">// 2. 配置Mysql</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'host'</span>]          = <span class="string">'localhost'</span>; <span class="comment">// MySQL的连接IP, 若需要远程连接即可配置此处</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'port'</span>]          = <span class="string">''</span>;          <span class="comment">// 端口号, 默认空白即为3306</span></span><br><span class="line"><span class="comment">// 3. 配置Mysql账号密码</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'auth_type'</span>]     = <span class="string">'http'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'user'</span>]          = <span class="string">'root'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'password'</span>]      = <span class="string">'123456'</span>; <span class="comment">// 此处使用的是基于mysql_native_password加密规则的账号密码</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>注意事项<ul>
+<li>./config.sample.inc.php 不需要进行另外的配置</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><strong>Mysql #1251- Client does not support authentication protocol， consider upgrade mysql.</strong><ul>
+<li>问题原因：Mysql 8.0 以上后使用了新的加密规则——chaching_sha2_password. 而 AppServ 2.6.0 中自带的PHP版本为PHP6，因此PHPMyAdmin在登陆Mysql时，无论Mysql账户密码有无设置正确，PHPMyAdmin都无法登陆。</li>
+<li>延伸：此处是Mysql报错，因此若是其他程序登陆Mysql时遇到此问题，也可以用同样的方法。</li>
+<li>解决方法：<ol>
+<li>升级PHP到7.0以上的版本即可使PHP支持新的加密规则（由于本人才疏学浅，担心AppServ统一安装的PHP6若是更换版本会不会导致整个AppServ崩溃，于是选用了另一个方法）</li>
+<li>由于MySql 8.0以后只是默认使用了新的加密规则，并没有直接不支持旧规则——mysql_native_password，因此我们在Mysql进程中进行设置mysql_native_password规则的密码，使之能兼容两个加密规则的登陆请求。下面是解决方案</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 运行环境为win10 1908</span><br><span class="line"># 1. 在终端中登陆mysql</span><br><span class="line">mysql -u username -p123456 # -u后面可以不加空格, -p后面必须不加空格(除非密码里含有一个空格)</span><br><span class="line"># 2. 进入系统数据库</span><br><span class="line">use mysql;</span><br><span class="line"># 3. 添加加密规则 设置在mysql_native_password加密规则下的密码</span><br><span class="line">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';</span><br><span class="line"># 4. 刷新权限</span><br><span class="line">FLUSH PRIVIEGES;</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="3">
+<li><strong>新版Edge貌似仍然有BUG，无法通过AppServ进入phpMyAdmin，神秘</strong><ul>
+<li>解决办法：Chrome可以正常打开</li>
+</ul>
+</li>
+</ol>
+</body></html>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -288,6 +410,90 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Kris Hugo">
+      <meta itemprop="description" content="Neutral, Indifference, Inertia;">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of KrisHugo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">hexo主题开发学习</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-28 00:00:00 / 修改时间：21:50:39" itemprop="dateCreated datePublished" datetime="2020-04-28T00:00:00+08:00">2020-04-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/themes/" itemprop="url" rel="index">
+                    <span itemprop="name">themes</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/themes/program/" itemprop="url" rel="index">
+                    <span itemprop="name">program</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <html><head></head><body></body></html><html><head></head><body><h2 id="Hexo-主题开发学习"><a href="#Hexo-主题开发学习" class="headerlink" title="Hexo 主题开发学习"></a>Hexo 主题开发学习</h2><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>​    出于个人的开发兴趣以及对个人博客的风格设计需求，附加一点学习经验需要，准备尝试一次大的系统性的插件性质的开发，为自己的前端学习添加一笔。</p>
+<p>​    个人的想法是一个类似Bootstrap所能带来的响应式布局，加之各种花里胡哨的辅助插件，例如视频，输入响应以及CSS动画等等，突然还想到，要加上表情包什么的哈哈哈。</p>
+<p>​    总之就开始吧，这个Blog也是出于记录学习内容而开始的，让我一步步从0开始学习，目标是成为最强的开发工程师啊，开发经验什么的，还是很重要的，以后干脆创业算了哈哈哈！</p>
+</body></html>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -313,7 +519,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-28 00:00:00 / 修改时间：20:37:49" itemprop="dateCreated datePublished" datetime="2020-04-28T00:00:00+08:00">2020-04-28</time>
+              <time title="创建时间：2020-04-28 00:00:00 / 修改时间：21:44:10" itemprop="dateCreated datePublished" datetime="2020-04-28T00:00:00+08:00">2020-04-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2947,225 +3153,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/10/%E8%80%83%E7%A0%94/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="Kris Hugo">
-      <meta itemprop="description" content="Neutral, Indifference, Inertia;">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of KrisHugo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/10/%E8%80%83%E7%A0%94/" class="post-title-link" itemprop="url">考研准备</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-10 00:00:00" itemprop="dateCreated datePublished" datetime="2020-04-10T00:00:00+08:00">2020-04-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-28 17:45:55" itemprop="dateModified" datetime="2020-04-28T17:45:55+08:00">2020-04-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index">
-                    <span itemprop="name">考研</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <html><head></head><body></body></html><html><head></head><body><h1 id="考研"><a href="#考研" class="headerlink" title="考研"></a>考研</h1><h2 id="复习阶段了解"><a href="#复习阶段了解" class="headerlink" title="复习阶段了解"></a>复习阶段了解</h2><p>报名时间：9月24日开始，第一天报名，因为要填报考点</p>
-<p>考试时间：12月月底，最后一个周末考试，大概要考2天</p>
-<p>复习顺序：政治和专业课可以在短时间内得到大幅提升</p>
-<p>​    政治不宜过早，最简单，报班节省时间</p>
-<p>​    英语的目标是过线</p>
-<p>​    数学是拉分项</p>
-<p>​    专业课是信息战</p>
-<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C2.png" alt="image-20200409160319786"></p>
-<p>理工340分差不多可以选比较好的211</p>
-<p>研究生分学硕和专硕：考试难度不一样，学费不一样，研究方向不一样等等</p>
-<p>学硕（一般三年）：理论研究型 -> 研一，上课；研二，做项目；研三，毕业论文。一般考研难度高；考试科目不一样，考英语一，数学考数学一；学硕相对便宜，有奖学金；</p>
-<p>专硕（一般两年）：实际操作型 -> 研一，上课；研二，实习；专硕相对更贵，没有奖学金；</p>
-<p>非会计和管理的大多数考试安排</p>
-<p>周六8:30~11:30 政治 100</p>
-<p>​        14:00~17:00 外国语 100</p>
-<p>周日8:30~11:30 数学 150分 / 专业课1 150分</p>
-<p>​        14:00~17:00 专业课2 150分</p>
-<p>​        </p>
-<p>政治：最简单的一科，不用先看</p>
-<p>​    包括内容：</p>
-<ul>
-<li>马原（哲学），毛中特，史纲，思修法基，当代</li>
-</ul>
-<p>报辅导班是最方便学习的渠道</p>
-<p>节省时间</p>
-<p>英语：过线为基本目的（国家线） 一区（广东）不同专业分数线不一样</p>
-<p>​    工学分数线：大概40以下</p>
-<p>​    英语一：5500单词量，有超纲词汇，阅读理解偏长，翻译分值5句10分，作文分值30分（看图作文）</p>
-<p>​    题型：完型20题10分，阅读，新题型，翻译，写作</p>
-<p>​    英语优先复习</p>
-<p>​    <strong>阅读和写作最主要</strong></p>
-<p>​    写作多练（单号小作文，双号大作文）</p>
-<p>​            小作文：书信为主</p>
-<p>​            大作文：</p>
-<p>数学：最终哟啊的科目</p>
-<p>​        数学决定了总分高低</p>
-<p>​    数学一/ 数学三：高数56%，线代22%，概率22%</p>
-<p>​    数学二（不考概率学）：高数78%，现代22%</p>
-<p>专业课：<strong>信息战</strong></p>
-<p>​    目标院校目标专业的相关信息</p>
-<ol>
-<li><p>“名校歧视普通高校生”</p>
-</li>
-<li><p>参考书和复习重点</p>
-</li>
-<li><p>导师</p>
-<p>认识目标院校目标专业师兄师姐</p>
-<p>方式一：去复试现场（通过复试通知了解（通过目标院校目标专业学院网站通知公告【3-5月份的通知，含复试时间和地点】））在面试结束后，买复习资料</p>
-<p>方式二：报辅导班 </p>
-</li>
-</ol>
-<h2 id="院校学习方法论"><a href="#院校学习方法论" class="headerlink" title="院校学习方法论"></a>院校学习方法论</h2><p>5+3方法</p>
-<p>5个问题，3个参数</p>
-<p>第一个问题：我能考什么专业？ - > 跨专业考研 （遵循一个原则：自然科学可跨人文，人文不可跨科学，科学跨科学要看情况（主干专业课要相同才可以跨），人文可跨人文）</p>
-<p>-> 本专业考研</p>
-<p>个人答案：理工科计算机</p>
-<p>第二个问题：我要考什么专业？-> 专业方向的选择 -> 问自己专业课的老师 </p>
-<p>个人答案：计算机专业人工智能、大数据、计算机应用等方向</p>
-<p>第三个问题：想去哪里发展（地域选择）-> 经济发展情况 -> 是否能适应</p>
-<p>第四个问题：目标城市哪些学校有我想考的专业 -> 中国研究生招生信息网(硕士目录[地域，学校，门类，方向，专业名称，学习方式])</p>
-<p>第五个问题：考那个学校 </p>
-<p>​    使用三个参数来判读那：</p>
-<p>​            复试分数线 （[考数学的专业]复试分数线的高低决定了报考的难度）</p>
-<p>​            招生人数[录取名单（学院名单）]</p>
-<p>​            指定参考书[考试科目] [问师兄师姐] [问目标院校目标专业本科生]</p>
-<h2 id="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"><a href="#通过复习参考书目来确定高中低档学校，让自己有回旋的余地" class="headerlink" title="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"></a>通过复习参考书目来确定高中低档学校，让自己有回旋的余地</h2><p>数据结构题型</p>
-<p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C12.png" alt="image-20200413223422551"></p>
-</body></html>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/java%E4%BB%A3%E7%A0%81%E4%B8%AD%E9%9D%99%E6%80%81%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="Kris Hugo">
-      <meta itemprop="description" content="Neutral, Indifference, Inertia;">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of KrisHugo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/05/java%E4%BB%A3%E7%A0%81%E4%B8%AD%E9%9D%99%E6%80%81%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96/" class="post-title-link" itemprop="url">java代码中静态读取文件信息进行初始化</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-05 16:40:00" itemprop="dateCreated datePublished" datetime="2020-04-05T16:40:00+08:00">2020-04-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-28 17:49:28" itemprop="dateModified" datetime="2020-04-28T17:49:28+08:00">2020-04-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <html><head></head><body></body></html><html><head></head><body><h1 id="java代码中静态读取文件信息进行初始化"><a href="#java代码中静态读取文件信息进行初始化" class="headerlink" title="java代码中静态读取文件信息进行初始化"></a>java代码中静态读取文件信息进行初始化</h1><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Properties pro = <span class="keyword">new</span> Properties();<span class="comment">//专门读取properties文件</span></span><br><span class="line">pro.load(ClassA.class.getClassLoader().getResourcesAsStream("classA.properties"));// 文件位于src目录下</span><br><span class="line">String info = pro.getProperty(<span class="string">"info"</span>);<span class="comment">//获取properties文件中的info属性</span></span><br></pre></td></tr></tbody></table></figure>
-
-</body></html>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -3216,20 +3203,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">29</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-count">25</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-count">40</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
