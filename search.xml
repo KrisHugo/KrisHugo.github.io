@@ -3,14 +3,14 @@
   <entry>
     <title>Win10 + AppServ + 另外自行安装的Mysql8.0遇到的问题</title>
     <url>/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题"><a href="#Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题" class="headerlink" title="Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题"></a>Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题</h1><ol>
+    <content><![CDATA[<h1 id="Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题"><a href="#Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题" class="headerlink" title="Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题"></a>Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题</h1><ol>
 <li><strong>配置PHPMyAdmin</strong><ul>
 <li>需要配置的内容有：连接路径，连接的Mysql服务及账户密码</li>
 <li>phpMyAdmin配置文件路径：./config.inc.php (phpMyAdmin根目录下) </li>
 </ul>
 </li>
 </ol>
-<figure class="highlight php"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// config.inc.php</span></span><br><span class="line"><span class="comment">// 1. 配置php网站域名</span></span><br><span class="line">$cfg[<span class="string">'PmaAbsoluteUri'</span>] = <span class="string">'http://127.0.0.1/phpmyadmin'</span>;</span><br><span class="line"><span class="comment">// 2. 配置Mysql</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'host'</span>]          = <span class="string">'localhost'</span>; <span class="comment">// MySQL的连接IP, 若需要远程连接即可配置此处</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'port'</span>]          = <span class="string">''</span>;          <span class="comment">// 端口号, 默认空白即为3306</span></span><br><span class="line"><span class="comment">// 3. 配置Mysql账号密码</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'auth_type'</span>]     = <span class="string">'http'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'user'</span>]          = <span class="string">'root'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'password'</span>]      = <span class="string">'123456'</span>; <span class="comment">// 此处使用的是基于mysql_native_password加密规则的账号密码</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// config.inc.php</span></span><br><span class="line"><span class="comment">// 1. 配置php网站域名</span></span><br><span class="line">$cfg[<span class="string">'PmaAbsoluteUri'</span>] = <span class="string">'http://127.0.0.1/phpmyadmin'</span>;</span><br><span class="line"><span class="comment">// 2. 配置Mysql</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'host'</span>]          = <span class="string">'localhost'</span>; <span class="comment">// MySQL的连接IP, 若需要远程连接即可配置此处</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'port'</span>]          = <span class="string">''</span>;          <span class="comment">// 端口号, 默认空白即为3306</span></span><br><span class="line"><span class="comment">// 3. 配置Mysql账号密码</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'auth_type'</span>]     = <span class="string">'http'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'user'</span>]          = <span class="string">'root'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'password'</span>]      = <span class="string">'123456'</span>; <span class="comment">// 此处使用的是基于mysql_native_password加密规则的账号密码</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>注意事项<ul>
@@ -30,7 +30,7 @@
 </ul>
 </li>
 </ol>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># 运行环境为win10 1908</span><br><span class="line"># 1. 在终端中登陆mysql</span><br><span class="line">mysql -u username -p123456 # -u后面可以不加空格, -p后面必须不加空格(除非密码里含有一个空格)</span><br><span class="line"># 2. 进入系统数据库</span><br><span class="line">use mysql;</span><br><span class="line"># 3. 添加加密规则 设置在mysql_native_password加密规则下的密码</span><br><span class="line">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';</span><br><span class="line"># 4. 刷新权限</span><br><span class="line">FLUSH PRIVIEGES;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 运行环境为win10 1908</span><br><span class="line"># 1. 在终端中登陆mysql</span><br><span class="line">mysql -u username -p123456 # -u后面可以不加空格, -p后面必须不加空格(除非密码里含有一个空格)</span><br><span class="line"># 2. 进入系统数据库</span><br><span class="line">use mysql;</span><br><span class="line"># 3. 添加加密规则 设置在mysql_native_password加密规则下的密码</span><br><span class="line">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;;</span><br><span class="line"># 4. 刷新权限</span><br><span class="line">FLUSH PRIVIEGES;</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
 <li><strong>新版Edge貌似仍然有BUG，无法通过AppServ进入phpMyAdmin，神秘</strong><ul>
@@ -38,7 +38,7 @@
 </ul>
 </li>
 </ol>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>AppServ</category>
         <category>phpMyAdmin</category>
@@ -55,8 +55,8 @@
   <entry>
     <title>英语练习</title>
     <url>/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="A-Story-of-an-Ideal"><a href="#A-Story-of-an-Ideal" class="headerlink" title="A Story of an Ideal"></a>A Story of an Ideal</h2><p>Constructing this suburban named “Micky Town”, which seemingly was abandoned by the whole world, was my dream when I was young.<br>I wanna refresh it, make it more like a fantasy castle, which contains real mysterious characters, such as Micky Mouse, Tang Ducky, and Little Fly Elephant, etc, of each sweet girl which should be treated like a real princess.</p>
-</body></html>]]></content>
+    <content><![CDATA[<h2 id="A-Story-of-an-Ideal"><a href="#A-Story-of-an-Ideal" class="headerlink" title="A Story of an Ideal"></a>A Story of an Ideal</h2><p>Constructing this suburban named “Micky Town”, which seemingly was abandoned by the whole world, was my dream when I was young.<br>I wanna refresh it, make it more like a fantasy castle, which contains real mysterious characters, such as Micky Mouse, Tang Ducky, and Little Fly Elephant, etc, of each sweet girl which should be treated like a real princess.</p>
+]]></content>
       <categories>
         <category>English</category>
       </categories>
@@ -68,10 +68,10 @@
   <entry>
     <title>hexo主题开发学习</title>
     <url>/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="Hexo-主题开发学习"><a href="#Hexo-主题开发学习" class="headerlink" title="Hexo 主题开发学习"></a>Hexo 主题开发学习</h2><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>​    出于个人的开发兴趣以及对个人博客的风格设计需求，附加一点学习经验需要，准备尝试一次大的系统性的插件性质的开发，为自己的前端学习添加一笔。</p>
+    <content><![CDATA[<h2 id="Hexo-主题开发学习"><a href="#Hexo-主题开发学习" class="headerlink" title="Hexo 主题开发学习"></a>Hexo 主题开发学习</h2><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>​    出于个人的开发兴趣以及对个人博客的风格设计需求，附加一点学习经验需要，准备尝试一次大的系统性的插件性质的开发，为自己的前端学习添加一笔。</p>
 <p>​    个人的想法是一个类似Bootstrap所能带来的响应式布局，加之各种花里胡哨的辅助插件，例如视频，输入响应以及CSS动画等等，突然还想到，要加上表情包什么的哈哈哈。</p>
 <p>​    总之就开始吧，这个Blog也是出于记录学习内容而开始的，让我一步步从0开始学习，目标是成为最强的开发工程师啊，开发经验什么的，还是很重要的，以后干脆创业算了哈哈哈！</p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>hexo</category>
         <category>themes</category>
@@ -86,16 +86,16 @@
   <entry>
     <title>服务器遇到的问题合集</title>
     <url>/2020/04/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="服务器遇到的问题合集"><a href="#服务器遇到的问题合集" class="headerlink" title="服务器遇到的问题合集"></a>服务器遇到的问题合集</h1><ol>
+    <content><![CDATA[<h1 id="服务器遇到的问题合集"><a href="#服务器遇到的问题合集" class="headerlink" title="服务器遇到的问题合集"></a>服务器遇到的问题合集</h1><ol>
 <li><p>如果需要查找docker容器中的es的elasticsearch.yml配置文件进行错误修正的话，由于容器文件夹过于复杂，需要进行文件查找</p>
 <p>解决办法：</p>
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">find / -name elasticsearch.yml |grep '/config/elasticsearch.yml'</span><br><span class="line"></span><br><span class="line">vim ...</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">find / -name elasticsearch.yml |grep '/config/elasticsearch.yml'</span><br><span class="line"></span><br><span class="line">vim ...</span><br></pre></td></tr></table></figure>
 
 
 
 </li>
 </ol>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>linux</category>
         <category>问题</category>
@@ -108,7 +108,7 @@
   <entry>
     <title>深度学习专业课内容</title>
     <url>/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="深度学习专业课内容"><a href="#深度学习专业课内容" class="headerlink" title="深度学习专业课内容"></a>深度学习专业课内容</h2><h3 id="专业课概述"><a href="#专业课概述" class="headerlink" title="专业课概述"></a>专业课概述</h3><p>AlphaGo使用的机器学习内容：蒙特卡洛树搜索，两个深度神经网络</p>
+    <content><![CDATA[<h2 id="深度学习专业课内容"><a href="#深度学习专业课内容" class="headerlink" title="深度学习专业课内容"></a>深度学习专业课内容</h2><h3 id="专业课概述"><a href="#专业课概述" class="headerlink" title="专业课概述"></a>专业课概述</h3><p>AlphaGo使用的机器学习内容：蒙特卡洛树搜索，两个深度神经网络</p>
 <ul>
 <li>神经网络内容：<ul>
 <li>卷积神经网络：ImageNet（残差网络），Inception<ul>
@@ -169,7 +169,7 @@
 </li>
 <li>深度学习框架<ul>
 <li><strong>TensorFlow</strong> from Google for Industry<ul>
-<li>19.10 -> Version 2.0</li>
+<li>19.10 -&gt; Version 2.0</li>
 <li>专业课主要学习的框架，学习版本为1.x，2.0版本与1.x版本差别很大，需要分开学习<ul>
 <li>编程语言：python 3.x</li>
 <li>编程环境：Anaconda, Jupyter Notebook, TensorFlow 1.x</li>
@@ -182,7 +182,7 @@
 <li>PaddlePaddle from Baidu</li>
 <li>Deeplearning4j use JAVA </li>
 <li>Mxnet from Amazon</li>
-<li><em>Caffe&Caffe2 into Pytorch</em></li>
+<li><em>Caffe&amp;Caffe2 into Pytorch</em></li>
 <li>CNTK from Microsoft</li>
 <li>Theano is ancient</li>
 <li>Chainer use Python</li>
@@ -190,7 +190,7 @@
 </li>
 <li><a href="https://www.bilibili.com/video/BV164411m79z?from=search&seid=16677849041663475348" target="_blank" rel="noopener">学习辅用网上视频课：吴恩达深度学习课程</a></li>
 </ul>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>college</category>
       </categories>
@@ -202,7 +202,7 @@
   <entry>
     <title>Python 数据分析与应用</title>
     <url>/2020/04/26/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h2 id="Python-数据分析与应用"><a href="#Python-数据分析与应用" class="headerlink" title="Python 数据分析与应用"></a>Python 数据分析与应用</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3></body></html>]]></content>
+    <content><![CDATA[<h2 id="Python-数据分析与应用"><a href="#Python-数据分析与应用" class="headerlink" title="Python 数据分析与应用"></a>Python 数据分析与应用</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3>]]></content>
       <categories>
         <category>college</category>
       </categories>
@@ -215,15 +215,15 @@
   <entry>
     <title>英语进阶翻译练习</title>
     <url>/2020/04/23/%E9%9C%80%E8%A6%81%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%BF%BB%E8%AF%91%E7%9A%84%E5%8F%A5%E5%AD%90/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="需要进一步翻译的句子"><a href="#需要进一步翻译的句子" class="headerlink" title="需要进一步翻译的句子"></a>需要进一步翻译的句子</h1><p>I think it’s really important to get this right the first time <strong>as opposed to opening up too early</strong></p>
+    <content><![CDATA[<h1 id="需要进一步翻译的句子"><a href="#需要进一步翻译的句子" class="headerlink" title="需要进一步翻译的句子"></a>需要进一步翻译的句子</h1><p>I think it’s really important to get this right the first time <strong>as opposed to opening up too early</strong></p>
 <p>U.S. Surgeon General Jerome Adams on Friday <strong>pumped the brakes</strong> on the possibility that <strong>wide swaths</strong> of America would reopen at the beginning of May</p>
 <p>only places that have seen low levels of COVID-19 and have implemented sufficient surveillance techniques to detect and contain further outbreaks would be able to consider opening up by then.</p>
 <p>while White House economic adviser Larry Kudlow expressed hope the country could begin reopening on a rolling basis in four to eight weeks.</p>
 <p>But the strength of the economy has been at the center of Trump’s reelection argument, and he has been fixated on certain financial markers even amid the pandemic</p>
 <p>Non-compliance may in turn prompt the entire deal to unravel—in the past week Saudi Arabia almost scuttled the deal when one country, Mexico, balked at its terms. America’s ability to intervene is limited, despite Mr Trump’s assurances. The president said that America would help “pick up the slack” for Mexico, by reducing its own production further. But it is unclear how that additional cut will materialise, if at all.</p>
-<p>The company slashed prices for oil headed to Asia in May, according to S&P Global Platts, a price-reporting outfit, even as it let prices rise for other destinations. That suggests a keen interest in defending Saudi market share in Asia, the world’s main driver of oil demand. </p>
+<p>The company slashed prices for oil headed to Asia in May, according to S&amp;P Global Platts, a price-reporting outfit, even as it let prices rise for other destinations. That suggests a keen interest in defending Saudi market share in Asia, the world’s main driver of oil demand. </p>
 <p>The global oil-price war is not over, but on hold.</p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>English</category>
       </categories>
@@ -235,7 +235,7 @@
   <entry>
     <title>考研笔记:数学一:高等数学</title>
     <url>/2020/04/10/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+    <content><![CDATA[<h1 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li><a href="#导论">导论:数学一高数考啥</a></li>
 <li>[第一章](#第一章 函数 极限 连续)</li>
 </ul>
@@ -338,7 +338,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="第二节-极限"><a href="#第二节-极限" class="headerlink" title="==第二节 极限=="></a>==第二节 极限==</h3><h3 id="第三节-连续"><a href="#第三节-连续" class="headerlink" title="第三节 连续"></a>第三节 连续</h3></body></html>]]></content>
+<h3 id="第二节-极限"><a href="#第二节-极限" class="headerlink" title="==第二节 极限=="></a>==第二节 极限==</h3><h3 id="第三节-连续"><a href="#第三节-连续" class="headerlink" title="第三节 连续"></a>第三节 连续</h3>]]></content>
       <categories>
         <category>考研</category>
         <category>数学</category>
@@ -354,7 +354,7 @@
   <entry>
     <title>个人英语考研笔记</title>
     <url>/2020/04/10/%E8%8B%B1%E8%AF%AD%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="英语考研笔记"><a href="#英语考研笔记" class="headerlink" title="英语考研笔记"></a>英语考研笔记</h1><h2 id="总论"><a href="#总论" class="headerlink" title="总论"></a>总论</h2><h3 id="篇章目录"><a href="#篇章目录" class="headerlink" title="篇章目录"></a>篇章目录</h3><ul>
+    <content><![CDATA[<h1 id="英语考研笔记"><a href="#英语考研笔记" class="headerlink" title="英语考研笔记"></a>英语考研笔记</h1><h2 id="总论"><a href="#总论" class="headerlink" title="总论"></a>总论</h2><h3 id="篇章目录"><a href="#篇章目录" class="headerlink" title="篇章目录"></a>篇章目录</h3><ul>
 <li><p>[商业经济类](#商业经济类 篇一)</p>
 <ul>
 <li>[篇一](#商业经济类 篇一)<ul>
@@ -377,7 +377,7 @@
 <li>[句十七](#句十七： Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom.)</li>
 <li>[句十八](#句十八：Diners might see an upside, too.)</li>
 <li>[句十九](#句十九：Getting a table at Manhattan’s hot new Alain Ducasse restaurant used to be impossible. Not anymore.)</li>
-<li>[句二十](#句二十：For that, Greenspan & Co. may still be worth toasting.)</li>
+<li>[句二十](#句二十：For that, Greenspan &amp; Co. may still be worth toasting.)</li>
 <li><a href="#题目">题目</a></li>
 </ul>
 </li>
@@ -487,7 +487,7 @@
 </ul>
 </li>
 <li>falling 日益下降的<ul>
-<li>fall -> fell -> fallen <strong>（数量）</strong>下降<ul>
+<li>fall -&gt; fell -&gt; fallen <strong>（数量）</strong>下降<ul>
 <li>fall rapidly 骤减<ul>
 <li><strong>the rural population fell rapidly from 1990 to 2010.</strong></li>
 </ul>
@@ -546,7 +546,7 @@
 <ul>
 <li><p>rising 日益上涨的</p>
 <ul>
-<li><p>rise->rose->risen</p>
+<li><p>rise-&gt;rose-&gt;risen</p>
 </li>
 <li><p><strong>rising concern 越来越担忧/关切</strong></p>
 <ul>
@@ -1606,10 +1606,10 @@
 </ul>
 </li>
 </ul>
-<h2 id="句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting"><a href="#句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting" class="headerlink" title="句二十：For that, Greenspan & Co. may still be worth toasting."></a>句二十：For that, Greenspan & Co. may still be worth toasting.</h2><p><strong>翻译：对于这样一种局面，格林斯潘和他的朋友们真值得好好长出一口气，庆祝一番</strong></p>
+<h2 id="句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting"><a href="#句二十：For-that-Greenspan-amp-Co-may-still-be-worth-toasting" class="headerlink" title="句二十：For that, Greenspan &amp; Co. may still be worth toasting."></a>句二十：For that, Greenspan &amp; Co. may still be worth toasting.</h2><p><strong>翻译：对于这样一种局面，格林斯潘和他的朋友们真值得好好长出一口气，庆祝一番</strong></p>
 <p><strong>知识点一</strong></p>
 <ul>
-<li>Greenspan & Co.<ul>
+<li>Greenspan &amp; Co.<ul>
 <li>Greenspan and Companies </li>
 <li>格林斯潘和他的同事们，<strong>指代中央银行的银行家们</strong></li>
 </ul>
@@ -1932,7 +1932,7 @@
 <p><strong>知识点一</strong></p>
 <ul>
 <li>in the short term 短期内<ul>
-<li>term 时期 <- time 时间</li>
+<li>term 时期 &lt;- time 时间</li>
 <li>long-term 长期<ul>
 <li>long-term effect / development / prospect</li>
 </ul>
@@ -1971,7 +1971,7 @@
 </ul>
 <h2 id="句八：Yet-there-are-good-reasons-to-expect-the-economic-consequences-now-to-be-less-severe-than-in-the-1970s"><a href="#句八：Yet-there-are-good-reasons-to-expect-the-economic-consequences-now-to-be-less-severe-than-in-the-1970s" class="headerlink" title="句八：Yet there are good reasons to expect the economic consequences now to be less severe than in the 1970s."></a>句八：Yet there are good reasons to expect the economic consequences now to be less severe than in the 1970s.</h2><p><strong>知识点一</strong></p>
 <ul>
-<li><p>yet 但是 -> but</p>
+<li><p>yet 但是 -&gt; but</p>
 </li>
 <li><p>be less severe than 相比（后者）,（前者）没有那么严重</p>
 <ul>
@@ -2168,7 +2168,7 @@
 <ul>
 <li>阅读书籍时带来的那些只有倾注身心才能关注得到的微小但深刻的感触</li>
 <li><strong>devote 倾注</strong><ul>
-<li>devote attention to >= pay attention to</li>
+<li>devote attention to &gt;= pay attention to</li>
 </ul>
 </li>
 <li><strong>faint 细小的</strong></li>
@@ -2227,7 +2227,7 @@
 <li><strong>trek 长途跋涉</strong></li>
 <li></li>
 </ol>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>考研</category>
         <category>英语</category>
@@ -2242,7 +2242,7 @@
   <entry>
     <title>考公准备</title>
     <url>/2020/04/10/%E8%80%83%E5%85%AC%E5%8A%A1%E5%91%98%20%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E5%AE%89%E6%8E%92/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="考公务员-复习计划安排-（第一版，若有更多会继续补充）"><a href="#考公务员-复习计划安排-（第一版，若有更多会继续补充）" class="headerlink" title="考公务员 复习计划安排 （第一版，若有更多会继续补充）"></a>考公务员 复习计划安排 （第一版，若有更多会继续补充）</h1><h2 id="1-知乎上的复习的总时间分配建议"><a href="#1-知乎上的复习的总时间分配建议" class="headerlink" title="1. 知乎上的复习的总时间分配建议"></a>1. 知乎上的复习的总时间分配建议</h2><p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C5.png" alt="preview"></p>
+    <content><![CDATA[<h1 id="考公务员-复习计划安排-（第一版，若有更多会继续补充）"><a href="#考公务员-复习计划安排-（第一版，若有更多会继续补充）" class="headerlink" title="考公务员 复习计划安排 （第一版，若有更多会继续补充）"></a>考公务员 复习计划安排 （第一版，若有更多会继续补充）</h1><h2 id="1-知乎上的复习的总时间分配建议"><a href="#1-知乎上的复习的总时间分配建议" class="headerlink" title="1. 知乎上的复习的总时间分配建议"></a>1. 知乎上的复习的总时间分配建议</h2><p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C5.png" alt="preview"></p>
 <p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C6.png" alt="preview"></p>
 <p><strong>知乎上的安排是11月底国考，那么在5，6月才正式开始复习考公都是没问题的</strong>，</p>
 <p>但是既然现在都已经开始复习了，那么就正好比别人预留更多复习时间，到考试的状态也就更好。</p>
@@ -2264,7 +2264,7 @@
 <li><p>7-8周：数量关系。重点：<strong>工程问题，方阵问题，浓度问题，时钟问题，植树问题，年龄问题，经济利润问题，周期问题，容斥原理问题，鸡兔同笼问题，牛吃草问题</strong></p>
 </li>
 <li><p><strong>下面是知乎上的各科重点难点解析</strong></p>
-<img src="G:\Blog\KrisHugo.github.io\source\images\11.png" alt="image-20200412213311958" style="zoom:50%;">
+<img src="G:\Blog\KrisHugo.github.io\source\images\11.png" alt="image-20200412213311958" style="zoom:50%;" />
 </li>
 <li><p>3-8周要分时间做前面学过的科目的专项习题</p>
 </li>
@@ -2287,7 +2287,7 @@
 <p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C9.png" alt="preview"></p>
 <h3 id="推荐资料："><a href="#推荐资料：" class="headerlink" title="推荐资料："></a>推荐资料：</h3><p>申论：</p>
 <p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C10.png" alt="img"></p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>考公</category>
       </categories>
@@ -2299,7 +2299,7 @@
   <entry>
     <title>考研准备</title>
     <url>/2020/04/10/%E8%80%83%E7%A0%94/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="考研"><a href="#考研" class="headerlink" title="考研"></a>考研</h1><h2 id="复习阶段了解"><a href="#复习阶段了解" class="headerlink" title="复习阶段了解"></a>复习阶段了解</h2><p>报名时间：9月24日开始，第一天报名，因为要填报考点</p>
+    <content><![CDATA[<h1 id="考研"><a href="#考研" class="headerlink" title="考研"></a>考研</h1><h2 id="复习阶段了解"><a href="#复习阶段了解" class="headerlink" title="复习阶段了解"></a>复习阶段了解</h2><p>报名时间：9月24日开始，第一天报名，因为要填报考点</p>
 <p>考试时间：12月月底，最后一个周末考试，大概要考2天</p>
 <p>复习顺序：政治和专业课可以在短时间内得到大幅提升</p>
 <p>​    政治不宜过早，最简单，报班节省时间</p>
@@ -2309,8 +2309,8 @@
 <p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C2.png" alt="image-20200409160319786"></p>
 <p>理工340分差不多可以选比较好的211</p>
 <p>研究生分学硕和专硕：考试难度不一样，学费不一样，研究方向不一样等等</p>
-<p>学硕（一般三年）：理论研究型 -> 研一，上课；研二，做项目；研三，毕业论文。一般考研难度高；考试科目不一样，考英语一，数学考数学一；学硕相对便宜，有奖学金；</p>
-<p>专硕（一般两年）：实际操作型 -> 研一，上课；研二，实习；专硕相对更贵，没有奖学金；</p>
+<p>学硕（一般三年）：理论研究型 -&gt; 研一，上课；研二，做项目；研三，毕业论文。一般考研难度高；考试科目不一样，考英语一，数学考数学一；学硕相对便宜，有奖学金；</p>
+<p>专硕（一般两年）：实际操作型 -&gt; 研一，上课；研二，实习；专硕相对更贵，没有奖学金；</p>
 <p>非会计和管理的大多数考试安排</p>
 <p>周六8:30~11:30 政治 100</p>
 <p>​        14:00~17:00 外国语 100</p>
@@ -2352,13 +2352,13 @@
 </ol>
 <h2 id="院校学习方法论"><a href="#院校学习方法论" class="headerlink" title="院校学习方法论"></a>院校学习方法论</h2><p>5+3方法</p>
 <p>5个问题，3个参数</p>
-<p>第一个问题：我能考什么专业？ - > 跨专业考研 （遵循一个原则：自然科学可跨人文，人文不可跨科学，科学跨科学要看情况（主干专业课要相同才可以跨），人文可跨人文）</p>
-<p>-> 本专业考研</p>
+<p>第一个问题：我能考什么专业？ - &gt; 跨专业考研 （遵循一个原则：自然科学可跨人文，人文不可跨科学，科学跨科学要看情况（主干专业课要相同才可以跨），人文可跨人文）</p>
+<p>-&gt; 本专业考研</p>
 <p>个人答案：理工科计算机</p>
-<p>第二个问题：我要考什么专业？-> 专业方向的选择 -> 问自己专业课的老师 </p>
+<p>第二个问题：我要考什么专业？-&gt; 专业方向的选择 -&gt; 问自己专业课的老师 </p>
 <p>个人答案：计算机专业人工智能、大数据、计算机应用等方向</p>
-<p>第三个问题：想去哪里发展（地域选择）-> 经济发展情况 -> 是否能适应</p>
-<p>第四个问题：目标城市哪些学校有我想考的专业 -> 中国研究生招生信息网(硕士目录[地域，学校，门类，方向，专业名称，学习方式])</p>
+<p>第三个问题：想去哪里发展（地域选择）-&gt; 经济发展情况 -&gt; 是否能适应</p>
+<p>第四个问题：目标城市哪些学校有我想考的专业 -&gt; 中国研究生招生信息网(硕士目录[地域，学校，门类，方向，专业名称，学习方式])</p>
 <p>第五个问题：考那个学校 </p>
 <p>​    使用三个参数来判读那：</p>
 <p>​            复试分数线 （[考数学的专业]复试分数线的高低决定了报考的难度）</p>
@@ -2366,7 +2366,7 @@
 <p>​            指定参考书[考试科目] [问师兄师姐] [问目标院校目标专业本科生]</p>
 <h2 id="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"><a href="#通过复习参考书目来确定高中低档学校，让自己有回旋的余地" class="headerlink" title="通过复习参考书目来确定高中低档学校，让自己有回旋的余地"></a>通过复习参考书目来确定高中低档学校，让自己有回旋的余地</h2><p>数据结构题型</p>
 <p><img src="G:%5CBlog%5CKrisHugo.github.io%5Csource%5Cimages%5C12.png" alt="image-20200413223422551"></p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>考研</category>
       </categories>
@@ -2378,21 +2378,21 @@
   <entry>
     <title>java代码中静态读取文件信息进行初始化</title>
     <url>/2020/04/05/java%E4%BB%A3%E7%A0%81%E4%B8%AD%E9%9D%99%E6%80%81%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="java代码中静态读取文件信息进行初始化"><a href="#java代码中静态读取文件信息进行初始化" class="headerlink" title="java代码中静态读取文件信息进行初始化"></a>java代码中静态读取文件信息进行初始化</h1><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">Properties pro = <span class="keyword">new</span> Properties();<span class="comment">//专门读取properties文件</span></span><br><span class="line">pro.load(ClassA.class.getClassLoader().getResourcesAsStream("classA.properties"));// 文件位于src目录下</span><br><span class="line">String info = pro.getProperty(<span class="string">"info"</span>);<span class="comment">//获取properties文件中的info属性</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="java代码中静态读取文件信息进行初始化"><a href="#java代码中静态读取文件信息进行初始化" class="headerlink" title="java代码中静态读取文件信息进行初始化"></a>java代码中静态读取文件信息进行初始化</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties pro = <span class="keyword">new</span> Properties();<span class="comment">//专门读取properties文件</span></span><br><span class="line">pro.load(ClassA.class.getClassLoader().getResourcesAsStream("classA.properties"));// 文件位于src目录下</span><br><span class="line">String info = pro.getProperty(<span class="string">"info"</span>);<span class="comment">//获取properties文件中的info属性</span></span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>问题</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
     <title>市场经济vs计划经济</title>
     <url>/2020/04/05/%E5%B8%82%E5%9C%BA%E7%BB%8F%E6%B5%8Evs%E8%AE%A1%E5%88%92%E7%BB%8F%E6%B5%8E/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="市场经济vs计划经济"><a href="#市场经济vs计划经济" class="headerlink" title="市场经济vs计划经济"></a>市场经济vs计划经济</h1><table>
+    <content><![CDATA[<h1 id="市场经济vs计划经济"><a href="#市场经济vs计划经济" class="headerlink" title="市场经济vs计划经济"></a>市场经济vs计划经济</h1><table>
 <thead>
 <tr>
 <th></th>
@@ -2436,7 +2436,7 @@
 <td>无</td>
 </tr>
 </tbody></table>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>微观经济学</category>
       </categories>
@@ -2448,7 +2448,7 @@
   <entry>
     <title>基于分布式架构的旅游平台开发日志</title>
     <url>/2020/04/03/%E5%9F%BA%E4%BA%8E%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E7%9A%84%E6%97%85%E6%B8%B8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="基于分布式架构的旅游平台开发日志"><a href="#基于分布式架构的旅游平台开发日志" class="headerlink" title="基于分布式架构的旅游平台开发日志"></a>基于分布式架构的旅游平台开发日志</h1><hr>
+    <content><![CDATA[<h1 id="基于分布式架构的旅游平台开发日志"><a href="#基于分布式架构的旅游平台开发日志" class="headerlink" title="基于分布式架构的旅游平台开发日志"></a>基于分布式架构的旅游平台开发日志</h1><hr>
 <h3 id="2020-4-3"><a href="#2020-4-3" class="headerlink" title="2020.4.3"></a>2020.4.3</h3><p>开始写开发日志</p>
 <p>感觉有必要将问题都整理起来，不然以后遇到还是会捉急。</p>
 <p>开发的进程也要写清楚，这样以后总结起来也会方便很多。</p>
@@ -2459,7 +2459,7 @@
 <li><p>Elastic Search的搜索功能方法基础实现完成，关键词搜索和地域搜索都完成了。</p>
 </li>
 </ul>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Lite-Travel</category>
       </categories>
@@ -2472,15 +2472,15 @@
   <entry>
     <title>IK-Analyzer的基本用法</title>
     <url>/2020/04/01/IK-Analyzer/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="IK-Analyzer的基本用法"><a href="#IK-Analyzer的基本用法" class="headerlink" title="IK-Analyzer的基本用法"></a>IK-Analyzer的基本用法</h1><ul>
+    <content><![CDATA[<h1 id="IK-Analyzer的基本用法"><a href="#IK-Analyzer的基本用法" class="headerlink" title="IK-Analyzer的基本用法"></a>IK-Analyzer的基本用法</h1><ul>
 <li><p>最简单的请求</p>
-<p>​    <a href="http://172.16.0.4:9200/_analyze?analyzer=ik_smart&pretty=true&text=Sentence" target="_blank" rel="noopener">http://172.16.0.4:9200/_analyze?analyzer=ik_smart&pretty=true&text=Sentence</a></p>
+<p>​    <a href="http://172.16.0.4:9200/_analyze?analyzer=ik_smart&amp;pretty=true&amp;text=Sentence" target="_blank" rel="noopener">http://172.16.0.4:9200/_analyze?analyzer=ik_smart&amp;pretty=true&amp;text=Sentence</a></p>
 </li>
 <li><p>自定义分词器配置：可设置自定义分词以及停用词汇</p>
 <p>​    IKAnalyzer.cfg.xml</p>
 </li>
 </ul>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>elastic-search</category>
       </categories>
@@ -2493,14 +2493,14 @@
   <entry>
     <title>Kibana学习</title>
     <url>/2020/04/01/Kibana%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Kibana学习"><a href="#Kibana学习" class="headerlink" title="Kibana学习"></a>Kibana学习</h1><figure class="highlight properties"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">#获取所有索引库</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">_cat/indices?v</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get specific</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get all</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Sort AND Page</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">},</span></span><br><span class="line">  <span class="meta">"sort"</span>: <span class="string">[</span></span><br><span class="line">    <span class="attr">{</span></span><br><span class="line">      <span class="meta">"age"</span>: <span class="string">{</span></span><br><span class="line">        <span class="meta">"order"</span>: <span class="string">"desc"</span></span><br><span class="line">      <span class="attr">}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">],</span></span><br><span class="line">  <span class="meta">"from"</span>: <span class="string">0,</span></span><br><span class="line">  <span class="meta">"size"</span>: <span class="string">3</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Specific Search</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{</span></span><br><span class="line">      </span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create new indic</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create mapping</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/_mapping</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"properties"</span>:<span class="string">{</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"city"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"long", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">},</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">{</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/1</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"zhangsan",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">20,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"zhangsan is a boy."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/2</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"lisi",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Shanghai",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">19,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"lisi is a shanghai boy."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/3</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"wangwu",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">25,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"wangwu is a guangdong handsome man."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/4</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaohong",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Beijing",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">15,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaohong is a Beijing girl."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/5</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"kris",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"American",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">17,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"kris is a sicuan cool boy.",</span></span><br><span class="line">  <span class="meta">"sex"</span>:<span class="string">"boy"</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info </span></span><br><span class="line"><span class="comment">#Or replace the original info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaomei",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"sicuan",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">18,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaomei is a sicuan hot girl."</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#update the original info</span></span><br><span class="line"><span class="attr">POST</span> <span class="string">/user/userinfo/6/_update</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"doc"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">"rio",</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">23,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">"rio is a sicuan smart woman"</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#deleted</span></span><br><span class="line"><span class="attr">DELETE</span> <span class="string">/user/userinfo/6</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="Kibana学习"><a href="#Kibana学习" class="headerlink" title="Kibana学习"></a>Kibana学习</h1><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#获取所有索引库</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">_cat/indices?v</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get specific</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#get all</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Sort AND Page</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;,</span></span><br><span class="line">  <span class="meta">"sort"</span>: <span class="string">[</span></span><br><span class="line">    <span class="attr">&#123;</span></span><br><span class="line">      <span class="meta">"age"</span>: <span class="string">&#123;</span></span><br><span class="line">        <span class="meta">"order"</span>: <span class="string">"desc"</span></span><br><span class="line">      <span class="attr">&#125;</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">],</span></span><br><span class="line">  <span class="meta">"from"</span>: <span class="string">0,</span></span><br><span class="line">  <span class="meta">"size"</span>: <span class="string">3</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Specific Search</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/user/userinfo/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;</span></span><br><span class="line">      </span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create new indic</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Create mapping</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/_mapping</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"properties"</span>:<span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"city"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"long", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"type"</span>:<span class="string">"text",</span></span><br><span class="line">      <span class="meta">"analyzer"</span>: <span class="string">"ik_smart",</span></span><br><span class="line">      <span class="meta">"search_analyzer"</span>: <span class="string">"ik_smart", </span></span><br><span class="line">      <span class="meta">"store"</span>: <span class="string">false</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/1</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"zhangsan",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">20,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"zhangsan is a boy."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/2</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"lisi",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Shanghai",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">19,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"lisi is a shanghai boy."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/3</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"wangwu",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Guangdong",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">25,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"wangwu is a guangdong handsome man."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/4</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaohong",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"Beijing",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">15,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaohong is a Beijing girl."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/5</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"kris",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"American",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">17,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"kris is a sicuan cool boy.",</span></span><br><span class="line">  <span class="meta">"sex"</span>:<span class="string">"boy"</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert Info </span></span><br><span class="line"><span class="comment">#Or replace the original info</span></span><br><span class="line"><span class="attr">PUT</span> <span class="string">/user/userinfo/6</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"name"</span>:<span class="string">"xiaomei",</span></span><br><span class="line">  <span class="meta">"city"</span>:<span class="string">"sicuan",</span></span><br><span class="line">  <span class="meta">"age"</span>:<span class="string">18,</span></span><br><span class="line">  <span class="meta">"description"</span>:<span class="string">"xiaomei is a sicuan hot girl."</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#update the original info</span></span><br><span class="line"><span class="attr">POST</span> <span class="string">/user/userinfo/6/_update</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"doc"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"name"</span>:<span class="string">"rio",</span></span><br><span class="line">    <span class="meta">"age"</span>:<span class="string">23,</span></span><br><span class="line">    <span class="meta">"description"</span>:<span class="string">"rio is a sicuan smart woman"</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#deleted</span></span><br><span class="line"><span class="attr">DELETE</span> <span class="string">/user/userinfo/6</span></span><br></pre></td></tr></table></figure>
 
 
 
 
-<figure class="highlight properties"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">#nested 查询</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"nested"</span> : <span class="string">{</span></span><br><span class="line">      <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">      <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">        <span class="meta">"match"</span>: <span class="string">{</span></span><br><span class="line">          <span class="meta">"rooms.roomId"</span>: <span class="string">1</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line">      <span class="attr">}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"bool"</span>: <span class="string">{</span></span><br><span class="line">      <span class="meta">"must"</span>: <span class="string">[</span></span><br><span class="line">        <span class="attr">{</span></span><br><span class="line">          <span class="meta">"nested"</span>: <span class="string">{</span></span><br><span class="line">            <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">            <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">              <span class="meta">"match"</span>: <span class="string">{</span></span><br><span class="line">                <span class="meta">"rooms.roomBedAdd"</span>: <span class="string">-1</span></span><br><span class="line">              <span class="attr">}</span></span><br><span class="line">            <span class="attr">}</span></span><br><span class="line">          <span class="attr">}</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line">      <span class="attr">]</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">{</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">{}</span></span><br><span class="line">  <span class="attr">}</span></span><br><span class="line"><span class="attr">}</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#nested 查询</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"nested"</span> : <span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">      <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">        <span class="meta">"match"</span>: <span class="string">&#123;</span></span><br><span class="line">          <span class="meta">"rooms.roomId"</span>: <span class="string">1</span></span><br><span class="line">        <span class="attr">&#125;</span></span><br><span class="line">      <span class="attr">&#125;</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"bool"</span>: <span class="string">&#123;</span></span><br><span class="line">      <span class="meta">"must"</span>: <span class="string">[</span></span><br><span class="line">        <span class="attr">&#123;</span></span><br><span class="line">          <span class="meta">"nested"</span>: <span class="string">&#123;</span></span><br><span class="line">            <span class="meta">"path"</span>: <span class="string">"rooms",</span></span><br><span class="line">            <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">              <span class="meta">"match"</span>: <span class="string">&#123;</span></span><br><span class="line">                <span class="meta">"rooms.roomBedAdd"</span>: <span class="string">-1</span></span><br><span class="line">              <span class="attr">&#125;</span></span><br><span class="line">            <span class="attr">&#125;</span></span><br><span class="line">          <span class="attr">&#125;</span></span><br><span class="line">        <span class="attr">&#125;</span></span><br><span class="line">      <span class="attr">]</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="attr">GET</span> <span class="string">/hotel/_search</span></span><br><span class="line"><span class="attr">&#123;</span></span><br><span class="line">  <span class="meta">"query"</span>: <span class="string">&#123;</span></span><br><span class="line">    <span class="meta">"match_all"</span>: <span class="string">&#123;&#125;</span></span><br><span class="line">  <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>elastic-search</category>
       </categories>
@@ -2513,13 +2513,13 @@
   <entry>
     <title>纯数字文本中获取最大数字</title>
     <url>/2020/04/01/%E7%BA%AF%E6%95%B0%E5%AD%97%E6%96%87%E6%9C%AC%E4%B8%AD%E8%8E%B7%E5%8F%96%E6%9C%80%E5%A4%A7%E6%95%B0%E5%AD%97/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="纯数字文本中获取最大数字"><a href="#纯数字文本中获取最大数字" class="headerlink" title="纯数字文本中获取最大数字"></a>纯数字文本中获取最大数字</h1><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># number.txt</span><br><span class="line"></span><br><span class="line">232</span><br><span class="line">123 456 789</span><br><span class="line">856 45</span><br><span class="line">12</span><br><span class="line">458</span><br><span class="line">65 5 89 654 2123 544</span><br><span class="line">45 88 46 53 64 87 998 112 456 789 654</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="纯数字文本中获取最大数字"><a href="#纯数字文本中获取最大数字" class="headerlink" title="纯数字文本中获取最大数字"></a>纯数字文本中获取最大数字</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># number.txt</span><br><span class="line"></span><br><span class="line">232</span><br><span class="line">123 456 789</span><br><span class="line">856 45</span><br><span class="line">12</span><br><span class="line">458</span><br><span class="line">65 5 89 654 2123 544</span><br><span class="line">45 88 46 53 64 87 998 112 456 789 654</span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将空格换成换行符</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g'</span><br><span class="line"><span class="meta">#</span><span class="bash"> 以及将空行去掉</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$"</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加排序</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加输出限制，只显示最大和最小的，即在文本中第一位和最后一位的</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr|sed -n '1p;$p'</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将空格换成换行符</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g'</span><br><span class="line"><span class="meta">#</span><span class="bash"> 以及将空行去掉</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$"</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加排序</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加输出限制，只显示最大和最小的，即在文本中第一位和最后一位的</span></span><br><span class="line">cat number.txt |sed 's/ /\n/g' |grep -v "^$" |sort -nr|sed -n '1p;$p'</span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Shell</category>
       </categories>
@@ -2531,9 +2531,9 @@
   <entry>
     <title>Apache,MySQL,PHP安装功能函数</title>
     <url>/2020/04/01/Apache%E5%AE%89%E8%A3%85%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Apache-MySQL-PHP安装功能函数"><a href="#Apache-MySQL-PHP安装功能函数" class="headerlink" title="Apache,MySQL,PHP安装功能函数"></a>Apache,MySQL,PHP安装功能函数</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">auto install apache</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">Httpd define path variable</span></span><br><span class="line">H_FILES=httpd-2.2.27.tar.bz2</span><br><span class="line">H_FILES_DIR=httpd-2.2.27</span><br><span class="line">H_URL=http://mirrors.cnnic.cn/apache/htpd/</span><br><span class="line">H_PREFIX=/usr/local/apache2/</span><br><span class="line"><span class="meta">#</span><span class="bash">MySQL</span></span><br><span class="line">M_FILES=...</span><br><span class="line">M_FILES_DIR=...</span><br><span class="line">M_URL=...</span><br><span class="line">M_PREFIX=...</span><br><span class="line"><span class="meta">#</span><span class="bash">PHP</span></span><br><span class="line">P_FILES=...</span><br><span class="line">P_FILES_DIR=...</span><br><span class="line">P_URL=...</span><br><span class="line">P_PREFIX=...</span><br><span class="line"></span><br><span class="line">MODULE=NOTHING</span><br><span class="line"></span><br><span class="line">function Menu(){</span><br><span class="line">	echo "--------------------------------------------------"</span><br><span class="line">	echo "Please choose to install the following optional modules."</span><br><span class="line">    select i in "Apache" "MySQL" "PHP"</span><br><span class="line">    do</span><br><span class="line">        case $i in</span><br><span class="line">            Apache)</span><br><span class="line">            $MODULE=$H_FILES_DIR</span><br><span class="line">            ApacheInstall</span><br><span class="line">            ;;</span><br><span class="line">            MySQL)</span><br><span class="line">            $MODULE=$M_FILES_DIR</span><br><span class="line">            MySQLInstall</span><br><span class="line">            ;;</span><br><span class="line">            PHP)</span><br><span class="line">            $MODULE=$P_FILES_DIR</span><br><span class="line">            PHPInstall</span><br><span class="line">            ;;</span><br><span class="line">            *)</span><br><span class="line">            echo "FOUND NOTHING BY USING SUPPORTED ARGUMENT"</span><br><span class="line">            ;;</span><br><span class="line">    done</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function ApacheInstall(){</span><br><span class="line">	echo "The Apache Server wait install..."</span><br><span class="line">    wget -c $H_URL/$H_FILES && tar -jxvf && cd &H_FILES_DIR && ./configure --prefix=$H_PREFIX</span><br><span class="line">	</span><br><span class="line">    if [ $? -eq 0 ];then</span><br><span class="line">        make && make install</span><br><span class="line">        echo "--------------------------------------------------"</span><br><span class="line">        echo "$MODULE Server Installation succeed!"</span><br><span class="line">    else</span><br><span class="line">        echo "$MODULE Make or Make install ERROR, Please Check...."</span><br><span class="line">        exit 0</span><br><span class="line">    fi</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function MySQLInstall(){</span><br><span class="line">	...</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function PHPInstall(){</span><br><span class="line">	...</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">Menu</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="Apache-MySQL-PHP安装功能函数"><a href="#Apache-MySQL-PHP安装功能函数" class="headerlink" title="Apache,MySQL,PHP安装功能函数"></a>Apache,MySQL,PHP安装功能函数</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">auto install apache</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">Httpd define path variable</span></span><br><span class="line">H_FILES=httpd-2.2.27.tar.bz2</span><br><span class="line">H_FILES_DIR=httpd-2.2.27</span><br><span class="line">H_URL=http://mirrors.cnnic.cn/apache/htpd/</span><br><span class="line">H_PREFIX=/usr/local/apache2/</span><br><span class="line"><span class="meta">#</span><span class="bash">MySQL</span></span><br><span class="line">M_FILES=...</span><br><span class="line">M_FILES_DIR=...</span><br><span class="line">M_URL=...</span><br><span class="line">M_PREFIX=...</span><br><span class="line"><span class="meta">#</span><span class="bash">PHP</span></span><br><span class="line">P_FILES=...</span><br><span class="line">P_FILES_DIR=...</span><br><span class="line">P_URL=...</span><br><span class="line">P_PREFIX=...</span><br><span class="line"></span><br><span class="line">MODULE=NOTHING</span><br><span class="line"></span><br><span class="line">function Menu()&#123;</span><br><span class="line">	echo "--------------------------------------------------"</span><br><span class="line">	echo "Please choose to install the following optional modules."</span><br><span class="line">    select i in "Apache" "MySQL" "PHP"</span><br><span class="line">    do</span><br><span class="line">        case $i in</span><br><span class="line">            Apache)</span><br><span class="line">            $MODULE=$H_FILES_DIR</span><br><span class="line">            ApacheInstall</span><br><span class="line">            ;;</span><br><span class="line">            MySQL)</span><br><span class="line">            $MODULE=$M_FILES_DIR</span><br><span class="line">            MySQLInstall</span><br><span class="line">            ;;</span><br><span class="line">            PHP)</span><br><span class="line">            $MODULE=$P_FILES_DIR</span><br><span class="line">            PHPInstall</span><br><span class="line">            ;;</span><br><span class="line">            *)</span><br><span class="line">            echo "FOUND NOTHING BY USING SUPPORTED ARGUMENT"</span><br><span class="line">            ;;</span><br><span class="line">    done</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function ApacheInstall()&#123;</span><br><span class="line">	echo "The Apache Server wait install..."</span><br><span class="line">    wget -c $H_URL/$H_FILES &amp;&amp; tar -jxvf &amp;&amp; cd &amp;H_FILES_DIR &amp;&amp; ./configure --prefix=$H_PREFIX</span><br><span class="line">	</span><br><span class="line">    if [ $? -eq 0 ];then</span><br><span class="line">        make &amp;&amp; make install</span><br><span class="line">        echo "--------------------------------------------------"</span><br><span class="line">        echo "$MODULE Server Installation succeed!"</span><br><span class="line">    else</span><br><span class="line">        echo "$MODULE Make or Make install ERROR, Please Check...."</span><br><span class="line">        exit 0</span><br><span class="line">    fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function MySQLInstall()&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function PHPInstall()&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Menu</span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Shell</category>
       </categories>
@@ -2544,9 +2544,9 @@
   <entry>
     <title>自动备份Mysql Shell脚本</title>
     <url>/2020/04/01/%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BDMysql%20Shell%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="自动备份Mysql-Shell脚本"><a href="#自动备份Mysql-Shell脚本" class="headerlink" title="自动备份Mysql Shell脚本"></a>自动备份Mysql Shell脚本</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">auto backup mysql db</span></span><br><span class="line"></span><br><span class="line">BACK_DIR=/data/backup/`date + %y%m%d`</span><br><span class="line">MYSQLDB=discuz</span><br><span class="line">MYSQLUSR=backup</span><br><span class="line">MYSQLPW=123456</span><br><span class="line">MYSQLCMD=/usr/bin/mysqldump</span><br><span class="line">if [ $UID -ne 0];then</span><br><span class="line">	echo "Must to be use root for exec shell"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $BAcK_DIR];then</span><br><span class="line">	mkdir -p $BAcK_DIR</span><br><span class="line">	echo "\033[32mThe $BACK_DIR Create Successfully!"</span><br><span class="line">else </span><br><span class="line">	echo "This $BACK_DIR is exists."</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash">MYSQLCMD -u<span class="variable">$MYSQLUSR</span> -p<span class="variable">$MYSQLPW</span> discuz ><span class="variable">$BACK_DIR</span>/<span class="variable">$MYSQLDB</span>.sql</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="自动备份Mysql-Shell脚本"><a href="#自动备份Mysql-Shell脚本" class="headerlink" title="自动备份Mysql Shell脚本"></a>自动备份Mysql Shell脚本</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">auto backup mysql db</span></span><br><span class="line"></span><br><span class="line">BACK_DIR=/data/backup/`date + %y%m%d`</span><br><span class="line">MYSQLDB=discuz</span><br><span class="line">MYSQLUSR=backup</span><br><span class="line">MYSQLPW=123456</span><br><span class="line">MYSQLCMD=/usr/bin/mysqldump</span><br><span class="line">if [ $UID -ne 0];then</span><br><span class="line">	echo "Must to be use root for exec shell"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $BAcK_DIR];then</span><br><span class="line">	mkdir -p $BAcK_DIR</span><br><span class="line">	echo "\033[32mThe $BACK_DIR Create Successfully!"</span><br><span class="line">else </span><br><span class="line">	echo "This $BACK_DIR is exists."</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash">MYSQLCMD -u<span class="variable">$MYSQLUSR</span> -p<span class="variable">$MYSQLPW</span> discuz &gt;<span class="variable">$BACK_DIR</span>/<span class="variable">$MYSQLDB</span>.sql</span></span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <tags>
         <tag>Shell</tag>
       </tags>
@@ -2554,7 +2554,7 @@
   <entry>
     <title>经济学分类以及对比</title>
     <url>/2020/04/01/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6vs%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="微观经济学vs宏观经济学"><a href="#微观经济学vs宏观经济学" class="headerlink" title="微观经济学vs宏观经济学"></a>微观经济学vs宏观经济学</h1><table>
+    <content><![CDATA[<h1 id="微观经济学vs宏观经济学"><a href="#微观经济学vs宏观经济学" class="headerlink" title="微观经济学vs宏观经济学"></a>微观经济学vs宏观经济学</h1><table>
 <thead>
 <tr>
 <th>差别</th>
@@ -2673,7 +2673,7 @@
 </tbody></table>
 <p>实证经济学的结论是客观的，需要验证正确与否</p>
 <p>规范经济学的结论取决于预设立场，无法验证</p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>微观经济学</category>
       </categories>
@@ -2684,10 +2684,10 @@
   <entry>
     <title>Java面试准备</title>
     <url>/2020/03/31/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Java面试题"><a href="#Java面试题" class="headerlink" title="Java面试题"></a>Java面试题</h1><ol>
+    <content><![CDATA[<h1 id="Java面试题"><a href="#Java面试题" class="headerlink" title="Java面试题"></a>Java面试题</h1><ol>
 <li>操作数栈的题：</li>
 </ol>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>{</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    ink k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    ink k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>重点：字节码，i++，操作数栈，运算符优先级</p>
 <p>=运算符是最后运算的</p>
@@ -2695,7 +2695,7 @@
 <p>+-*/四则运算需要将变量先压入操作数栈在取出操作数栈中的数进行运算后再将临时结果压入操作数栈中，等待取出结果。</p>
 <p>++运算符是直接对局部变量表中的变量直接操作的，不经过操作数栈。</p>
 <p>结果输出：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">i = <span class="number">4</span></span><br><span class="line">j = <span class="number">1</span></span><br><span class="line">k = <span class="number">11</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">i = <span class="number">4</span></span><br><span class="line">j = <span class="number">1</span></span><br><span class="line">k = <span class="number">11</span></span><br></pre></td></tr></table></figure>
 
 <ol start="2">
 <li>单例模式Singleton</li>
@@ -2719,24 +2719,24 @@
 <p>常见形式：</p>
 <ul>
 <li><p>饿汉式：直接创建对象，不存在线程安全问题</p>
-<pre><code>- 直接实例化饿汉式（简洁直观）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 不考虑是否需要实例该单例</span></span><br><span class="line"><span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton instance = <span class="keyword">new</span> Singleton();</span><br><span class="line"><span class="comment">// 构造器</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 直接实例化饿汉式（简洁直观）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 不考虑是否需要实例该单例</span></span><br><span class="line"><span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton instance = <span class="keyword">new</span> Singleton();</span><br><span class="line"><span class="comment">// 构造器</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<pre><code>- 枚举式（最简洁）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 表示该类型的对象是有限的几个</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton{</span><br><span class="line">    INSTANCE1,</span><br><span class="line">    INSTANCE2</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 枚举式（最简洁）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 表示该类型的对象是有限的几个</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton&#123;</span><br><span class="line">    INSTANCE1,</span><br><span class="line">    INSTANCE2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<pre><code>- 静态代码块饿汉式（适合复杂实例化）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE;</span><br><span class="line"><span class="keyword">static</span>{</span><br><span class="line">    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">//需要进行一定的初始化</span></span><br><span class="line">    <span class="comment">//或者需要从文件中获取属性值</span></span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 静态代码块饿汉式（适合复杂实例化）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE;</span><br><span class="line"><span class="keyword">static</span>&#123;</span><br><span class="line">    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">//需要进行一定的初始化</span></span><br><span class="line">    <span class="comment">//或者需要从文件中获取属性值</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>懒汉式：延迟创建对象</p>
-<pre><code>- 线程不安全（适用于单线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>){</span><br><span class="line">        instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 线程不安全（适用于单线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">        instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<pre><code>- 线程安全（适用于多线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>){</span><br><span class="line">    	<span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>)</span>{</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>){</span><br><span class="line">                <span class="keyword">try</span>{</span><br><span class="line">                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                }<span class="keyword">catch</span>(Exception e){</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">            }    </span><br><span class="line">        }    </span><br><span class="line">	}</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 线程安全（适用于多线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">    	<span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">                <span class="keyword">try</span>&#123;</span><br><span class="line">                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;    </span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<pre><code>- 静态内部类形式（适用于多线程）</code></pre><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>{</span><br><span class="line">    </span><br><span class="line">}</span><br><span class="line"><span class="comment">// 在内部类加载和初始化时创建的，因此是线程安全的</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>{</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">return</span> Inner.INSTANCE;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>- 静态内部类形式（适用于多线程）</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 在内部类加载和初始化时创建的，因此是线程安全的</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Inner.INSTANCE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
 </li>
 </ul>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>面试</category>
       </categories>
@@ -2748,25 +2748,25 @@
   <entry>
     <title>使用Docker遇到的问题</title>
     <url>/2020/03/31/%E4%BD%BF%E7%94%A8Docker%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="使用Docker遇到的问题"><a href="#使用Docker遇到的问题" class="headerlink" title="使用Docker遇到的问题"></a>使用Docker遇到的问题</h1><ol>
+    <content><![CDATA[<h1 id="使用Docker遇到的问题"><a href="#使用Docker遇到的问题" class="headerlink" title="使用Docker遇到的问题"></a>使用Docker遇到的问题</h1><ol>
 <li><p>*<em>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? *</em></p>
 <p>重新配置daemon，并重启docker</p>
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>ES运行内存不足</strong></p>
-<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 登陆docker容器进行修改</span></span><br><span class="line"><span class="string">docker</span> <span class="string">exec</span> <span class="string">-it</span> <span class="string">容器名</span> <span class="string">/bin/bash</span></span><br><span class="line"><span class="string">cd</span> <span class="string">../etc/elasticsearch</span></span><br><span class="line"><span class="string">vim</span> <span class="string">jvm.options</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jvm.options</span></span><br><span class="line"><span class="comment"># 修改-Xms和-Xmx</span></span><br><span class="line"><span class="string">-Xms128m</span></span><br><span class="line"><span class="string">-Xmx128m</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>查看logs</p>
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">docker container logs 容器名</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker container logs 容器名</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在容器出现错误时修改内部文件的办法</p>
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">找到docker容器的文件路径</span></span><br><span class="line">find / -name 出现错误的文件名</span><br><span class="line"><span class="meta">#</span><span class="bash">进入并修改文件</span></span><br><span class="line">vim 文件路径</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">找到docker容器的文件路径</span></span><br><span class="line">find / -name 出现错误的文件名</span><br><span class="line"><span class="meta">#</span><span class="bash">进入并修改文件</span></span><br><span class="line">vim 文件路径</span><br></pre></td></tr></table></figure>
 
 
 
 </li>
 </ol>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Shell</category>
       </categories>
@@ -2778,13 +2778,13 @@
   <entry>
     <title>Shell 数组</title>
     <url>/2020/02/02/Shell%20%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Shell-数组"><a href="#Shell-数组" class="headerlink" title="Shell 数组"></a>Shell 数组</h1><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">soft = (</span><br><span class="line">	nginx-1.6.1.tar.gz</span><br><span class="line">	mysql-5.1.17.tar.gz</span><br><span class="line">	php-5.3.3.tar.gz</span><br><span class="line">	/etc/sysctl.conf</span><br><span class="line">)</span><br><span class="line">echo "tHIS SOFT TOTAL ${#soft[@]} !"</span><br><span class="line">tar -xzf ${soft[0]} ;cd nginx-1.6.1 ;./configure ;make install</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="Shell-数组"><a href="#Shell-数组" class="headerlink" title="Shell 数组"></a>Shell 数组</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">soft = (</span><br><span class="line">	nginx-1.6.1.tar.gz</span><br><span class="line">	mysql-5.1.17.tar.gz</span><br><span class="line">	php-5.3.3.tar.gz</span><br><span class="line">	/etc/sysctl.conf</span><br><span class="line">)</span><br><span class="line">echo "tHIS SOFT TOTAL $&#123;#soft[@]&#125; !"</span><br><span class="line">tar -xzf $&#123;soft[0]&#125; ;cd nginx-1.6.1 ;./configure ;make install</span><br></pre></td></tr></table></figure>
 
 
 
 
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Shell</category>
       </categories>
@@ -2796,15 +2796,15 @@
   <entry>
     <title>自动化运维</title>
     <url>/2020/02/02/Shell%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="自动化运维"><a href="#自动化运维" class="headerlink" title="自动化运维"></a>自动化运维</h1><h2 id="1-自动禁止恶意IP访问"><a href="#1-自动禁止恶意IP访问" class="headerlink" title="1. 自动禁止恶意IP访问"></a>1. 自动禁止恶意IP访问</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 从访问记录<span class="built_in">log</span>里获取恶意ip访问信息</span></span><br><span class="line"></span><br><span class="line">SEC_FILE=/var/log/secure</span><br><span class="line"><span class="meta">#</span><span class="bash"> 筛选恶意访问(密码错误多次[>=4次])多次的ip</span></span><br><span class="line">IP_ADDR=`tail -n 1000 $SEC_FILE | grep "Failed password" | egrep -o "([0-9]{1,3}\.){3}[0-9]{1,3}" | sort -nr | uniq -c | awk ' $1>=4 {print $2}'`</span><br><span class="line">IPTABLE_CONF=/etc/sysconfig/iptables</span><br><span class="line">echo </span><br><span class="line">cat <<EOF</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">---------------------welcome to use ssh login drop failed ip------------------</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">EOF</span><br><span class="line">for i in `echo $IP_ADDR`</span><br><span class="line">do</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓取防火墙中对应的ip信息</span></span><br><span class="line">	cat $IPTABLE_CONF | grep $i >/dev/null</span><br><span class="line">	</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 判断是否已经存在对应ip的拒绝信息, 如存在, 就不添加相应信息</span></span><br><span class="line">	if [ $? -ne 0];then</span><br><span class="line">		sed -i "/lo/a -A INPUT -s $i -m state --state NEW -m tcp -p tcp --dropt 22 -j DROP" $IPTABLE_CONF</span><br><span class="line">	else </span><br><span class="line">		echo "This $i is exists in the iptables."</span><br><span class="line">	fi</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">/etc/init.d/iptables restart</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="自动化运维"><a href="#自动化运维" class="headerlink" title="自动化运维"></a>自动化运维</h1><h2 id="1-自动禁止恶意IP访问"><a href="#1-自动禁止恶意IP访问" class="headerlink" title="1. 自动禁止恶意IP访问"></a>1. 自动禁止恶意IP访问</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 从访问记录<span class="built_in">log</span>里获取恶意ip访问信息</span></span><br><span class="line"></span><br><span class="line">SEC_FILE=/var/log/secure</span><br><span class="line"><span class="meta">#</span><span class="bash"> 筛选恶意访问(密码错误多次[&gt;=4次])多次的ip</span></span><br><span class="line">IP_ADDR=`tail -n 1000 $SEC_FILE | grep "Failed password" | egrep -o "([0-9]&#123;1,3&#125;\.)&#123;3&#125;[0-9]&#123;1,3&#125;" | sort -nr | uniq -c | awk ' $1&gt;=4 &#123;print $2&#125;'`</span><br><span class="line">IPTABLE_CONF=/etc/sysconfig/iptables</span><br><span class="line">echo </span><br><span class="line">cat &lt;&lt;EOF</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">---------------------welcome to use ssh login drop failed ip------------------</span><br><span class="line">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br><span class="line">EOF</span><br><span class="line">for i in `echo $IP_ADDR`</span><br><span class="line">do</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓取防火墙中对应的ip信息</span></span><br><span class="line">	cat $IPTABLE_CONF | grep $i &gt;/dev/null</span><br><span class="line">	</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 判断是否已经存在对应ip的拒绝信息, 如存在, 就不添加相应信息</span></span><br><span class="line">	if [ $? -ne 0];then</span><br><span class="line">		sed -i "/lo/a -A INPUT -s $i -m state --state NEW -m tcp -p tcp --dropt 22 -j DROP" $IPTABLE_CONF</span><br><span class="line">	else </span><br><span class="line">		echo "This $i is exists in the iptables."</span><br><span class="line">	fi</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">/etc/init.d/iptables restart</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-网络自动化部署以及管理"><a href="#2-网络自动化部署以及管理" class="headerlink" title="2.网络自动化部署以及管理"></a>2.网络自动化部署以及管理</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Auto change Server Files</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少ip.txt</span></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat <<EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少参数</span></span><br><span class="line">if [ -z "$1" ];then</span><br><span class="line">	echo "Usage: $0 command, example{Src_Files|Src_Dir Des_dir}. "</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 抓去ip.txt的行数</span></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i< $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "${i}s/^/&${i} /g" ip.txt >>ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '{if(I==$1)print $2}' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 同步语句	</span></span><br><span class="line">	scp -r $1 root@${IP}:$2</span><br><span class="line">	</span><br><span class="line">done</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="2-网络自动化部署以及管理"><a href="#2-网络自动化部署以及管理" class="headerlink" title="2.网络自动化部署以及管理"></a>2.网络自动化部署以及管理</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Auto change Server Files</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少ip.txt</span></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat &lt;&lt;EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 缺少参数</span></span><br><span class="line">if [ -z "$1" ];then</span><br><span class="line">	echo "Usage: $0 command, example&#123;Src_Files|Src_Dir Des_dir&#125;. "</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span><span class="bash"> 抓去ip.txt的行数</span></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i&lt; $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "$&#123;i&#125;s/^/&amp;$&#123;i&#125; /g" ip.txt &gt;&gt;ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '&#123;if(I==$1)print $2&#125;' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 同步语句	</span></span><br><span class="line">	scp -r $1 root@$&#123;IP&#125;:$2</span><br><span class="line">	</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="3-批量远程服务器执行命令"><a href="#3-批量远程服务器执行命令" class="headerlink" title="3.批量远程服务器执行命令"></a>3.批量远程服务器执行命令</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat <<EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Usage: $0 command, example {rm /tmp/test.txt | mkdir /tmp/20140228}"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i< $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "${i}s/^/&${i} /g" ip.txt >>ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '{if(I==$1)print $2}' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 命令语句, 并输出操作返回结果</span></span><br><span class="line">	ssh -q -l root $IP "$*";echo "The $IP Execution Command: $* succeed";sleep 2"	</span><br><span class="line">done</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="3-批量远程服务器执行命令"><a href="#3-批量远程服务器执行命令" class="headerlink" title="3.批量远程服务器执行命令"></a>3.批量远程服务器执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">if [ ! -f ip.txt ];then</span><br><span class="line">	echo "Please Create ip.txt Files, the ip.txt contents models are as follows: "</span><br><span class="line">	cat &lt;&lt;EOF</span><br><span class="line">	192.168.149.128</span><br><span class="line">	192.168.149.129</span><br><span class="line">	EOF</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Usage: $0 command, example &#123;rm /tmp/test.txt | mkdir /tmp/20140228&#125;"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">count='cat ip.txt | wc -l'</span><br><span class="line">rm -rf ip.txt.swp</span><br><span class="line">i=0</span><br><span class="line">while ((i&lt; $count))</span><br><span class="line">do</span><br><span class="line">	i=`expr $i + 1`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 抓去ip.txt的第<span class="variable">$i</span>行的ip并赋予至ip.txt.swp</span></span><br><span class="line">	sed "$&#123;i&#125;s/^/&amp;$&#123;i&#125; /g" ip.txt &gt;&gt;ip.txt.swp</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 获取需要同步的ip</span></span><br><span class="line">	IP=`awk -v I="$i" '&#123;if(I==$1)print $2&#125;' ip.txt.swp`</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 命令语句, 并输出操作返回结果</span></span><br><span class="line">	ssh -q -l root $IP "$*";echo "The $IP Execution Command: $* succeed";sleep 2"	</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-Rsync-SSH批量自动化部署"><a href="#4-Rsync-SSH批量自动化部署" class="headerlink" title="4.Rsync+SSH批量自动化部署"></a>4.Rsync+SSH批量自动化部署</h2><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刷新函数</span></span><br><span class="line">flush(){</span><br><span class="line">	if [ ! -f rsync.list ];then</span><br><span class="line">		echo "Please Create rsync.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat <<EOF</span><br><span class="line">		192.168.149.128 src_dir des_dir</span><br><span class="line">		192.168.149.127 src_dir des_dir</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	</span><br><span class="line">	rm -rf rsync.list.swp ; cat rsync.list | grep -v "#" >rsync.list.swp</span><br><span class="line">	COUNT=`cat rsync.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while ((${i} < $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "${i}p" rsync.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '{print $1}'`</span><br><span class="line">		SRC=`echo $Line | awk '{print $2}'`</span><br><span class="line">		DES=`echo $Line | awk '{print $3}'`</span><br><span class="line">		rsync -ap --delete ${SRC}/ root@${IP}:${DES}/</span><br><span class="line">	done</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重启</span></span><br><span class="line">restart(){</span><br><span class="line">	if [ ! -f restart.list ];then</span><br><span class="line">		echo "Please Create restart.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat <<EOF</span><br><span class="line">		192.168.149.128 Command</span><br><span class="line">		192.168.149.127 Command</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	rm -rf restart.list.swp ; cat restart.list | grep -v "#" >>restart.list.swp</span><br><span class="line">	COUNT=`cat restart.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while ((${i} < $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "${i}p" restart.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '{print $1}'`</span><br><span class="line">		Command=`echo $Line | awk '{print $2}'`</span><br><span class="line">		ssh -l root $IP "sh $Command;echo 'The $IP Exec Command and : sh $Command success'"</span><br><span class="line">	done	</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">case $i in </span><br><span class="line">	flush )</span><br><span class="line">	flush</span><br><span class="line">	;;</span><br><span class="line">	restart )</span><br><span class="line">	restart</span><br><span class="line">	;;</span><br><span class="line">	*)</span><br><span class="line">	echo "Usage: $0 command, example{flush|restart}"</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="4-Rsync-SSH批量自动化部署"><a href="#4-Rsync-SSH批量自动化部署" class="headerlink" title="4.Rsync+SSH批量自动化部署"></a>4.Rsync+SSH批量自动化部署</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刷新函数</span></span><br><span class="line">flush()&#123;</span><br><span class="line">	if [ ! -f rsync.list ];then</span><br><span class="line">		echo "Please Create rsync.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat &lt;&lt;EOF</span><br><span class="line">		192.168.149.128 src_dir des_dir</span><br><span class="line">		192.168.149.127 src_dir des_dir</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	</span><br><span class="line">	rm -rf rsync.list.swp ; cat rsync.list | grep -v "#" &gt;rsync.list.swp</span><br><span class="line">	COUNT=`cat rsync.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while (($&#123;i&#125; &lt; $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "$&#123;i&#125;p" rsync.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '&#123;print $1&#125;'`</span><br><span class="line">		SRC=`echo $Line | awk '&#123;print $2&#125;'`</span><br><span class="line">		DES=`echo $Line | awk '&#123;print $3&#125;'`</span><br><span class="line">		rsync -ap --delete $&#123;SRC&#125;/ root@$&#123;IP&#125;:$&#123;DES&#125;/</span><br><span class="line">	done</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重启</span></span><br><span class="line">restart()&#123;</span><br><span class="line">	if [ ! -f restart.list ];then</span><br><span class="line">		echo "Please Create restart.list Files, the rsync.list contents should be look like as follow:"</span><br><span class="line">		cat &lt;&lt;EOF</span><br><span class="line">		192.168.149.128 Command</span><br><span class="line">		192.168.149.127 Command</span><br><span class="line">		EOF</span><br><span class="line">		exit</span><br><span class="line">	fi</span><br><span class="line">	rm -rf restart.list.swp ; cat restart.list | grep -v "#" &gt;&gt;restart.list.swp</span><br><span class="line">	COUNT=`cat restart.list.swp | wc -l`</span><br><span class="line">	i=0</span><br><span class="line">	while (($&#123;i&#125; &lt; $COUNT))</span><br><span class="line">	do</span><br><span class="line">		i = `expr $i + 1`</span><br><span class="line">		Line=`sed -n "$&#123;i&#125;p" restart.list.swp`</span><br><span class="line">		IP=`echo $Line | awk '&#123;print $1&#125;'`</span><br><span class="line">		Command=`echo $Line | awk '&#123;print $2&#125;'`</span><br><span class="line">		ssh -l root $IP "sh $Command;echo 'The $IP Exec Command and : sh $Command success'"</span><br><span class="line">	done	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">case $i in </span><br><span class="line">	flush )</span><br><span class="line">	flush</span><br><span class="line">	;;</span><br><span class="line">	restart )</span><br><span class="line">	restart</span><br><span class="line">	;;</span><br><span class="line">	*)</span><br><span class="line">	echo "Usage: $0 command, example&#123;flush|restart&#125;"</span><br></pre></td></tr></table></figure>
 
 <h2 id="4-增量备份脚本"><a href="#4-增量备份脚本" class="headerlink" title="4.增量备份脚本"></a>4.增量备份脚本</h2><ul>
 <li><p>完整备份</p>
@@ -2818,13 +2818,13 @@
 </ul>
 <p><strong>一般是周日进行完整备份，每天进行一次增量备份</strong></p>
 <p>定时备份：</p>
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">确定今天是周几: date +%u</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">确定今天是周几: date +%u</span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有文件</span></span><br><span class="line">SOURCE_DIR=(</span><br><span class="line"><span class="meta">	$</span><span class="bash">*</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">TARGET_DIR=/data/backup/</span><br><span class="line"></span><br><span class="line">YEAR=`date +%Y`</span><br><span class="line">MONTH=`date +%m`</span><br><span class="line">DAY=`date +%d`</span><br><span class="line">WEEK=`date +%u`</span><br><span class="line">A_NAME=`date +%H%M`</span><br><span class="line">FILES=${A_NAME}_system_backup.tgz</span><br><span class="line">CODE=$?</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Please Enter Your Backup Files or Directories"</span><br><span class="line">	echo "Usage: { $0 /boot /etc }"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $TARGET_DIR/$YEAR/$MONTH/$DAY ];then</span><br><span class="line">	mkdir -p $TARGET_DIR/$YEAR/$MONTH/$DAY</span><br><span class="line">	echo "The $TARGET_DIR Created success"</span><br><span class="line">fi</span><br><span class="line">Full_Backup(){</span><br><span class="line">	if [ "$WEEK" -eq "7" ];then</span><br><span class="line">		rm -rf $TARGET_DIR/snapshot</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES ${SOURCE_DIR[@]}</span><br><span class="line">		[ "$CODE" == "0" ]&&echo "These Full_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">}</span><br><span class="line">Add_Backup(){</span><br><span class="line">	if [ "$WEEK" -ne "7" ];then</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES ${SOURCE_DIR[@]}</span><br><span class="line">		[ "$CODE" == "0" ]&&echo "These Add_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">}</span><br><span class="line">sleep 3</span><br><span class="line">Full_Backup;Add_Backup</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有文件</span></span><br><span class="line">SOURCE_DIR=(</span><br><span class="line"><span class="meta">	$</span><span class="bash">*</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">TARGET_DIR=/data/backup/</span><br><span class="line"></span><br><span class="line">YEAR=`date +%Y`</span><br><span class="line">MONTH=`date +%m`</span><br><span class="line">DAY=`date +%d`</span><br><span class="line">WEEK=`date +%u`</span><br><span class="line">A_NAME=`date +%H%M`</span><br><span class="line">FILES=$&#123;A_NAME&#125;_system_backup.tgz</span><br><span class="line">CODE=$?</span><br><span class="line"></span><br><span class="line">if [ -z "$*" ];then</span><br><span class="line">	echo "Please Enter Your Backup Files or Directories"</span><br><span class="line">	echo "Usage: &#123; $0 /boot /etc &#125;"</span><br><span class="line">	exit</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">if [ ! -d $TARGET_DIR/$YEAR/$MONTH/$DAY ];then</span><br><span class="line">	mkdir -p $TARGET_DIR/$YEAR/$MONTH/$DAY</span><br><span class="line">	echo "The $TARGET_DIR Created success"</span><br><span class="line">fi</span><br><span class="line">Full_Backup()&#123;</span><br><span class="line">	if [ "$WEEK" -eq "7" ];then</span><br><span class="line">		rm -rf $TARGET_DIR/snapshot</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES $&#123;SOURCE_DIR[@]&#125;</span><br><span class="line">		[ "$CODE" == "0" ]&amp;&amp;echo "These Full_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">&#125;</span><br><span class="line">Add_Backup()&#123;</span><br><span class="line">	if [ "$WEEK" -ne "7" ];then</span><br><span class="line">		cd $TARGET_DIR/$YEAR/$MONTH/$DAY ;tar -g $TARGET_DIR/snapshot -czvf $FILES $&#123;SOURCE_DIR[@]&#125;</span><br><span class="line">		[ "$CODE" == "0" ]&amp;&amp;echo "These Add_backup System Files $TARGET_DIR/$YEAR/$MONTH/$DAY/$FILES Backup Success"</span><br><span class="line">	fi</span><br><span class="line">&#125;</span><br><span class="line">sleep 3</span><br><span class="line">Full_Backup;Add_Backup</span><br></pre></td></tr></table></figure>
 
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>Shell</category>
       </categories>
@@ -2836,8 +2836,8 @@
   <entry>
     <title>Change-To-Chinese</title>
     <url>/2020/02/02/%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="简单的网站测试"><a href="#简单的网站测试" class="headerlink" title="简单的网站测试"></a>简单的网站测试</h1><p>测试测试测试</p>
-</body></html>]]></content>
+    <content><![CDATA[<h1 id="简单的网站测试"><a href="#简单的网站测试" class="headerlink" title="简单的网站测试"></a>简单的网站测试</h1><p>测试测试测试</p>
+]]></content>
       <categories>
         <category>test</category>
       </categories>
@@ -2848,7 +2848,7 @@
   <entry>
     <title>倾诉欲</title>
     <url>/2020/02/02/%E5%80%BE%E8%AF%89%E6%AC%B2/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="倾诉欲"><a href="#倾诉欲" class="headerlink" title="倾诉欲"></a>倾诉欲</h1><p>   每个人都会有困难的时候。</p>
+    <content><![CDATA[<h1 id="倾诉欲"><a href="#倾诉欲" class="headerlink" title="倾诉欲"></a>倾诉欲</h1><p>   每个人都会有困难的时候。</p>
 <p>   有些困难看似不起眼，可它永远垒在那里，无时无刻不想着拌你一脚，你一时觉得无所谓，也许搬个铲子动土的时间，不如拿来赚更多的钱。</p>
 <p>   可真当它动起火来，真将你绊倒在地的时候，你哗啦地翻下山坡，卷起后面一片沙尘，摔得你鼻青脸肿，随后再在山顶上瞧着你，嘲笑你还得上来。</p>
 <p>   或者你觉得它太过危险，你注意到了后面的险山峻岭。可你此时此刻再无多余的心思去顾虑它，你双手抱住了一摞顶天的，不管是什么东西，背上背了沉重的背包，小腿以下甚至已经敷满了皑皑白雪。可你知道你迟早会遇到那颗扎根在泥土里的尖石头。</p>
@@ -2863,9 +2863,9 @@
 <p>   可你意识到了，山后是什么，不重要。</p>
 <p>   重要的是有人听着，一直听着。</p>
 <hr>
-<p><img src="../images/1.jpg" alt=""说爱你的平铺直叙法"" title="说爱你的平铺直叙法"></p>
+<p><img src="../images/1.jpg" alt="&quot;说爱你的平铺直叙法&quot;" title="说爱你的平铺直叙法"></p>
 <hr>
-</body></html>]]></content>
+]]></content>
       <tags>
         <tag>writing</tag>
       </tags>
@@ -2873,12 +2873,12 @@
   <entry>
     <title>Diary</title>
     <url>/2020/02/02/Diary-20200202/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="Diary-2020-02-02"><a href="#Diary-2020-02-02" class="headerlink" title="Diary 2020-02-02"></a>Diary 2020-02-02</h1><p>​    好多父母甚至根本不知道如何教育孩子，他们只是凭着一个身份和嘴上的爱，以及自私和懒惰在教育孩子。</p>
+    <content><![CDATA[<h1 id="Diary-2020-02-02"><a href="#Diary-2020-02-02" class="headerlink" title="Diary 2020-02-02"></a>Diary 2020-02-02</h1><p>​    好多父母甚至根本不知道如何教育孩子，他们只是凭着一个身份和嘴上的爱，以及自私和懒惰在教育孩子。</p>
 <p>​    他们期望他们可以不需要再付出就可以获得孩子的一切，获得孩子的收入养活自己，获得孩子的身份展开话题，获得孩子的自尊满足自己的虚荣。</p>
 <p>​    他们大张旗鼓的夺走了孩子的灵魂。</p>
 <p>​    孩子甚至还没有意识到。</p>
 <p>​    就变成了父母的一条狗。</p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>diary</category>
       </categories>
@@ -2890,7 +2890,7 @@
   <entry>
     <title>First-Post</title>
     <url>/2020/02/02/First-Post/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><h1 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h1><p>​    Hello World!</p>
+    <content><![CDATA[<h1 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h1><p>​    Hello World!</p>
 <p>​    Hello this blog of mine!</p>
 <p>​    This is the first time trying to post a new blog, and I have no idea what to say.</p>
 <p>​    But I just can’t wait to do something in it.</p>
@@ -2903,7 +2903,7 @@
 <p>​    Hope I can remember to write all down.</p>
 <p>​    Hope you could find anything you like or approve! Thanks!</p>
 <p>​    Anyway, good night, every one!</p>
-</body></html>]]></content>
+]]></content>
       <categories>
         <category>writing</category>
       </categories>
@@ -2915,19 +2915,19 @@
   <entry>
     <title>Hello World</title>
     <url>/2019/11/02/hello-world/</url>
-    <content><![CDATA[<html><head></head><body></body></html><html><head></head><body><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-</body></html>]]></content>
+]]></content>
   </entry>
 </search>
