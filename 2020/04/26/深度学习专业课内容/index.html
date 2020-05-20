@@ -507,6 +507,207 @@
 </li>
 <li><a href="https://www.bilibili.com/video/BV164411m79z?from=search&seid=16677849041663475348" target="_blank" rel="noopener">学习辅用网上视频课：吴恩达深度学习课程</a></li>
 </ul>
+<h2 id="视频课1-6-导论"><a href="#视频课1-6-导论" class="headerlink" title="视频课1-6 导论"></a>视频课1-6 导论</h2><ol>
+<li><p>学习顺序</p>
+<ol>
+<li>(周1-4)Neural Networks and Deep Learning<ul>
+<li>Cats Recognition</li>
+</ul>
+</li>
+<li>Improving Deep Neural Network: Hyperparameter tuning(参数调整) , Regularization(正则化) and Optimization(优化)</li>
+<li>Structing(结构化) your Machine Learning project. </li>
+<li>Convolutional Neural Networks 卷积神经网络</li>
+<li>Natural Language Processing.</li>
+</ol>
+</li>
+<li><p>What is a neural network?</p>
+<p><em>A function to estimate a result which need a lot of data of parameter to confirm how is the final result decided.</em></p>
+<p><strong>We do not setting the method detail of solving problem</strong></p>
+</li>
+<li><p>Supervised Learning 监管学习</p>
+<p>Give a series of Input and Gain a series of Output.</p>
+<ul>
+<li><p>Example:</p>
+<p>​    Home features -&gt; Price (Standard NN)</p>
+<p>​    Ad, user Info … -&gt; Click on ad? (Standard NN)</p>
+<p>​    Image -&gt; Objects (CNN)</p>
+<p>​    Audio -&gt; Text transcript (RNN【Recurrent Neural Network】)</p>
+<p>​    English -&gt; Chinese (RNN)</p>
+<p>​    Image, Radar Info -&gt; Position of other cars. (Custom / Hybrid)</p>
+</li>
+</ul>
+<p><strong>Standard NN 标准神经网络，Convolutional NN 卷积神经网络，Recurrent NN 循环神经网络</strong></p>
+<p><em>Neural Network Make Computer more easy to understand unstructured data.</em></p>
+</li>
+<li><p>Why are they just now taking off?</p>
+<p>scale of data and computation is growing rapidly, and the progress in algorithms.</p>
+<p><em>Using a new way (ReLu function instead of Sigmoid function) to faster the speed of training a model.</em></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/ReLu%E5%87%BD%E6%95%B0.png" alt="ReLu函数"></p>
+</li>
+</ol>
+<h2 id="视频课7-24"><a href="#视频课7-24" class="headerlink" title="视频课7-24"></a>视频课7-24</h2><ol start="7">
+<li>Binary Classification<ul>
+<li><strong>A great algorithm to process the entire train sets with a great speed.</strong></li>
+<li>A introduction of <strong>forward pass or forward propagation step</strong> and <strong>backward pass or backward propagation step</strong> 前向传播和反向传播</li>
+<li>Logistic regression 逻辑回归<ul>
+<li>An algorithm for binary classification.</li>
+</ul>
+</li>
+<li>Important Notation <ul>
+<li>‘n’ is the length of height of the matric X, ‘m’ is the count of training examples (or looks like { (x1, y1) … (x(m), y(m) ) } ). </li>
+<li>there are two sets, one of them for train, another for test.</li>
+<li>(Xn, Y) is a specific vector.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Logistic Regression<ul>
+<li>Given x, want y hat or y^.</li>
+<li>Parameters: w (matrix), b (real number)</li>
+<li>Output: y^ = w^T * x + b (Sigmoid function) = Sigmoid(Z)<ul>
+<li>![sigmoid function](./深度学习专业课内容/Sigmoid function.png “sigmoid function”)</li>
+<li><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/Sigmoid(Z).png" alt="Sigmoid(Z)"></li>
+<li><em>learn about w and b to know how y become a good estimate.</em></li>
+<li><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/MatrixOfResult.png" alt="Another academic method of display" title="Another academic method of display which will be not used in this course"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Logistic Regression cost function</li>
+</ol>
+<p><strong>To train the parameters W and B of the logistic regression model, We need to define a cost function</strong></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/yHat.png" alt="yHat"></p>
+<p>To get the best prediction, we want the y Hat can be more and more near to the i-th example.</p>
+<p><strong>Lost funcion</strong> is used to measure how well our algorithm is doing.</p>
+<p>Here is the not good algorithm: (which will get serveral global optimums.)</p>
+<p>![Old Loss function](./深度学习专业课内容/Old Loss function.png “Old Loss function”)</p>
+<p>Here is the better algorithm: (of which graph is convex)</p>
+<p>![New Loss function](./深度学习专业课内容/Loss function.png “New Loss Function”)</p>
+<p><strong>Cost function:</strong> the cost of the parameters.</p>
+<p>![Cost function](./深度学习专业课内容/Cost function.png “Cost function”)</p>
+<p>Compute the total cost of the whole sets, Measure how well the performance of your trained model.</p>
+<ol start="10">
+<li>Gradient Descent 梯度下降法</li>
+</ol>
+<p><strong>The method to train the w and b.</strong></p>
+<p><em>ways: Find the minimum or to say the global optimum.</em></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/GradientDescent.png" alt="Cost Function"></p>
+<p>The real usage of Gradient Descent.</p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/GradientDescentAlgorithm.png" alt="GradientDescent"></p>
+<p>Parameters in this function:    </p>
+<p>​    α ：learning rate ：which to control how big a step we take on each iteration or gradient descent.</p>
+<p>​    <strong>w := means updated w equal to the right</strong> </p>
+<p><strong>The Key of function</strong></p>
+<ul>
+<li><strong>using derivatives导数 to find the side which is more near to the optimum</strong></li>
+<li>and update the nearest value and repeat it until you can not fould the next value.</li>
+</ul>
+<ol start="11">
+<li>derivatives 导数</li>
+</ol>
+<p>略（PS:作为一个正在考研的人，要是这里还需要这种入门级的教学，我就别考了hhh）</p>
+<ol start="13">
+<li>Computation Graph 计算图</li>
+</ol>
+<p><strong>Also the introduction about derivaives, but the graph makes the procedure of whole computation a lot easier to be comprehended.</strong></p>
+<p><em>Example:</em></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/ComputationGraph.png" alt="ComputationGraph"></p>
+<p><em>The Compute of Derivatives in Computation Graph</em></p>
+<p>![image-20200430115619173](./深度学习专业课内容/The backward propagation.png)</p>
+<ol start="15">
+<li>Logistic Regression - Gradient descent 逻辑回归中的梯度下降法</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/G:%5CBlog%5CKrisHugo.github.io%5Csource_posts%5C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9%5CLogisticRegressionRecap.png" alt="LogisticRegressionRecap"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/LogisticRegressionDerivatives.png" alt="LogisticRegressionDerivatives"></p>
+<p>And Find the derivatives for L : </p>
+<p><strong>da = dL / da = - y / a + (1 - y) / (1 - a)</strong></p>
+<p><strong>dz = dL / dz =  dL / da * da / dz = dL / da * a(1-a) = a - y</strong></p>
+<p>*<em>dw1 = dL / dw1 = x1 * dz = x1 * (a - y) *</em></p>
+<p>*<em>dw2 = x2 * dz *</em></p>
+<p><strong>db = dz</strong></p>
+<h4 id="using-Gradient-descent-on-M-samples"><a href="#using-Gradient-descent-on-M-samples" class="headerlink" title="using Gradient descent on M samples"></a>using Gradient descent on M samples</h4><p>The used function is <strong>J(w, b)</strong></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/LogisticRegressionOnMExamples.png" alt="LogisticRegressionOnMExamples"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/CalculateTheLossFunction.png" alt="CalculateTheLossFunction"></p>
+<ol start="17">
+<li>Vetorization 向量化</li>
+</ol>
+<p><strong>A great important method to forbid repeatitive and inefficient looping</strong></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/ExampleForVectorizedSpeed.png" alt="ExampleForVectorizedSpeed"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/Numpy.png" alt="A more faster way of calculate a series of great datasets"></p>
+<ol start="19">
+<li>Vectorizing Logistic Regression 向量化逻辑回归</li>
+</ol>
+<p><strong>Using Python Module – Numpy to Simplify the Code</strong></p>
+<ol start="20">
+<li>Vectorizing Logistic Regresion’s Gradient Computation 向量化逻辑回归的梯度计算</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/ImplementingLogisticRegression.png" alt="ImplementingLogisticRegression"></p>
+<ol start="21">
+<li>Broadcasting in Python</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/Broadingcasting.png" alt="Broadingcasting"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/.%5C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9%5CExampleForBroadcasting.png" alt="ExampleForBroadcasting"></p>
+<ol start="25">
+<li><p>Neural Network Overview</p>
+</li>
+<li><p>Neural Network Representation</p>
+</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515110302243.png" alt="Neural Network Representation"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515110648704.png" alt="image-20200515110648704"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515111536381.png" alt="image-20200515111536381"></p>
+<ol start="28">
+<li>Vertorizing</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515112005402.png" alt="image-20200515112005402"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515112240179.png" alt="image-20200515112240179"></p>
+<ol start="30">
+<li>Activation functions</li>
+</ol>
+<p>Here are four useful and often activation function:</p>
+<ul>
+<li>sigmoid : It doesn’t to be used any more, because it has some disadventages</li>
+<li>tanh: limit the output between 0 and 1</li>
+<li>ReLU: Rectified limit Unit – a = max(0, 1) <strong>(Mr.Wu recommend)</strong></li>
+<li>Leaky ReLU: Rectified limit Unit which is not zero when input go down zero.</li>
+</ul>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515114039515.png" alt="image-20200515114039515"></p>
+<ol start="31">
+<li>Why we use non-linear activate function.</li>
+</ol>
+<p>If we use linear activate function in neural network, the whole hidden layers is useless, and it may be OK when you wanna computing output a real number.*<em>So we only use linear function in the final output layer, except for some special circumstance. *</em>but In that case, using ReLU is fine, too</p>
+<ol start="32">
+<li>the deriviatives of Activate functions</li>
+</ol>
+<ul>
+<li>sigmoid -&gt; a’ = sigmoid’(z) =  a (1 - a)</li>
+<li>tanh -&gt; a’ = tanh’(z) = 1 - a^2</li>
+<li>ReLU -&gt; a’ = (max(0, z))’ = 0, if z &lt; 0; 1, if z &gt;= 0.</li>
+<li>Leaky ReLU -&gt; a’ = (max(0.01 * z, z))’ = 0.01, if z &lt; 0; 1 if z &gt;=0.</li>
+</ul>
+<ol start="33">
+<li>Gradient descent for neural networks</li>
+</ol>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515120536239.png" alt="image-20200515120536239"></p>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200515121112957.png" alt="backward propagation"></p>
+<ol start="35">
+<li><p>Randomly Initialization</p>
+<p>If we don’t randomly initialize paremeter W, we will get the same result from each unit in one </p>
+</li>
+</ol>
+<p>layer. It will make out gradient descent to doesn’t work by makes the units output the same results.</p>
+<p><strong>b initialized by zeros is OK, but W should be randomly initialized.</strong></p>
+<p>In Python: </p>
+<ul>
+<li><p>w1 = np.random.rand((a, b)) * 0.01 (<em>why here is 0.01 instead of 100 or 1000?</em>)</p>
+<ul>
+<li><strong>the latter multiplier usually be very small because if this parameter become too large, it makes the sigmoid function or tanh or others useless, hence it makes the learning too slow.</strong></li>
+</ul>
+</li>
+<li><p>b1 = np.zero((b, 1))</p>
+</li>
+</ul>
+<p><img src="/2020/04/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%93%E4%B8%9A%E8%AF%BE%E5%86%85%E5%AE%B9/image-20200518213524372.png" alt="image-20200518213524372"></p>
 
             </div>
             <hr/>
