@@ -1,1336 +1,2084 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Program, Writing, Diary">
-    <meta name="description" content="Neutral, Indifference, Inertia;">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="utf-8">
+  
 
-
-    <title>Blog of KrisHugo</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
+  
+  <title>Blog of KrisHugo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Neutral, Indifference, Inertia;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog of KrisHugo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Blog of KrisHugo">
+<meta property="og:description" content="Neutral, Indifference, Inertia;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Kris Hugo">
+<meta property="article:tag" content="Program, Writing, Diary">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Blog of KrisHugo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-
 <body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Blog of KrisHugo</span>
-                </a>
-            </div>
-            
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Blog of KrisHugo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-QuickSort-快速排序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/09/13/QuickSort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" class="article-date">
+  <time datetime="2021-09-13T13:25:27.708Z" itemprop="datePublished">2021-09-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/C/">C++</a>►<a class="article-category-link" href="/categories/C/Sort-%E5%88%86%E7%B1%BB/">Sort  // 分类</a>
+  </div>
 
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/13/QuickSort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">QuickSort 快速排序  // 文章标题</a>
+    </h1>
   
-  <li class="hide-on-med-and-down nav-item">
+
+      </header>
     
-    <a href="/tags" class="waves-effect waves-light">
+    <div class="article-entry" itemprop="articleBody">
       
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+        <hr>
+<p><img src=".//images//quickSort.GIF" alt="QuickSort"></p>
+<p><strong>具体C++代码如下</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sstream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> random(a,b) (rand()%(b-a)+a)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//vector作为局部变量是不被允许返回的, 当需要处理一个vector并得到处理结果, 必须外部输入一个vector引用。</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">intRandomRange</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; res, <span class="keyword">int</span> min, <span class="keyword">int</span> max, <span class="keyword">int</span> count)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">srand</span>((<span class="keyword">int</span>)<span class="built_in">time</span>(<span class="number">0</span>));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res.<span class="built_in">push_back</span>((<span class="keyword">int</span>)<span class="built_in">random</span>(min, max));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//使用stringstream转换生成string, 用于测试</span></span><br><span class="line"><span class="function">string <span class="title">vector2string</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; vec)</span> </span>&#123;</span><br><span class="line">    stringstream ss;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; vec.<span class="built_in">size</span>(); ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (i != <span class="number">0</span>)</span><br><span class="line">            ss &lt;&lt; <span class="string">&quot;,&quot;</span>;</span><br><span class="line">        ss &lt;&lt; vec[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ss.<span class="built_in">str</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">contrastByOrder</span><span class="params">(<span class="keyword">int</span> left, <span class="keyword">int</span> right, <span class="keyword">bool</span> bigger, <span class="keyword">bool</span> equal)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (equal)</span><br><span class="line">        <span class="keyword">if</span> (bigger)<span class="comment">//升序比较</span></span><br><span class="line">            <span class="keyword">return</span> left &gt;= right;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> left &lt;= right;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">if</span> (bigger)</span><br><span class="line">            <span class="keyword">return</span> left &gt; right;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> left &lt; right;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//递归式快排_主体</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">quickSort_main</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; vec, <span class="keyword">int</span> left, <span class="keyword">int</span> right, <span class="keyword">bool</span> ascending)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mid = left++;</span><br><span class="line">    <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">        <span class="keyword">while</span> (left &lt;= right &amp;&amp; <span class="built_in">contrastByOrder</span>(vec[right], vec[mid], ascending, <span class="literal">false</span>))<span class="comment">// vec[mid] &lt; vec[right]|ascending = true;</span></span><br><span class="line">            right--;</span><br><span class="line">        <span class="keyword">if</span> (left &lt;= right) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(vec[mid], vec[right]);</span><br><span class="line">            mid = right;<span class="comment">//复位, 确保该轮中对比的数据仍不变</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (left &lt;= right &amp;&amp; <span class="built_in">contrastByOrder</span>(vec[mid], vec[left], ascending, <span class="literal">true</span>))<span class="comment">// vec[left] &lt;= vec[mid]|ascending = true;</span></span><br><span class="line">            left++;</span><br><span class="line">        <span class="keyword">if</span> (left &lt;= right) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(vec[mid], vec[left]);</span><br><span class="line">            mid = left;<span class="comment">//复位</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//递归式快排_递归体</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quickSort_Rp</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; vec, <span class="keyword">int</span> left, <span class="keyword">int</span> right, <span class="keyword">bool</span> ascending)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (left &gt; right)<span class="comment">//递归出口</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> mid = <span class="built_in">quickSort_main</span>(vec, left, right, ascending);</span><br><span class="line">    <span class="built_in">quickSort_Rp</span>(vec, left, mid - <span class="number">1</span>, ascending);</span><br><span class="line">    <span class="built_in">quickSort_Rp</span>(vec, mid + <span class="number">1</span>, right, ascending);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//递归式快速排序_入口</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">quickSort</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; vec, <span class="keyword">bool</span> ascending)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = vec.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">if</span> (count &lt;= <span class="number">1</span>)<span class="comment">//无需排序的状态</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="built_in">quickSort_Rp</span>(vec, <span class="number">0</span>, vec.<span class="built_in">size</span>() - <span class="number">1</span>, ascending);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    vector&lt;<span class="keyword">int</span>&gt; test;</span><br><span class="line">    <span class="built_in">intRandomRange</span>(test, <span class="number">0</span>, <span class="number">10</span>, <span class="number">10</span>);</span><br><span class="line">    cout &lt;&lt; <span class="built_in">vector2string</span>(test) &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">quickSort</span>(test, <span class="literal">false</span>))</span><br><span class="line">        cout &lt;&lt; <span class="built_in">vector2string</span>(test) &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;No Need to Quick Sort&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
       
-      <span>标签</span>
-    </a>
-    
-  </li>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/13/QuickSort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="cktip7fv70000kou7270z05vr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-%E6%A0%87%E7%AD%BE/" rel="tag">C++   // 标签</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Program/" rel="tag">Program</a></li></ul>
+
+    </footer>
+  </div>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
+</article>
+
+
   
-  <li class="hide-on-med-and-down nav-item">
+    <article id="post-考研英语小作文" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/23/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E5%B0%8F%E4%BD%9C%E6%96%87/" class="article-date">
+  <time datetime="2020-07-22T16:00:00.000Z" itemprop="datePublished">2020-07-23</time>
+</a>
     
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a>►<a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/%E8%8B%B1%E8%AF%AD/">英语</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
     
-  </li>
+    
+      <header class="article-header">
+        
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/23/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E5%B0%8F%E4%BD%9C%E6%96%87/">考研英语小作文</a>
+    </h1>
   
-  <li class="hide-on-med-and-down nav-item">
+
+      </header>
     
-    <a href="/contact" class="waves-effect waves-light">
+    <div class="article-entry" itemprop="articleBody">
       
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+        <h2 id="考研英语小作文"><a href="#考研英语小作文" class="headerlink" title="考研英语小作文"></a>考研英语小作文</h2><h3 id="考试范围"><a href="#考试范围" class="headerlink" title="考试范围"></a>考试范围</h3><h5 id="应用文写作-100字"><a href="#应用文写作-100字" class="headerlink" title="应用文写作 100字"></a>应用文写作 100字</h5><ul>
+<li><strong>通知</strong></li>
+<li><strong>信函</strong></li>
+<li><em>其他</em>  （基本没考，但还是有一定的概率）</li>
+</ul>
+<h5 id="评分标准"><a href="#评分标准" class="headerlink" title="评分标准"></a>评分标准</h5><p>第五档：很好的完成了试题规定的任务</p>
+<ul>
+<li>含所有要点</li>
+<li>语法结构和词汇要丰富</li>
+<li>语法错误极少（<strong>1处</strong>）</li>
+<li><strong>多种</strong>衔接手段<ul>
+<li>代词的使用</li>
+<li><strong>同义替换</strong></li>
+<li><strong>连接性词语的使用</strong><ul>
+<li>although, while, however, therefore, equally important, finally, above all.</li>
+</ul>
+</li>
+<li><strong>并列结构</strong><ul>
+<li>and, or</li>
+</ul>
+</li>
+<li><strong>关键词复现</strong></li>
+</ul>
+</li>
+<li><strong>格式，语域</strong><ul>
+<li>书信格式等等</li>
+<li>一般使用正规的语法和单词<ul>
+<li>不要用gonna, I’m等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 id="总论指导"><a href="#总论指导" class="headerlink" title="总论指导"></a>总论指导</h3><ul>
+<li><strong>积累词汇</strong></li>
+<li><strong>练习写作</strong></li>
+<li><strong>批改验证</strong></li>
+</ul>
+<h3 id="2010-英语二"><a href="#2010-英语二" class="headerlink" title="2010 英语二"></a>2010 英语二</h3><p>Directions:</p>
+<p>　　You have just come back from the U.S. as a <a href="http://kaoyan.koolearn.com/zhuanshuo/mem/" target="_blank" rel="noopener">mem</a>ber of a Sino-American cultural exchange program. Write a letter to your American colleague to</p>
+<p>　　1) Express your thanks for his/her warm reception;</p>
+<p>　　2) Welcome him/her to visit China in due course.</p>
+<p>　　You should write about 100 words on ANSWER SHEET 2.</p>
+<p>　　Do not sign your own name at the end of the letter. Use “Zhang Wei” instead.</p>
+<p>　　Do not write your address. (10 points)</p>
+<h4 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h4><ul>
+<li><strong>Sino-American</strong> cultural exchange program <strong>中美</strong>文化交流项目<ul>
+<li>job-training program 实训项目</li>
+</ul>
+</li>
+<li>colleague n. 同事<ul>
+<li>college n. 大学</li>
+</ul>
+</li>
+<li><strong>warm reception 热情接待</strong><ul>
+<li>receptionist n. 接待人员</li>
+<li>reception desk 接待处</li>
+</ul>
+</li>
+<li><strong>in due course 在合适的时候</strong></li>
+</ul>
+<h4 id="作文要求"><a href="#作文要求" class="headerlink" title="作文要求"></a>作文要求</h4><ol>
+<li><strong>开头表示感谢</strong><ul>
+<li>*<em>I am indeed obliged to you for *</em>your warm reception and generous help.<ul>
+<li>我很感谢你的温暖接待和慷慨帮助</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>邀请他适当的时候来中国游玩</strong></li>
+<li>不要使用真名，而是写 Zhang Wei</li>
+<li>不用写地址</li>
+</ol>
+<h3 id="2005-英语一"><a href="#2005-英语一" class="headerlink" title="2005 英语一"></a>2005 英语一</h3><h4 id="笔记-1"><a href="#笔记-1" class="headerlink" title="笔记"></a>笔记</h4><ul>
+<li><p>get a job as an editor for the magazine</p>
+</li>
+<li><p>what you expected 你所期望的</p>
+</li>
+<li><p>quit = leave = depart = resign v. 辞职</p>
+<ul>
+<li>exit = departure = regination n. 辞职</li>
+</ul>
+</li>
+<li><p>state v. 陈述，阐述，表述</p>
+<ul>
+<li>joint statement 联合声明</li>
+</ul>
+</li>
+<li><p>apology n. 道歉</p>
+<ul>
+<li>apologize / apologise v. 道歉 </li>
+<li>make an apology</li>
+</ul>
+</li>
+</ul>
+<h4 id="作文要求-1"><a href="#作文要求-1" class="headerlink" title="作文要求"></a>作文要求</h4><p>辞职信</p>
+<ol>
+<li><strong>开头道歉</strong></li>
+<li>表示离职原因</li>
+<li>About 100 words</li>
+<li>use “Li Ming” Instead</li>
+<li>no need to write address</li>
+</ol>
+<h3 id="2006-英语一"><a href="#2006-英语一" class="headerlink" title="2006 英语一"></a>2006 英语一</h3><h4 id="笔记-2"><a href="#笔记-2" class="headerlink" title="笔记"></a>笔记</h4><ul>
+<li>Project Hope 希望工程</li>
+<li>offer financial aid 资助 / 提供经济援助</li>
+<li>in a remote area 在一个遥远的地区</li>
+<li>the department concerned 有关部门<ul>
+<li>department n. 部门；系</li>
+</ul>
+</li>
+<li>candidate n. 人选，候选</li>
+<li>specify v. 明确列出<ul>
+<li>specific = concrete adj. 明确的</li>
+<li>benefit 益处</li>
+</ul>
+</li>
+</ul>
+<h4 id="作文要求-2"><a href="#作文要求-2" class="headerlink" title="作文要求"></a>作文要求</h4><h3 id="2007-英语一"><a href="#2007-英语一" class="headerlink" title="2007 英语一"></a>2007 英语一</h3>
       
-      <span>留言板</span>
-    </a>
-    
-  </li>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/07/23/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E5%B0%8F%E4%BD%9C%E6%96%87/" data-id="ckd8l2ioa004728nseropdnw4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E4%BD%9C%E6%96%87/" rel="tag">小作文</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li></ul>
+
+    </footer>
+  </div>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
+</article>
+
+
   
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
+    <article id="post-中译英重要单词" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/09/%E4%B8%AD%E8%AF%91%E8%8B%B1%E9%87%8D%E8%A6%81%E5%8D%95%E8%AF%8D/" class="article-date">
+  <time datetime="2020-06-09T14:46:57.506Z" itemprop="datePublished">2020-06-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/09/%E4%B8%AD%E8%AF%91%E8%8B%B1%E9%87%8D%E8%A6%81%E5%8D%95%E8%AF%8D/">中译英重要单词</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="中译英重要单词"><a href="#中译英重要单词" class="headerlink" title="中译英重要单词"></a>中译英重要单词</h3><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>装饰品</td>
+<td>n.</td>
+<td>ornament</td>
+</tr>
+<tr>
+<td>绳结</td>
+<td>n.</td>
+<td>knot</td>
+</tr>
+<tr>
+<td>人类社会学</td>
+<td>n.</td>
+<td>anthropology</td>
+</tr>
+<tr>
+<td>合适的</td>
+<td>adj.</td>
+<td>appropriate</td>
+</tr>
+<tr>
+<td>狡猾</td>
+<td>n.</td>
+<td>cunning</td>
+</tr>
+<tr>
+<td>诱惑力</td>
+<td>n.</td>
+<td>glamour</td>
+</tr>
+<tr>
+<td>诱惑</td>
+<td>v.</td>
+<td>tempt</td>
+</tr>
+<tr>
+<td>干扰，打断</td>
+<td>v.</td>
+<td>intervene;</td>
+</tr>
+<tr>
+<td>然而</td>
+<td>conj.</td>
+<td>whereas</td>
+</tr>
+<tr>
+<td>官僚主义</td>
+<td>n.</td>
+<td>bureaucracy</td>
+</tr>
+<tr>
+<td>自尊心</td>
+<td>n.</td>
+<td>ego</td>
+</tr>
+<tr>
+<td>初步的</td>
+<td>adj.</td>
+<td>preliminary</td>
+</tr>
+<tr>
+<td>律师</td>
+<td>n.</td>
+<td>lawyer; counsel;</td>
+</tr>
+<tr>
+<td>曲解</td>
+<td>v.</td>
+<td>distort</td>
+</tr>
+<tr>
+<td>赞同</td>
+<td>v.</td>
+<td>endorse; approve;</td>
+</tr>
+<tr>
+<td>争吵</td>
+<td>v.</td>
+<td>dispute;</td>
+</tr>
+<tr>
+<td>谬论</td>
+<td>n.</td>
+<td>fallacy</td>
+</tr>
+<tr>
+<td>嘲笑,轻蔑</td>
+<td>v.</td>
+<td>tease; comtempt</td>
+</tr>
+<tr>
+<td>尽管</td>
+<td>prep.</td>
+<td>although; though; despite; in spite of;</td>
+</tr>
+<tr>
+<td>似乎说得过去的</td>
+<td>adj.</td>
+<td>plausible</td>
+</tr>
+<tr>
+<td>伤亡人数</td>
+<td>n.</td>
+<td>casualty; toll;</td>
+</tr>
+<tr>
+<td>往返航班</td>
+<td>n.</td>
+<td>shuttle</td>
+</tr>
+<tr>
+<td>主张</td>
+<td>v.</td>
+<td>argue;</td>
+</tr>
+<tr>
+<td>死亡</td>
+<td>v.</td>
+<td>perish; die;</td>
+</tr>
+<tr>
+<td>草图</td>
+<td>n.</td>
+<td>draft;</td>
+</tr>
+<tr>
+<td>意识到；理解</td>
+<td>v.</td>
+<td>perceive</td>
+</tr>
+<tr>
+<td>猜测</td>
+<td>v.</td>
+<td>speculate</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/09/%E4%B8%AD%E8%AF%91%E8%8B%B1%E9%87%8D%E8%A6%81%E5%8D%95%E8%AF%8D/" data-id="ckd8l2hj5003428ns1we9gqgn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-考研词汇精讲" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/24/%E8%80%83%E7%A0%94%E8%AF%8D%E6%B1%87%E7%B2%BE%E8%AE%B2/" class="article-date">
+  <time datetime="2020-05-23T16:00:00.000Z" itemprop="datePublished">2020-05-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a>►<a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/%E8%8B%B1%E8%AF%AD/">英语</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E8%80%83%E7%A0%94%E8%AF%8D%E6%B1%87%E7%B2%BE%E8%AE%B2/">考研词汇精讲</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="政治法律类词汇："><a href="#政治法律类词汇：" class="headerlink" title="政治法律类词汇："></a>政治法律类词汇：</h2><h4 id="Unit1-司法类"><a href="#Unit1-司法类" class="headerlink" title="Unit1 司法类"></a>Unit1 司法类</h4><ul>
+<li><p>prosecute = sue  v.起诉</p>
+<ul>
+<li>prosecute / sue  sb. for sth.</li>
+<li>prosecution n. 起诉</li>
+<li>prosecutor n. 检察官，公诉人</li>
+<li>suit = lawsuit n. 诉讼 <ul>
+<li>a federal <strong>class-action</strong> lawsuit 联邦<strong>集体</strong>诉讼</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>accuse  = charge v. 指控; 指责; 控诉 </p>
+<ul>
+<li><p><strong>accuse sb. of sth.</strong></p>
+</li>
+<li><p><strong>charge sb. with sth.</strong></p>
+</li>
+<li><p>accusation n. 指控 </p>
+</li>
+</ul>
+</li>
+<li><p>landowner n. 土地所有人 </p>
+<ul>
+<li><p>homeowner 房产所有人</p>
+</li>
+<li><p>carowner 汽车所有人</p>
+</li>
+<li><p>prosecute the landowner for sth.</p>
+</li>
+<li><p>manufacturer n. 制造生产商</p>
+</li>
+</ul>
+</li>
+<li><p>claimant = plaintiff n. 原告 </p>
+<ul>
+<li>claim v./n. 索要，索取，索赔，主张，声称 </li>
+</ul>
+<ul>
+<li>complaint v. 抱怨;投诉 <ul>
+<li>complaint n. 抱怨 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>defendant n. 被告 </p>
+<ul>
+<li>defend v. 为…辩护；保卫，保护；证明…合理/合法/合情<ul>
+<li><strong>justify v. 辩护</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>justified adj. 合理的 </p>
+<pre><code>- attack v. 攻击；抨击
+</code></pre>
+</li>
+<li><p>justice n. 大法官（美国最高法院的法官）</p>
+<ul>
+<li>judge n. 法官（除大法官以外的法官） v. 判断 <ul>
+<li>judgement n. 判断</li>
+<li>judicial adj. 司法的 <ul>
+<li>the judicial system 司法制度 </li>
+</ul>
+</li>
+<li>jurisdiction n. 司法</li>
+<li>prejudice n.偏见，成见 <ul>
+<li><em>该词基于词根==jud==构成，可以理解为在获得充分证据之前的提前判断</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>just 、fair 、equal</p>
+<ul>
+<li>just -&gt; justice 大法官；正义</li>
+<li>fair adj. 公平的 n. 交易会；博览会；集市<ul>
+<li>Guangzhou Export Communities Fair 广州出口商品交易会</li>
+<li>unfair adj. 不公平的</li>
+<li>fair play 公平操作，规则公平</li>
+</ul>
+</li>
+<li>equal adj. 平等的<ul>
+<li>All men are created equal</li>
+<li>equality n. 平等</li>
+<li>equally big surprise 同样大的惊喜</li>
+<li>equally big habitat 同样大的栖息地</li>
+<li>equivalent adj. 等同于，相当于<ul>
+<li>be equivalent to<ul>
+<li>the Chinese equivalent of the American Congress is the National People’s Congress</li>
+</ul>
+</li>
+<li>equation n. 等式，方程式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>jury n. 陪审团</p>
+<ul>
+<li>juror n. 陪审员</li>
+<li>the jury system 陪审团制度</li>
+</ul>
+</li>
+<li><p>lawyer（英）= attorney（美） n.律师</p>
+</li>
+<li><p>dispute n. / v. 争议 </p>
+<ul>
+<li><p>repute n.名誉 </p>
+</li>
+<li><p>reputed adj.声名远扬；普遍认为 </p>
+</li>
+<li><p>reputation n.名声 </p>
+<ul>
+<li>he has a reputation for slacking. 他有懒散的名声。</li>
+</ul>
+</li>
+<li><p>a disputed issue 一个有争议的问题</p>
+</li>
+<li><p><strong>provoke / spark a dispute 引起一个争议</strong></p>
+</li>
+<li><p>resolve the dispute / controversy 解决争议</p>
+</li>
+<li><p><strong>sth. has long been in dispute 某事一直以来备受争议</strong></p>
+</li>
+<li><p><strong>sth. is beyond dispute. 没有争议</strong></p>
+</li>
+</ul>
+</li>
+<li><p>controversy n. 争议 </p>
+<ul>
+<li>contrary  adj.相反的<ul>
+<li>**on the contrary 恰恰相反的是 **</li>
+</ul>
+</li>
+<li>**controversial adj.有争议的 **</li>
+</ul>
+</li>
+<li><p>resort v. 诉诸 </p>
+<ul>
+<li>resort / turn to the court 诉诸法律</li>
+</ul>
+</li>
+<li><p>preside v. 主持 </p>
+<ul>
+<li><p>president 主席；总统；行长；校长；总裁n.</p>
+</li>
+<li><p>preside over sth. 主持某事</p>
+</li>
+<li><p>preside over a meeting / trial 主持一场会议/审判</p>
+<ul>
+<li><strong>the trail of sb. 对某人的审判/审讯</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>argument n. 争吵；观点 </p>
+<ul>
+<li><p>argue v. 主张，认为；争吵 </p>
+<ul>
+<li>It might be argued that … 一些人认为…</li>
+</ul>
+</li>
+<li><p>quarrel n./v. 吵架 </p>
+</li>
+</ul>
+</li>
+<li><p>debate n./v. 争论；辩论 </p>
+<ul>
+<li>parliamentary debate 国会辩论</li>
+<li>a nationwide debate 全国范围的辩论</li>
+</ul>
+</li>
+<li><p>contest  n. <strong>抗辩</strong>；竞赛 </p>
+<ul>
+<li>four contested provisions / clauses 四项抗辩(有异议的)条款</li>
+<li>English contest 英语竞赛</li>
+<li>English speech contest 英语演讲竞赛 </li>
+</ul>
+</li>
+<li><p>commit v.犯下 </p>
+<ul>
+<li>commit a crime 犯罪</li>
+<li>commit a mistake 犯错</li>
+<li>commit a suicide 自杀</li>
+</ul>
+</li>
+<li><p>crime n. / v. 犯罪 </p>
+<ul>
+<li>criminal n. 罪犯 <ul>
+<li>criminal behavior 犯罪行为</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>suspect n. 嫌疑人; v. 怀疑 </p>
+<ul>
+<li>arrest the suspect 抓捕嫌疑人</li>
+</ul>
+</li>
+<li><p>sin n. 罪恶 </p>
+<ul>
+<li>Gambling was broadly considered a sin. 赌博曾被广泛认为是一种罪恶。</li>
+</ul>
+</li>
+<li><p>blunder n.（无意酿下的）大错 </p>
+<ul>
+<li>blind adj. 盲的 </li>
+</ul>
+</li>
+<li><p>adaptation blunders 适应方面的错误</p>
+<ul>
+<li>The move was seen / considered as a blunder. 这次举动被视为一个错误。</li>
+</ul>
+</li>
+<li><p>gamble n. 赌博</p>
+<ul>
+<li>game n. 游戏 </li>
+</ul>
+</li>
+<li><p>corruption n. 腐败</p>
+<ul>
+<li><em>prosecute the governor for corruption</em></li>
+</ul>
+</li>
+<li><p>bribery n. 贿赂</p>
+</li>
+<li><p>theft n. 盗窃 </p>
+</li>
+<li><p>fabricating sth. 编造某事 （动名词）</p>
+<ul>
+<li>The panel was accused of fabricating data. 这个小组被指控伪造数据</li>
+</ul>
+</li>
+<li><p>fraud n. 欺诈</p>
+</li>
+<li><p>hijack v. 劫持</p>
+<ul>
+<li>hijacking n. 劫持</li>
+<li>hijack social media to apply pressure on the businesses 劫持社交媒体来对商家施加压力</li>
+</ul>
+</li>
+<li><p>murder n. 谋杀</p>
+</li>
+<li><p>consipiracy n. 密谋</p>
+</li>
+<li><p>assault / attack v. 袭击</p>
+<ul>
+<li>a hacker assault 一次黑客袭击</li>
+<li>assault on teachers / children</li>
+</ul>
+</li>
+<li><p>decision = verdict  n. 决定；<strong>判决</strong></p>
+<ul>
+<li>ruling n.【最高法院的】裁决；裁定<ul>
+<li>a sweeping ruling 一个一刀切的裁决<ul>
+<li><strong>sweep 拖</strong><ul>
+<li>sweep a floor 拖地</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the courts’ ruling 该法院的裁定</li>
+<li>the judge / justice rules that …</li>
+<li>the law / act / bill / order rules that …</li>
+</ul>
+</li>
+<li>through trial, the judge make a decision</li>
+</ul>
+</li>
+<li><p>arbiter n. 仲裁者</p>
+<ul>
+<li>we should not let others be arbiters of our beauty.</li>
+</ul>
+</li>
+<li><p>evidence = proof n. 证据</p>
+<ul>
+<li>evident adj. 清楚的</li>
+<li>prove v. 证明</li>
+</ul>
+</li>
+<li><p>confirm v. 确认</p>
+<ul>
+<li><p>confirmation n. 确认</p>
+</li>
+<li><p>confirm that he is the father of the kid.</p>
+</li>
+<li><p>recent court decisions have confirmed the right of all children.</p>
+</li>
+</ul>
+</li>
+<li><p>approve v. 批准，审批；赞同</p>
+<ul>
+<li>disapprove 不同意</li>
+<li>approve of sth.</li>
+<li>approve of a contract. </li>
+<li>approve of a budget.</li>
+<li>approve of a drug.</li>
+</ul>
+</li>
+<li><p>overturn v. 撤销；推翻</p>
+<ul>
+<li>overturn the decision 推翻了这个判决</li>
+<li>overturn the prior decision 推翻了之前的判决</li>
+<li>guilty verdict / decision / ruling 有罪判决</li>
+<li>innocent verdict / decision / ruling 无罪判决<ul>
+<li>cent n. 美分</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>invalidate v. 使无效</p>
+<ul>
+<li><p>invalid adj. 无效的</p>
+<ul>
+<li>invalid user name</li>
+</ul>
+</li>
+<li><p>invalidate the law / bill / act / rule</p>
+</li>
+</ul>
+</li>
+<li><p>precede v. 先于，优先于</p>
+<ul>
+<li>federal laws precedes state laws.</li>
+<li>Ming Dynasty preceded Qing Dynasty.</li>
+</ul>
+</li>
+<li><p>conviction n. 定罪</p>
+<ul>
+<li><strong>be exempt from conviction 免于定罪</strong></li>
+<li>The supreme court has overturned the corruption conviction of a former governor.</li>
+</ul>
+</li>
+<li><p>trial n. 审判</p>
+</li>
+<li><p>sentence v. 宣判</p>
+<ul>
+<li>sentence sb. to death</li>
+<li>sb. was sentenced in imprison</li>
+<li>sentence sb. forced community service</li>
+</ul>
+</li>
+<li><p>imprison v. 入狱</p>
+</li>
+<li><p>release v. 释放</p>
+</li>
+<li><p>appeal v. 上诉，申诉</p>
+<ul>
+<li><strong>appeal to 申诉，上诉，呼吁</strong><ul>
+<li>appeal to a higher court 上诉到更高一级法院</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>examine v. 认真检查；仔细检查</p>
+</li>
+<li><p>tell A from B 将A和B区分开来</p>
+<ul>
+<li>It can be / seems / is difficult to tell good information from bad.</li>
+<li>differentiate v. 区别<ul>
+<li><strong>differentiate between</strong> a credible man <strong>and</strong> a dishonest man.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>discriminate v. 歧视</p>
+<ul>
+<li>discriminate against sb. 歧视某人</li>
+<li>discrimination n. 歧视</li>
+</ul>
+</li>
+<li><p>fine n. / v.  罚款；惩罚 adj. 好的</p>
+<ul>
+<li><p>finance n. 财政；金融 v. 拨款，资助</p>
+<ul>
+<li>finance the project</li>
+<li>finance his education</li>
+</ul>
+</li>
+<li><p>lower fines</p>
+</li>
+<li><p>he received lower fines.</p>
+</li>
+</ul>
+</li>
+<li><p>punish v. 惩罚</p>
+<ul>
+<li>punishment n. 惩罚</li>
+</ul>
+</li>
+<li><p>penalty n. 惩罚</p>
+<ul>
+<li>penalize v. 惩罚</li>
+<li><strong>penetrate v. 刺穿</strong></li>
+<li>pen n. 钢笔</li>
+<li>pin n. 大头针</li>
+<li>pain n. 疼；痛</li>
+</ul>
+</li>
+<li><p>sanction n. 制裁；处罚</p>
+<ul>
+<li>impose sanctions against Korea / Iraq 实施制裁</li>
+<li>lift the sanctions against sb. 解除制裁</li>
+</ul>
+</li>
+<li><p>violate v. 违反</p>
+<ul>
+<li>violate the rule / law / bill / act / regulation<ul>
+<li>follow the rule / law / bill / act / regulation</li>
+</ul>
+</li>
+<li>violate the constitution</li>
+<li>violate one’s privacy </li>
+<li>violence n. 暴力</li>
+<li>violent adj. 猛烈的</li>
+</ul>
+</li>
+<li><p>dismiss v. 不考虑</p>
+<ul>
+<li>dismiss one’s proposal 驳回某人的提议</li>
+<li>dismiss that possibility entirely 完全不考虑那种可能性</li>
+<li>It has been dismissed by the supreme court.</li>
+</ul>
+</li>
+<li><p>abolish v. 废除</p>
+<ul>
+<li><p>abolition n. 废除</p>
+<ul>
+<li>the abolition of slavery 奴隶制的废除</li>
+</ul>
+</li>
+<li><p>abortion n. 流产</p>
+</li>
+<li><p>abolish an entire class of patents. 废除一整类的专利权</p>
+</li>
+</ul>
+</li>
+<li><p>exempt v. 豁免</p>
+<ul>
+<li>be exempt from</li>
+</ul>
+</li>
+<li><p>court n. 法院，法庭；球场；宫廷，朝廷</p>
+<ul>
+<li><em>food court 美食街</em></li>
+<li>resort to the court 诉诸法律</li>
+<li>the Supreme Court 最高法院</li>
+</ul>
+</li>
+<li><p>chancellor n. 大臣；法官</p>
+<ul>
+<li>the socially concerned chancellor （2014.Text1.）心系社会的大臣</li>
+</ul>
+</li>
+<li><p>witness v. 目击，见证；n. 目击者，证人</p>
+<ul>
+<li><p>wit n. 智慧</p>
+</li>
+<li><p>wisdom n. 智慧</p>
+</li>
+<li><p><em><strong>widow n. 寡妇</strong></em></p>
+</li>
+<li><p>The period between A and B witnessed sth.</p>
+</li>
+</ul>
+</li>
+<li><p>hearing n. 听证会</p>
+<ul>
+<li>conduct public hearing 举行公众听证会</li>
+<li>a cout hearing 庭审</li>
+</ul>
+</li>
+<li><p>plead v. 恳请</p>
+<ul>
+<li>plead for sth.  =  ask for sth.  =  appeal for sth.  恳求，请求</li>
+<li>plead for rate relief 恳求降价</li>
+</ul>
+</li>
+<li><p><strong>rights</strong> and <strong>obligations</strong> 权利与义务</p>
+<ul>
+<li><p>the right to sth. </p>
+<ul>
+<li>the right to private property 私有财产权</li>
+<li>the right to physician-assisted suicide 安乐死权</li>
+</ul>
+</li>
+<li><p>oblige = force = compel v. 逼迫，迫使</p>
+<ul>
+<li><strong>oblige / force / compel  sb. to do sth. 逼迫某人做某事</strong><ul>
+<li>he was compelled to leave / resign / quit. 他被迫离职</li>
+</ul>
+</li>
+<li>compulsory adj. 义务的，强制的<ul>
+<li>compulsory education 义务教育</li>
+<li>a compulsory internet driver’s license <ul>
+<li>license n. 许可证，执照</li>
+</ul>
+</li>
+<li>compulsory courses 必修课</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>obligation = liability  = responsibility = duty n. 义务</p>
+<ul>
+<li><p>shoulder the responsibility 肩负起这份责任</p>
+</li>
+<li><p>legal liability 法律责任</p>
+</li>
+<li><p>protect the manufacturer from legal liability 保护开发商免于担负法律责任</p>
+</li>
+<li><p>liable adj. 负责的</p>
+<ul>
+<li>be liable for = be responsible for 对…负责</li>
+<li>be liable to do sth.  =  tend to do sth. = be inclined to do sth. 倾向于做某事</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>patent n. 专利（权）</p>
+<ul>
+<li>patent experts 专利权方面的专家</li>
+<li>grant / authorize / issue sb. a patent 授予某人一项专利</li>
+<li>overturn / eliminate an entire class of patents 撤销一整类的专利</li>
+</ul>
+</li>
+<li><p>copyright 版权</p>
+<ul>
+<li>copyright owner 版权所有人</li>
+</ul>
+</li>
+<li><p>ownership 所有制</p>
+<ul>
+<li>ownership structure n. 所有制结构【政治】</li>
+</ul>
+</li>
+<li><p>strike n. 罢工；撞击</p>
+<ul>
+<li>attend a strike 参加一场罢工</li>
+</ul>
+</li>
+<li><p>forbid = prohibit = ban v. 禁止；取缔</p>
+<ul>
+<li>she is prohibited from entering the casino. 她被禁止进入那个赌场</li>
+</ul>
+</li>
+<li><p>allow = permit v. 允许，许可</p>
+<ul>
+<li>she is allowed to enter the casino. 她被准许进入那个赌场</li>
+</ul>
+</li>
+<li><p>warrant n. 授权书，委任状，准许状，搜查令</p>
+<ul>
+<li>the police issues a warrant to arrest sb. 警察批准了那个逮捕某人的授权书</li>
+</ul>
+</li>
+<li><p>licence n. 许可证</p>
+<ul>
+<li>license n. / v. 许可证，证书；v. 允许，许可<ul>
+<li>driver’s license 驾驶证</li>
+<li>medical license 执业医师许可证</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>illicit = illegal adj. 违法的</p>
+<ul>
+<li>permit v. 准许，许可</li>
+<li>allow  v. 准许，许可</li>
+</ul>
+</li>
+<li><p>intrude v. 侵犯</p>
+<ul>
+<li><p>intrude on green belt</p>
+</li>
+<li><p>intrusion n. 侵犯</p>
+</li>
+</ul>
+</li>
+<li><p>tort n. 侵权（法）</p>
+<ul>
+<li>the tort law </li>
+<li>the tort system 侵权制度</li>
+</ul>
+</li>
+</ul>
+<h3 id="Unit2-立法执法"><a href="#Unit2-立法执法" class="headerlink" title="Unit2 立法执法"></a>Unit2 立法执法</h3><ul>
+<li><p>law = bill = act = statute = rule = regulation  n. 法律；法则；规律 </p>
+<ul>
+<li><p><strong>the Charter = the Constitution 宪法</strong></p>
+</li>
+<li><p>natural laws 自然规律</p>
+</li>
+<li><p>state laws 洲际法律</p>
+</li>
+<li><p>federal statue 联邦法规</p>
+</li>
+<li><p>The Human Rights Bill 人权法</p>
+</li>
+<li><p>The Tea Act 茶叶法案 <em>使得美国独立成为一个国家并命名为USA</em></p>
+</li>
+<li><p><strong>rule = regulation 学校规范，区域规范</strong></p>
+</li>
+</ul>
+</li>
+<li><p><strong>comply with = abide by = follow = obey 遵守，按照</strong></p>
+</li>
+<li><p><strong>legislate v. 立法</strong></p>
+<ul>
+<li>legal adj. 法律的；合法的<ul>
+<li>legal learning 法律知识（07翻译）</li>
+<li>legal practice 法律实践</li>
+</ul>
+</li>
+<li>legitimate adj. 合法的；<strong>合理的</strong><ul>
+<li>legitimate concerns 合理的担忧</li>
+</ul>
+</li>
+<li>legitimacy n. 合法（性）；合理（性）</li>
+<li>legislation n. 立法</li>
+<li>legislator n. 议员；人大代表</li>
+<li>legislature n. 立法机关；议会<ul>
+<li>congress n. 国会（美）</li>
+<li>parliament n. 议会（英）</li>
+<li>the National People’s Congress （NPC）全国人民代表大会</li>
+</ul>
+</li>
+<li>legislative adj. 立法的<ul>
+<li>legislative body 立法机关；立法主体</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>charter n. 宪章</p>
+</li>
+<li><p>amend v. 修改</p>
+<ul>
+<li><p>amend the Constitution 修改宪章</p>
+</li>
+<li><p>mend v. （<strong>针对实物的</strong>）修复</p>
+<ul>
+<li>mend the broken bone 修复摔伤的骨头</li>
+</ul>
+</li>
+<li><p>the fourth Amendment 《第四修正案》</p>
+</li>
+<li><p>violate the fourth Amendment 违反《第四修正案》</p>
+</li>
+<li><p>the charter’s main tool 这个宪章（实施）的主要工具</p>
+</li>
+</ul>
+</li>
+<li><p>regulate v. 规范</p>
+<ul>
+<li>regulate our behavior 规范我们的行为</li>
+<li>regulate our mood 掌控我们的情绪</li>
+<li>regular adj. 规范的<ul>
+<li>irregular adj. 不规则的；不规范的</li>
+</ul>
+</li>
+<li>regulatory body 主管部门</li>
+</ul>
+</li>
+<li><p>punish = penalize = fine v. 惩罚</p>
+</li>
+<li><p>item n. 款 = provision n. 条 = clause n. 条款</p>
+<ul>
+<li>The justices overturned three of four contested provisions. 大法官推翻了四条有争议的条款其中的三条。</li>
+<li>the explainatory item 解释性的条款<ul>
+<li>explainatory adj. 解释性的</li>
+<li>explain v. 解释</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>compact n. 共识</p>
+<ul>
+<li>basic compact 基本共识</li>
+<li>contract n. 合同</li>
+<li>agreement n. 协议，共识</li>
+</ul>
+</li>
+<li><p>frame v. 制订（法律），总体设计…</p>
+<ul>
+<li>frame a bill 制订一个法案</li>
+<li>framer n. 总设计师，总策划</li>
+</ul>
+</li>
+<li><p>draft v. 起草 n. 草案 adj. 起草的</p>
+<ul>
+<li>draft a bill/act/law</li>
+<li>the first draft 初稿</li>
+<li>the final draft 终稿</li>
+</ul>
+</li>
+<li><p>fashion / develop / set up conservation measures 制订环境保护的措施</p>
+</li>
+<li><p>implement = enforce v. 执行</p>
+<ul>
+<li>enforce the law / bill / act / policy 执行政策 </li>
+<li>a well-enforced law 一部被很好执行的法案</li>
+<li>implement the law flexibly 灵活执行法律</li>
+<li>implementation = enforcement 执行<ul>
+<li>joint enforcement 共同执行</li>
+</ul>
+</li>
+<li>reinforce v. 加强<ul>
+<li>reinforce social solidarity </li>
+<li>reinforce the effect</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="专业领域词汇"><a href="#专业领域词汇" class="headerlink" title="专业领域词汇"></a>专业领域词汇</h4><ul>
+<li>the American Bar Examination 美国司法考试 </li>
+</ul>
+<h3 id="Unit3-行政：政府管理"><a href="#Unit3-行政：政府管理" class="headerlink" title="Unit3 行政：政府管理"></a>Unit3 行政：政府管理</h3><h4 id="节一"><a href="#节一" class="headerlink" title="节一"></a>节一</h4><ul>
+<li>administration n. 管理；政府<ul>
+<li>the Trump Administration 特朗普政府</li>
+<li>the administration = the government<ul>
+<li>governor n. 州长；省长</li>
+<li>govern v. 管理</li>
+<li><strong>governance n. 管理</strong><ul>
+<li>corporate governance 公司管理（07.S2.reading.04）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the authorities 当局，官方<ul>
+<li><strong>authority n. 权利</strong></li>
+<li>authorize v. 授权<ul>
+<li>authorize HUAWEI a patent.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>council n. 委员会<ul>
+<li>the state council 国务院；中国中央政府；联邦政府</li>
+<li>the local council 地方议会，地方政府</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>democracy n. 民主（制）<ul>
+<li>democratic adj. 民主的</li>
+<li>science n. 科学</li>
+<li>pioneer n. 先行者</li>
+<li>shopping becomes a public and democratic act. 购物成为了一种开放的人人可以参与的行为</li>
+<li>democratic values 民主价值观</li>
+<li>the Democratic (party) 民主党<ul>
+<li>democrat n. 民主党人</li>
+</ul>
+</li>
+<li>the Republican (party) 共和党<ul>
+<li>republican n. 共和党人</li>
+<li>republic n. 共和国<ul>
+<li>the People’s Republic of China</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>monarchy n. 君主制<ul>
+<li>monarch n. 君主<ul>
+<li>king, queen</li>
+</ul>
+</li>
+<li>head of state 国家首脑，国家元首</li>
+<li>president n. 总统；主席<ul>
+<li>preside over sth. 主持…</li>
+</ul>
+</li>
+<li>prime minister = premier n. 首相，总理<ul>
+<li>Japanese prime minister Abe</li>
+<li>minister n. 部长，大臣<ul>
+<li>the minister of education</li>
+<li>the minister of foreign affairs 外交部长</li>
+<li>the minister of civil affairs 民政部长<ul>
+<li>civilian n. 平民</li>
+</ul>
+</li>
+<li>ministry n. 部</li>
+<li>province n. 省<ul>
+<li>province governor 省长</li>
+</ul>
+</li>
+<li>state n. 州（美）；国家（其它）<ul>
+<li>state governor 州长</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the royal family n. 王室家庭</li>
+<li>Royal Shakespear Company (RSC) 皇家莎士比亚公司</li>
+</ul>
+</li>
+</ul>
+<h3 id="Unit3-行政：政治，官员，部门"><a href="#Unit3-行政：政治，官员，部门" class="headerlink" title="Unit3 行政：政治，官员，部门"></a>Unit3 行政：政治，官员，部门</h3><h4 id="节一-1"><a href="#节一-1" class="headerlink" title="节一"></a>节一</h4><ul>
+<li>politics n. 政治学<ul>
+<li>political leaders 政治领导人</li>
+<li>politician n. 政客 政治家</li>
+<li>statesman n. 政治家</li>
+<li>businessman n. 商人</li>
+<li>economics n. 经济学</li>
+</ul>
+</li>
+<li>senator n. 参议员<ul>
+<li>The senate n. 参议院</li>
+<li><em><strong>senior n. 年长的人；大四学生；adj. 年长的；高级的</strong></em></li>
+</ul>
+</li>
+<li>official n. 官员<ul>
+<li>government officials 政府官员</li>
+<li>incompetent officials 没有能力的官员</li>
+<li>office 办公室</li>
+<li>civil servants 公仆<ul>
+<li><em>serve v. 服务</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the Union 工会<ul>
+<li>the Unions in the public sector 公共部门</li>
+<li>the Unions in the private sector 私有部门</li>
+<li>the students’ Union 学生会</li>
+<li>the postgraduates’ Association  研究生协会<ul>
+<li>association n. 协会</li>
+<li>National Basketball Association (NBA)</li>
+<li>Australian Medical Association</li>
+<li>Chinese Medical Association 中国医学会</li>
+<li>Chinese Football Association (CFA) 中国足协</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>chairman n. 主席；主持人<ul>
+<li>chair = preside v. 主持</li>
+</ul>
+</li>
+<li>federal government 联邦制政府<ul>
+<li>federal court 联邦法院</li>
+<li>federal Bureau of Investigation 联邦调查局<ul>
+<li>bureau n. 局</li>
+<li><strong>bureaucrat n. 官员, 官僚</strong></li>
+<li><strong>bureaucratic adj. 官僚主义的</strong></li>
+<li><strong>bureaucracy n. 官僚主义</strong><ul>
+<li><strong>democracy n. 民主</strong></li>
+<li><strong>democratic adj. 民主的</strong></li>
+<li><strong>democrat n. 民主党人</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>commission = commitee = board n. 委员会 = 部<ul>
+<li>board n. 董事会</li>
+</ul>
+</li>
+<li>institution = agency n. 机构<ul>
+<li>research institution 研究机构</li>
+<li>financial institution 金融机构</li>
+<li>higher institution 高等教育机构，高校</li>
+<li>a national agency 国家机构</li>
+<li>Xinhua News Agency 新华社</li>
+<li>Central Intelligence Agency （CIA）中央情报局</li>
+<li>a traveling agency 旅游社</li>
+</ul>
+</li>
+<li>district n. 区（行政）<ul>
+<li>Haidian District of Beijing</li>
+<li>special administrative district / region 特别行政区</li>
+</ul>
+</li>
+<li>region 地区（地理）<ul>
+<li>poor regions</li>
+<li>regional cooperation 地区合作</li>
+<li>national cooperation 全国性合作</li>
+<li>international cooperation 国际合作</li>
+<li><strong>reign n. 统治</strong><ul>
+<li>In 1912, Puyi ended his reign in embarrassment.</li>
+</ul>
+</li>
+<li>sovereign adj. 有主权的</li>
+<li>sovereignty n. 主权</li>
+<li><em><strong>religion n. 宗教</strong></em></li>
+<li>regime n. 政体</li>
+<li><em><strong>regulate our behavior/mood</strong></em></li>
+</ul>
+</li>
+</ul>
+<h3 id="Unit3-行政：选举、发行、倡导"><a href="#Unit3-行政：选举、发行、倡导" class="headerlink" title="Unit3 行政：选举、发行、倡导"></a>Unit3 行政：选举、发行、倡导</h3><h4 id="节一-2"><a href="#节一-2" class="headerlink" title="节一"></a>节一</h4><ul>
+<li>issue = release v. 出台，发布<ul>
+<li>issue a policy</li>
+<li>issue a <strong>preferential</strong> policy to <strong>lure talents</strong>. 出台优惠政策以吸引人才<ul>
+<li>prefer v. 偏爱</li>
+</ul>
+</li>
+<li>release new guidelines 发布新的指导意见</li>
+</ul>
+</li>
+<li>brief n. 简讯，简报； adj. 简短的<ul>
+<li>a brief introduction</li>
+<li><strong>abbreviate v. 缩写</strong></li>
+<li>abbreviation n. 缩写</li>
+</ul>
+</li>
+<li>elect v. 选举；选择<ul>
+<li>presidential election campaign 总统选举战役<ul>
+<li>campaign n. 战役；运动</li>
+</ul>
+</li>
+<li>elect  sb. as monitor 选举某人做班长</li>
+<li>elect / choose / select  the rich as friends.</li>
+</ul>
+</li>
+<li>lobby = persuade v. 游说，说服<ul>
+<li>anti-smoking lobby 戒烟游说</li>
+<li>persuade sb. into doing sth. 说服某人做某事</li>
+<li>persuade the chinese into <strong>boycotting</strong> a kind of japanese product.<ul>
+<li>boycott v. 抵制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sponsor v. 发起；n. 赞助人<ul>
+<li>sponsor a project 发起一个计划</li>
+<li>sponsor a <strong>initiative</strong> / <strong>advocate</strong> 发起一个倡议<ul>
+<li><strong>advocate = preach v. 倡导；鼓吹 n. 倡导</strong><ul>
+<li>advocate <strong>thrift</strong> 提倡节俭</li>
+<li>They always advocate / preach the American values / democracy / system and attack the socialist values / democracy / system.</li>
+<li>It irrigated chinese that some politicians are advocating Taiwan Independence.</li>
+<li>the Christians always preach their religion.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sponsor a national English speech contest 发起了一个全国英语演讲比赛</li>
+</ul>
+</li>
+<li><strong>responsible adj. 负责任的</strong><ul>
+<li>Who sponsor should be responsible for the initiative. 发起人需要对倡议负责</li>
+</ul>
+</li>
+<li>poll n. 调查；民意投票 <ul>
+<li>the Gallup poll 盖勒普调查</li>
+<li><strong>survey v. / n.  调查</strong><ul>
+<li><strong>a recent survey indicates that ….</strong></li>
+</ul>
+</li>
+<li><strong>census n. 人口普查</strong><ul>
+<li>the 1990 census <strong>revealed</strong> that …</li>
+<li>the 2020 census will <strong>indicate</strong> that …</li>
+<li>reveal = indicate v. 表示，显示，展示</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ballot n. 选票；匿名制选举</li>
+<li>vote v. / n. 投票<ul>
+<li><strong>vote for .. 投票支持</strong></li>
+<li><strong>vote against … 投票反对…</strong> </li>
+<li>vote for the bill / act / law / rule / statute 投票支持那项法案</li>
+</ul>
+</li>
+</ul>
+<h3 id="uint3-行政：身份、迁徙、协调"><a href="#uint3-行政：身份、迁徙、协调" class="headerlink" title="uint3 行政：身份、迁徙、协调"></a>uint3 行政：身份、迁徙、协调</h3><h4 id="节一-3"><a href="#节一-3" class="headerlink" title="节一"></a>节一</h4><h4 id="专业领域词汇-1"><a href="#专业领域词汇-1" class="headerlink" title="专业领域词汇"></a>专业领域词汇</h4><ul>
+<li>Master of Business Administration （MBA）工商管理硕士</li>
+<li>Juris Master（JM）法硕</li>
+</ul>
+<h3 id="附加词汇"><a href="#附加词汇" class="headerlink" title="附加词汇"></a>附加词汇</h3><ul>
+<li><p>solar adj. 太阳的 </p>
+<ul>
+<li><p><strong>solitude 独居 n.</strong></p>
+</li>
+<li><p><strong>solitary 孤独的 adj.</strong></p>
+</li>
+<li><p>isolate 孤立 v.</p>
+</li>
+<li><p>isolated 孤独的 adj.</p>
+</li>
+<li><p>solar energy 太阳能 n.</p>
+</li>
+</ul>
+</li>
+<li><p>adapt v. 适应 </p>
+<ul>
+<li><p>adaptation 适应 n.</p>
+</li>
+<li><p>adapt to the new environment 适应新的环境</p>
+</li>
+</ul>
+</li>
+<li><p>eligible adj. 有资格的</p>
+<ul>
+<li>be eligible for sth. 在某事上有资格<ul>
+<li>be eligible for benefits 有资格得到补助</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>binding adj. 有约束力的</p>
+<ul>
+<li>a legally binding rule 一个具有法律约束力的规定</li>
+<li>bind v. 捆绑</li>
+<li>bound adj. 被俘的</li>
+</ul>
+</li>
+<li><p>follow = obey = abide by = comply with v. 遵守</p>
+</li>
 </ul>
 
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Blog of KrisHugo</div>
-        <div class="logo-desc">
-            
-            Neutral, Indifference, Inertia;
-            
-        </div>
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/05/24/%E8%80%83%E7%A0%94%E8%AF%8D%E6%B1%87%E7%B2%BE%E8%AE%B2/" data-id="ckd8l2ioe004f28ns0nb44r8w" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94/" rel="tag">考研</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%8D%E6%B1%87/" rel="tag">词汇</a></li></ul>
 
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-考研政治" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/" class="article-date">
+  <time datetime="2020-05-18T16:00:00.000Z" itemprop="datePublished">2020-05-19</time>
+</a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a>►<a class="article-category-link" href="/categories/%E8%80%83%E7%A0%94/%E6%94%BF%E6%B2%BB/">政治</a>
+  </div>
 
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
+  </div>
+  <div class="article-inner">
     
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">考研政治</a>
+    </h1>
+  
 
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                KrisHugo Is A Programmer;
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="考研政治"><a href="#考研政治" class="headerlink" title="考研政治"></a>考研政治</h2><h3 id="马原-（24分）"><a href="#马原-（24分）" class="headerlink" title="马原 （24分）"></a>马原 （24分）</h3><p><strong>总括考试要点：</strong></p>
+<ul>
+<li><p><strong>八章，二十三节，一百六十五个考点</strong></p>
+</li>
+<li><p><strong>二、三、五章总共不小于20分</strong></p>
+</li>
+<li><p><strong>四、六章低于3-4分</strong></p>
+</li>
+<li><p><strong>一、七、八章小于1-2分</strong></p>
+</li>
+</ul>
+<p><strong>考点：</strong></p>
+<ul>
+<li>哲学四大领域：<strong>唯物论（辩证唯物论-&gt;强调运动的物质），辩证法（唯物辩证法-&gt;强调物质的运动），认识论，唯物史观</strong></li>
+<li>世界是物质的，物质是运动的，<strong>运动是物质的运动，物质是运动的物质</strong>。</li>
+</ul>
+<h4 id="导论（和科学社会主义一起考总共1-2分）-4-21"><a href="#导论（和科学社会主义一起考总共1-2分）-4-21" class="headerlink" title="导论（和科学社会主义一起考总共1-2分）(4 / 21)"></a>导论（和科学社会主义一起考总共1-2分）(4 / 21)</h4><h5 id="第一章-马克思主义是关于无产阶级和人类解放的科学（非重点）"><a href="#第一章-马克思主义是关于无产阶级和人类解放的科学（非重点）" class="headerlink" title="第一章 马克思主义是关于无产阶级和人类解放的科学（非重点）"></a>第一章 马克思主义是关于无产阶级和人类解放的科学（非重点）</h5><h4 id="哲学（16-18分）（2单选-lt-1分-gt-1-2-2多选-lt-2分-gt-17-18-1分析-lt-10分-gt-34-）"><a href="#哲学（16-18分）（2单选-lt-1分-gt-1-2-2多选-lt-2分-gt-17-18-1分析-lt-10分-gt-34-）" class="headerlink" title="哲学（16-18分）（2单选&lt;1分&gt;[1,2], 2多选&lt;2分&gt;[17,18], 1分析&lt;10分&gt;[34]）"></a>哲学（16-18分）（2单选&lt;1分&gt;[1,2], 2多选&lt;2分&gt;[17,18], 1分析&lt;10分&gt;[34]）</h4><h5 id="第二章-世界的物质性及发展规律"><a href="#第二章-世界的物质性及发展规律" class="headerlink" title="第二章 世界的物质性及发展规律"></a>第二章 世界的物质性及发展规律</h5><h6 id="第一节-世界多样性与物质统一性：唯物论"><a href="#第一节-世界多样性与物质统一性：唯物论" class="headerlink" title="第一节 世界多样性与物质统一性：唯物论"></a>第一节 世界多样性与物质统一性：唯物论</h6><h6 id="第二节-事物的练习与发展：辩证法"><a href="#第二节-事物的练习与发展：辩证法" class="headerlink" title="第二节 事物的练习与发展：辩证法"></a>第二节 事物的练习与发展：辩证法</h6><h6 id="第三节-唯物辩证法是认识世界和改造世界的根本方法（出单选）"><a href="#第三节-唯物辩证法是认识世界和改造世界的根本方法（出单选）" class="headerlink" title="第三节 唯物辩证法是认识世界和改造世界的根本方法（出单选）"></a>第三节 唯物辩证法是认识世界和改造世界的根本方法（出单选）</h6><h5 id="第三章-实践与认识及其发展规律：认识论（2021年34题可能考）"><a href="#第三章-实践与认识及其发展规律：认识论（2021年34题可能考）" class="headerlink" title="第三章 实践与认识及其发展规律：认识论（2021年34题可能考）"></a>第三章 实践与认识及其发展规律：认识论（2021年34题可能考）</h5><h6 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h6><h5 id="第四章-人类社会及其发展规律：唯物史观"><a href="#第四章-人类社会及其发展规律：唯物史观" class="headerlink" title="第四章 人类社会及其发展规律：唯物史观"></a>第四章 人类社会及其发展规律：唯物史观</h5><h6 id="第一节-1"><a href="#第一节-1" class="headerlink" title="第一节"></a>第一节</h6><h4 id="政治经济学（5-7分）（2单选-lt-1分-gt-3-4-2多选-lt-2分-gt-19-20-）"><a href="#政治经济学（5-7分）（2单选-lt-1分-gt-3-4-2多选-lt-2分-gt-19-20-）" class="headerlink" title="政治经济学（5-7分）（2单选&lt;1分&gt;[3,4], 2多选&lt;2分&gt;[19,20]）"></a>政治经济学（5-7分）（2单选&lt;1分&gt;[3,4], 2多选&lt;2分&gt;[19,20]）</h4><h5 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h5><h5 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h5><h4 id="科学社会主义（和导论一起考总共1-2分）-4-21"><a href="#科学社会主义（和导论一起考总共1-2分）-4-21" class="headerlink" title="科学社会主义（和导论一起考总共1-2分）(4 / 21)"></a>科学社会主义（和导论一起考总共1-2分）(4 / 21)</h4><h5 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h5><h5 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h5>
+      
     </div>
-</div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/05/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/" data-id="ckd8l2io8004328nsgyu4h7wx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB/" rel="tag">政治</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94/" rel="tag">考研</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/krishugo" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:KrisHugo@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2676086616" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2676086616" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-    <a href="https://www.zhihu.com/people/KrisHugo" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/KrisHugo" data-position="top" data-delay="50">
-        <i class="fab fa-zhihu1">知</i>
-    </a>
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
-    </div>
-
+  
+    <article id="post-存在主义" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/12/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/" class="article-date">
+  <time datetime="2020-05-11T16:00:00.000Z" itemprop="datePublished">2020-05-12</time>
+</a>
     
-</div>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/writing/">writing</a>
+  </div>
 
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/12/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/">存在主义</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="As-a-extentialist"><a href="#As-a-extentialist" class="headerlink" title="As a extentialist"></a>As a extentialist</h1><p>​    Extentialism，存在主义。今天突然为此着迷了，坚信自己应该成为这样一个贯彻存在主义的人。</p>
+<h3 id="曾经的虚无主义者"><a href="#曾经的虚无主义者" class="headerlink" title="曾经的虚无主义者"></a>曾经的虚无主义者</h3><p>​    以往的我，从来都是一个走过一段算一段的人，没有什么或伟大或细致入微的目标，没有什么细致详实的计划，没有一生一定要做到的事，没有非它不可的决心。</p>
+<p>​    我那时时常会想，既然生不带来，死不带去，为什么要这么拼命呢？若是将自己一生都奉献在苦痛之中了，却没能得到什么回报，那我这一生又有什么意义呢？<strong>既然生命毫无意义，无论我做什么，我都将最终陷入深深的土地之下，或成空气中的微粒，或成宇宙中飘荡的不可见光，那我为什么要活着呢？</strong></p>
+<p>​    甚至产生了各种抛弃生命必经之路的想法：要交朋友？很麻烦啊，要是说错什么了而失去了这个花费那么多精力的朋友，更麻烦啊；要学游泳？很麻烦啊，我怕水，这辈子也不会误入水中的啦，要是有女朋友一定也是选不喜欢游泳的吧；要考大学？简直麻烦过了头啊，每天5点起11点睡，比当今996还要消耗生命啊，凭什么不花多点时间在能让自己身心愉快的事情上呢？啊算了，还是就要心情愉快吧，身体这种东西，反正生命没有意义，活多久也是看天，那只要今天心情开心了，无论如何也足够了吧。</p>
+<p>​    何其消极的想法带来的不只是生活上的不积极主动作为，生命中的不积极追求，生理上的怠惰退步，更加让我在内心中植下了一个心锚，及时行乐，逃避困难，要是被迫站在了困苦的面前，不如就直接从天台上直奔地狱去吧。</p>
+<p>​    作为一个积极寻死的人，能活到今天，实在是因为怕疼吧。</p>
+<h3 id="死亡这一尊神"><a href="#死亡这一尊神" class="headerlink" title="死亡这一尊神"></a>死亡这一尊神</h3><p>​    我不信教，但也因为曾经消极的想法而突然理解了宗教对教徒来说的意义。宗教赋予了死亡一个新意义：<strong>死亡不是终点，而是中转站。</strong></p>
+<p>​    死亡对他们来说并不可怕，死亡列车最终行驶的方向才是可怕的。</p>
+<p>​    <strong>一念天堂，一念地狱</strong>，无论宗教的创立者有怎样的目的，宗教是心灵的归宿这一点是不能否认的。宗教给予了信徒们前进的意义，生命的意义。他们将从信仰宗教开始，便能彻底剥离虚无主义对他们的消极影响，他们将信奉神，为了死亡之后能走向更加美好的‘天堂’之所，他们能够行善戒恶，又或者至少保持绝对的中立。这对个人，可以说是极好的。</p>
+<p>​    那么若是我们不信教呢？我们也能有一柄利刃去斩下那个消极的自己的头颅，做回一个积极向上的人吗？</p>
+<p>​    当然，那就是存在主义。</p>
+<h3 id="无神论者之死"><a href="#无神论者之死" class="headerlink" title="无神论者之死"></a>无神论者之死</h3><p>​    </p>
+<p>​    </p>
+<p>​    </p>
+<p>​    <strong>我们每个人都要用尽一生，为自己的生命赋予意义，唯一决定我们是谁的，只有我们自己！</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/05/12/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/" data-id="ckd8l2inv003x28nsbhrh5xcb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Philosophy/" rel="tag">Philosophy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/writing/" rel="tag">writing</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-picTest" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/29/picTest/" class="article-date">
+  <time datetime="2020-04-29T08:39:19.000Z" itemprop="datePublished">2020-04-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/test/">test</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/29/picTest/">picTest</a>
+    </h1>
+  
 
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="上传图片进行图片加载测试"><a href="#上传图片进行图片加载测试" class="headerlink" title="上传图片进行图片加载测试"></a>上传图片进行图片加载测试</h3><p><img src="/2020/04/29/picTest/7.png" alt="picture"></p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/04/29/picTest/" data-id="ckd8l2heu001l28nsg7c0c1m0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-AppServ搭建遇到的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="article-date">
+  <time datetime="2020-04-29T04:00:00.000Z" itemprop="datePublished">2020-04-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AppServ/">AppServ</a>►<a class="article-category-link" href="/categories/AppServ/phpMyAdmin/">phpMyAdmin</a>►<a class="article-category-link" href="/categories/mysql/">mysql</a>►<a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98/">问题</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">Win10 + AppServ + 另外自行安装的Mysql8.0遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题"><a href="#Win10-AppServ-2-6-0-另外自行安装的Mysql8-0遇到的问题" class="headerlink" title="Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题"></a>Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题</h1><ol>
+<li><strong>配置PHPMyAdmin</strong><ul>
+<li>需要配置的内容有：连接路径，连接的Mysql服务及账户密码</li>
+<li>phpMyAdmin配置文件路径：./config.inc.php (phpMyAdmin根目录下) </li>
+</ul>
+</li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// config.inc.php</span></span><br><span class="line"><span class="comment">// 1. 配置php网站域名</span></span><br><span class="line">$cfg[<span class="string">'PmaAbsoluteUri'</span>] = <span class="string">'http://127.0.0.1/phpmyadmin'</span>;</span><br><span class="line"><span class="comment">// 2. 配置Mysql</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'host'</span>]          = <span class="string">'localhost'</span>; <span class="comment">// MySQL的连接IP, 若需要远程连接即可配置此处</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'port'</span>]          = <span class="string">''</span>;          <span class="comment">// 端口号, 默认空白即为3306</span></span><br><span class="line"><span class="comment">// 3. 配置Mysql账号密码</span></span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'auth_type'</span>]     = <span class="string">'http'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'user'</span>]          = <span class="string">'root'</span>;</span><br><span class="line">$cfg[<span class="string">'Servers'</span>][$i][<span class="string">'password'</span>]      = <span class="string">'123456'</span>; <span class="comment">// 此处使用的是基于mysql_native_password加密规则的账号密码</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意事项<ul>
+<li>./config.sample.inc.php 不需要进行另外的配置</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><strong>Mysql #1251- Client does not support authentication protocol， consider upgrade mysql.</strong><ul>
+<li>问题原因：Mysql 8.0 以上后使用了新的加密规则——chaching_sha2_password. 而 AppServ 2.6.0 中自带的PHP版本为PHP6，因此PHPMyAdmin在登陆Mysql时，无论Mysql账户密码有无设置正确，PHPMyAdmin都无法登陆。</li>
+<li>延伸：此处是Mysql报错，因此若是其他程序登陆Mysql时遇到此问题，也可以用同样的方法。</li>
+<li>解决方法：<ol>
+<li>升级PHP到7.0以上的版本即可使PHP支持新的加密规则（由于本人才疏学浅，担心AppServ统一安装的PHP6若是更换版本会不会导致整个AppServ崩溃，于是选用了另一个方法）</li>
+<li>由于MySql 8.0以后只是默认使用了新的加密规则，并没有直接不支持旧规则——mysql_native_password，因此我们在Mysql进程中进行设置mysql_native_password规则的密码，使之能兼容两个加密规则的登陆请求。下面是解决方案</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 运行环境为win10 1908</span><br><span class="line"># 1. 在终端中登陆mysql</span><br><span class="line">mysql -u username -p123456 # -u后面可以不加空格, -p后面必须不加空格(除非密码里含有一个空格)</span><br><span class="line"># 2. 进入系统数据库</span><br><span class="line">use mysql;</span><br><span class="line"># 3. 添加加密规则 设置在mysql_native_password加密规则下的密码</span><br><span class="line">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;;</span><br><span class="line"># 4. 刷新权限</span><br><span class="line">FLUSH PRIVIEGES;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>新版Edge貌似仍然有BUG，无法通过AppServ进入phpMyAdmin，神秘</strong><ul>
+<li>解决办法：Chrome可以正常打开</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" data-id="ckd8l2he4000b28ns4hyq8k1i" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AppServ/" rel="tag">AppServ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phpMyAdmin/" rel="tag">phpMyAdmin</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-2020-4-28-英语随写" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/" class="article-date">
+  <time datetime="2020-04-28T09:42:00.000Z" itemprop="datePublished">2020-04-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/English/">English</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
-    });
-</script>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/">英语练习</a>
+    </h1>
+  
 
-
-
-<main class="content">
-
+      </header>
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="A-Story-of-an-Ideal"><a href="#A-Story-of-an-Ideal" class="headerlink" title="A Story of an Ideal"></a>A Story of an Ideal</h2><p>Constructing this suburban named “Micky Town”, which seemingly was abandoned by the whole world, was my dream when I was young.<br>I wanna refresh it, make it more like a fantasy castle, which contains real mysterious characters, such as Micky Mouse, Tang Ducky, and Little Fly Elephant, etc, of each sweet girl which should be treated like a real princess.</p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/" data-id="ckd8l2hd4000228ns4u3fa10m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/writing/" rel="tag">writing</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Hexo主题开发学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time datetime="2020-04-27T16:00:00.000Z" itemprop="datePublished">2020-04-28</time>
+</a>
     
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/themes/">themes</a>►<a class="article-category-link" href="/categories/hexo/themes/program/">program</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/">hexo主题开发学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Hexo-主题开发学习"><a href="#Hexo-主题开发学习" class="headerlink" title="Hexo 主题开发学习"></a>Hexo 主题开发学习</h2><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>​    出于个人的开发兴趣以及对个人博客的风格设计需求，附加一点学习经验需要，准备尝试一次大的系统性的插件性质的开发，为自己的前端学习添加一笔。</p>
+<p>​    个人的想法是一个类似Bootstrap所能带来的响应式布局，加之各种花里胡哨的辅助插件，例如视频，输入响应以及CSS动画等等，突然还想到，要加上表情包什么的哈哈哈。</p>
+<p>​    总之就开始吧，这个Blog也是出于记录学习内容而开始的，让我一步步从0开始学习，目标是成为最强的开发工程师啊，开发经验什么的，还是很重要的，以后干脆创业算了哈哈哈！</p>
+
+      
     </div>
-</div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/" data-id="ckd8l2hep001b28ns9wf90gs2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/program/" rel="tag">program</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/themes/" rel="tag">themes</a></li></ul>
 
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
+    </footer>
+  </div>
+  
+</article>
 
 
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">下一页 &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AppServ/">AppServ</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AppServ/phpMyAdmin/">phpMyAdmin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C/Sort-%E5%88%86%E7%B1%BB/">Sort  // 分类</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Lite-Travel/">Lite-Travel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Shell/">Shell</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/college/">college</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/diary/">diary</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/elastic-search/">elastic-search</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/themes/">themes</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/themes/program/">program</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/writing/">writing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/">微观经济学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E5%85%AC/">考公</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/English/">English</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/%E6%94%BF%E6%B2%BB/">政治</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/">数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/%E8%8B%B1%E8%AF%AD/">英语</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%AE%E9%A2%98/">问题</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a></li></ul>
     </div>
+  </div>
+
+
+  
     
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/13/QuickSort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="QuickSort 快速排序  // 文章标题">
-                            
-                            <span class="card-title">QuickSort 快速排序  // 文章标题</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-
-具体C++代码如下
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/C/" class="post-category">
-                                    C++
-                                </a>
-                                
-                                <a href="/categories/C/Sort-%E5%88%86%E7%B1%BB/" class="post-category">
-                                    Sort  // 分类
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Program/">
-                            <span class="chip bg-color">Program</span>
-                        </a>
-                        
-                        <a href="/tags/C-%E6%A0%87%E7%AD%BE/">
-                            <span class="chip bg-color">C++   // 标签</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/07/23/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E5%B0%8F%E4%BD%9C%E6%96%87/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="考研英语小作文">
-                            
-                            <span class="card-title">考研英语小作文</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                考研英语小作文考试范围应用文写作 100字
-通知
-信函
-其他  （基本没考，但还是有一定的概率）
-
-评分标准第五档：很好的完成了试题规定的任务
-
-含所有要点
-语法结构和词汇要丰富
-语法错误极少（1处）
-多种衔接手段
-代词的使用
-同义替换
-连
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/" class="post-category">
-                                    考研
-                                </a>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%8B%B1%E8%AF%AD/">
-                            <span class="chip bg-color">英语</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B0%8F%E4%BD%9C%E6%96%87/">
-                            <span class="chip bg-color">小作文</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/06/09/%E4%B8%AD%E8%AF%91%E8%8B%B1%E9%87%8D%E8%A6%81%E5%8D%95%E8%AF%8D/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="中译英重要单词">
-                            
-                            <span class="card-title">中译英重要单词</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                中译英重要单词
-
-
-
-
-
-
-
-
-装饰品
-n.
-ornament
-
-
-绳结
-n.
-knot
-
-
-人类社会学
-n.
-anthropology
-
-
-合适的
-adj.
-appropriate
-
-
-狡猾
-n.
-cunning
-
-
-诱惑力
-n.
-gla
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Kris Hugo
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/05/24/%E8%80%83%E7%A0%94%E8%AF%8D%E6%B1%87%E7%B2%BE%E8%AE%B2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="考研词汇精讲">
-                            
-                            <span class="card-title">考研词汇精讲</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                政治法律类词汇：Unit1 司法类
-prosecute = sue  v.起诉
-
-prosecute / sue  sb. for sth.
-prosecution n. 起诉
-prosecutor n. 检察官，公诉人
-suit = la
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/" class="post-category">
-                                    考研
-                                </a>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%80%83%E7%A0%94/">
-                            <span class="chip bg-color">考研</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%8B%B1%E8%AF%AD/">
-                            <span class="chip bg-color">英语</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AF%8D%E6%B1%87/">
-                            <span class="chip bg-color">词汇</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/05/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="考研政治">
-                            
-                            <span class="card-title">考研政治</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                考研政治马原 （24分）总括考试要点：
-
-八章，二十三节，一百六十五个考点
-
-二、三、五章总共不小于20分
-
-四、六章低于3-4分
-
-一、七、八章小于1-2分
-
-
-考点：
-
-哲学四大领域：唯物论（辩证唯物论-&gt;强调运动的物质），辩证法
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/" class="post-category">
-                                    考研
-                                </a>
-                                
-                                <a href="/categories/%E8%80%83%E7%A0%94/%E6%94%BF%E6%B2%BB/" class="post-category">
-                                    政治
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%80%83%E7%A0%94/">
-                            <span class="chip bg-color">考研</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%94%BF%E6%B2%BB/">
-                            <span class="chip bg-color">政治</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/05/12/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="存在主义">
-                            
-                            <span class="card-title">存在主义</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                As a extentialist​    Extentialism，存在主义。今天突然为此着迷了，坚信自己应该成为这样一个贯彻存在主义的人。
-曾经的虚无主义者​    以往的我，从来都是一个走过一段算一段的人，没有什么或伟大或细致入微的目
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/writing/" class="post-category">
-                                    writing
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/writing/">
-                            <span class="chip bg-color">writing</span>
-                        </a>
-                        
-                        <a href="/tags/Philosophy/">
-                            <span class="chip bg-color">Philosophy</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/29/picTest/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="picTest">
-                            
-                            <span class="card-title">picTest</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上传图片进行图片加载测试
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/test/" class="post-category">
-                                    test
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/test/">
-                            <span class="chip bg-color">test</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/29/AppServ%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Win10 + AppServ + 另外自行安装的Mysql8.0遇到的问题">
-                            
-                            <span class="card-title">Win10 + AppServ + 另外自行安装的Mysql8.0遇到的问题</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Win10 + AppServ 2.6.0 + 另外自行安装的Mysql8.0遇到的问题
-配置PHPMyAdmin
-需要配置的内容有：连接路径，连接的Mysql服务及账户密码
-phpMyAdmin配置文件路径：./config.inc.ph
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/AppServ/" class="post-category">
-                                    AppServ
-                                </a>
-                                
-                                <a href="/categories/AppServ/phpMyAdmin/" class="post-category">
-                                    phpMyAdmin
-                                </a>
-                                
-                                <a href="/categories/mysql/" class="post-category">
-                                    mysql
-                                </a>
-                                
-                                <a href="/categories/%E9%97%AE%E9%A2%98/" class="post-category">
-                                    问题
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/AppServ/">
-                            <span class="chip bg-color">AppServ</span>
-                        </a>
-                        
-                        <a href="/tags/phpMyAdmin/">
-                            <span class="chip bg-color">phpMyAdmin</span>
-                        </a>
-                        
-                        <a href="/tags/mysql/">
-                            <span class="chip bg-color">mysql</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/28/2020-4-28-%E8%8B%B1%E8%AF%AD%E9%9A%8F%E5%86%99/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="英语练习">
-                            
-                            <span class="card-title">英语练习</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                A Story of an IdealConstructing this suburban named “Micky Town”, which seemingly was abandoned by the whole world, was 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/English/" class="post-category">
-                                    English
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/English/">
-                            <span class="chip bg-color">English</span>
-                        </a>
-                        
-                        <a href="/tags/writing/">
-                            <span class="chip bg-color">writing</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/28/Hexo%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo主题开发学习">
-                            
-                            <span class="card-title">hexo主题开发学习</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Hexo 主题开发学习概要​    出于个人的开发兴趣以及对个人博客的风格设计需求，附加一点学习经验需要，准备尝试一次大的系统性的插件性质的开发，为自己的前端学习添加一笔。
-​    个人的想法是一个类似Bootstrap所能带来的响应式布
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                                
-                                <a href="/categories/hexo/themes/" class="post-category">
-                                    themes
-                                </a>
-                                
-                                <a href="/categories/hexo/themes/program/" class="post-category">
-                                    program
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/hexo/">
-                            <span class="chip bg-color">hexo</span>
-                        </a>
-                        
-                        <a href="/tags/themes/">
-                            <span class="chip bg-color">themes</span>
-                        </a>
-                        
-                        <a href="/tags/program/">
-                            <span class="chip bg-color">program</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 4</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AppServ/" rel="tag">AppServ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-%E6%A0%87%E7%AD%BE/" rel="tag">C++   // 标签</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Lite-Travel/" rel="tag">Lite-Travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Philosophy/" rel="tag">Philosophy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Program/" rel="tag">Program</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shell/" rel="tag">Shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Translation/" rel="tag">Translation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/big-data/" rel="tag">big data</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/data-analyze/" rel="tag">data analyze</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/diary/" rel="tag">diary</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elastic-search/" rel="tag">elastic-search</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kibana/" rel="tag">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/" rel="tag">log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpMyAdmin/" rel="tag">phpMyAdmin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/program/" rel="tag">program</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/themes/" rel="tag">themes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/writing/" rel="tag">writing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%86%E5%A4%87/" rel="tag">准备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%95%86%E5%BF%97/" rel="tag">商志</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/" rel="tag">基本知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">基础知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9E%E6%93%8D/" rel="tag">实操</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B0%8F%E4%BD%9C%E6%96%87/" rel="tag">小作文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" rel="tag">微观经济学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%84%9F%E6%83%B3/" rel="tag">感想</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB/" rel="tag">政治</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6%E4%B8%80/" rel="tag">数学一</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E5%85%AC/" rel="tag">考公</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E7%A0%94/" rel="tag">考研</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%8D%E6%B1%87/" rel="tag">词汇</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BE%E5%A4%96%E5%AD%A6%E4%B9%A0/" rel="tag">课外学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%AE%E9%A2%98/" rel="tag">问题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
     </div>
-</div>
+  </div>
 
 
-
-
-    <footer class="page-footer bg-color">
+  
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/AppServ/" style="font-size: 10px;">AppServ</a> <a href="/tags/C-%E6%A0%87%E7%AD%BE/" style="font-size: 10px;">C++   // 标签</a> <a href="/tags/English/" style="font-size: 12px;">English</a> <a href="/tags/Lite-Travel/" style="font-size: 10px;">Lite-Travel</a> <a href="/tags/Philosophy/" style="font-size: 10px;">Philosophy</a> <a href="/tags/Program/" style="font-size: 10px;">Program</a> <a href="/tags/Shell/" style="font-size: 20px;">Shell</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/big-data/" style="font-size: 10px;">big data</a> <a href="/tags/data-analyze/" style="font-size: 10px;">data analyze</a> <a href="/tags/diary/" style="font-size: 10px;">diary</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/elastic-search/" style="font-size: 12px;">elastic-search</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 18px;">java</a> <a href="/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/log/" style="font-size: 10px;">log</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/phpMyAdmin/" style="font-size: 10px;">phpMyAdmin</a> <a href="/tags/program/" style="font-size: 10px;">program</a> <a href="/tags/python/" style="font-size: 12px;">python</a> <a href="/tags/test/" style="font-size: 14px;">test</a> <a href="/tags/themes/" style="font-size: 10px;">themes</a> <a href="/tags/writing/" style="font-size: 16px;">writing</a> <a href="/tags/%E5%87%86%E5%A4%87/" style="font-size: 12px;">准备</a> <a href="/tags/%E5%95%86%E5%BF%97/" style="font-size: 10px;">商志</a> <a href="/tags/%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/" style="font-size: 10px;">基本知识</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">基础学习</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 10px;">基础知识</a> <a href="/tags/%E5%AE%9E%E6%93%8D/" style="font-size: 12px;">实操</a> <a href="/tags/%E5%B0%8F%E4%BD%9C%E6%96%87/" style="font-size: 10px;">小作文</a> <a href="/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" style="font-size: 12px;">微观经济学</a> <a href="/tags/%E6%84%9F%E6%83%B3/" style="font-size: 10px;">感想</a> <a href="/tags/%E6%94%BF%E6%B2%BB/" style="font-size: 10px;">政治</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E4%B8%80/" style="font-size: 10px;">数学一</a> <a href="/tags/%E8%80%83%E5%85%AC/" style="font-size: 10px;">考公</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 18px;">考研</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 14px;">英语</a> <a href="/tags/%E8%AF%8D%E6%B1%87/" style="font-size: 10px;">词汇</a> <a href="/tags/%E8%AF%BE%E5%A4%96%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">课外学习</a> <a href="/tags/%E9%97%AE%E9%A2%98/" style="font-size: 12px;">问题</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 10px;">面试</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
     </div>
-</div>
+  </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
+  
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            <span id="year">2019</span>
-            <a href="http://example.com" target="_blank">Kris Hugo</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/krishugo" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:KrisHugo@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2676086616" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2676086616" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-    <a href="https://www.zhihu.com/people/KrisHugo" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/KrisHugo" data-position="top" data-delay="50">
-        <i class="fab fa-zhihu1">知</i>
-    </a>
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
     </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/13/QuickSort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">QuickSort 快速排序  // 文章标题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/23/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E5%B0%8F%E4%BD%9C%E6%96%87/">考研英语小作文</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/09/%E4%B8%AD%E8%AF%91%E8%8B%B1%E9%87%8D%E8%A6%81%E5%8D%95%E8%AF%8D/">中译英重要单词</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/24/%E8%80%83%E7%A0%94%E8%AF%8D%E6%B1%87%E7%B2%BE%E8%AE%B2/">考研词汇精讲</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">考研政治</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 Kris Hugo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
     </div>
-</div>
-
-<script src="/js/search.js"></script>
-<script type="text/javascript">
-$(function () {
-    searchFunc("/search.xml", 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
     
 
-    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-    
 
-    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
-    
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
 </body>
-
 </html>
